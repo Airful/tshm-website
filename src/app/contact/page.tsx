@@ -15,7 +15,6 @@ export default function ContactPage() {
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    // In production, connect to an API endpoint
     console.log("Form submitted:", formData);
     setSubmitted(true);
     setTimeout(() => setSubmitted(false), 5000);
@@ -25,61 +24,76 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero Banner */}
-      <section className="pt-32 pb-20 bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-secondary)]">
-        <div className="container mx-auto px-5 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+      <section className="pt-32 pb-20 lg:pt-36 lg:pb-24 bg-[var(--foreground)]">
+        <div className="max-w-6xl mx-auto px-6 sm:px-8 text-center">
+          <h1
+            className="text-4xl md:text-5xl font-bold text-white mb-4"
+            style={{ fontFamily: "var(--font-heading)", letterSpacing: "-0.02em", lineHeight: "1.15" }}
+          >
             Contact Us
           </h1>
-          <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+          <p className="text-white/60 text-lg max-w-2xl mx-auto">
             Get in touch with us for admissions, inquiries, or any other
             information
           </p>
         </div>
       </section>
 
-      {/* Contact Info Cards */}
-      <section className="py-20 bg-[var(--color-bg-warm)]">
-        <div className="container mx-auto px-5">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            <div className="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow border border-[var(--color-border)]">
-              <div className="w-16 h-16 bg-[var(--color-accent-light)] rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl text-[var(--color-accent)]">&#9906;</span>
+      {/* Contact Info Cards + Form + Map */}
+      <section className="py-20 lg:py-28 bg-[var(--canvas)]">
+        <div className="max-w-6xl mx-auto px-6 sm:px-8">
+          {/* 3 Contact Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+            {/* Visit */}
+            <div className="bg-white rounded-2xl border border-[var(--border)] p-8 text-center hover:shadow-md transition-all duration-300">
+              <div className="w-12 h-12 mx-auto mb-4 bg-[var(--accent-soft)] rounded-full flex items-center justify-center">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
               </div>
-              <h3 className="text-lg font-bold text-[var(--color-primary)] mb-2">
+              <h3 className="text-base font-semibold text-[var(--foreground)] mb-2">
                 Visit Us
               </h3>
-              <p className="text-[var(--color-text-light)] text-sm">
+              <p className="text-sm text-[var(--body)]">
                 College Road, Padmapukur,
                 <br />
                 Tarakeswar, Hooghly, 712410
               </p>
             </div>
 
-            <div className="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow border border-[var(--color-border)]">
-              <div className="w-16 h-16 bg-[var(--color-accent-light)] rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl text-[var(--color-accent)]">&#9742;</span>
+            {/* Call */}
+            <div className="bg-white rounded-2xl border border-[var(--border)] p-8 text-center hover:shadow-md transition-all duration-300">
+              <div className="w-12 h-12 mx-auto mb-4 bg-[var(--accent-soft)] rounded-full flex items-center justify-center">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+                </svg>
               </div>
-              <h3 className="text-lg font-bold text-[var(--color-primary)] mb-2">
+              <h3 className="text-base font-semibold text-[var(--foreground)] mb-2">
                 Call Us
               </h3>
               <a
                 href="tel:+919635964348"
-                className="text-[var(--color-text-light)] text-sm hover:text-[var(--color-accent)] transition-colors"
+                className="text-sm text-[var(--body)] hover:text-[var(--accent)] transition-colors"
               >
                 +91 96359 64348
               </a>
             </div>
 
-            <div className="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow border border-[var(--color-border)]">
-              <div className="w-16 h-16 bg-[var(--color-accent-light)] rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl text-[var(--color-accent)]">&#9993;</span>
+            {/* Email */}
+            <div className="bg-white rounded-2xl border border-[var(--border)] p-8 text-center hover:shadow-md transition-all duration-300">
+              <div className="w-12 h-12 mx-auto mb-4 bg-[var(--accent-soft)] rounded-full flex items-center justify-center">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
               </div>
-              <h3 className="text-lg font-bold text-[var(--color-primary)] mb-2">
+              <h3 className="text-base font-semibold text-[var(--foreground)] mb-2">
                 Email Us
               </h3>
               <a
                 href="mailto:tshm368@gmail.com"
-                className="text-[var(--color-text-light)] text-sm hover:text-[var(--color-accent)] transition-colors"
+                className="text-sm text-[var(--body)] hover:text-[var(--accent)] transition-colors"
               >
                 tshm368@gmail.com
               </a>
@@ -90,16 +104,16 @@ export default function ContactPage() {
           <div className="grid md:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div>
-              <SectionTitle title="Send Us a Message" />
+              <SectionTitle title="Send Us a Message" align="left" />
               {submitted && (
-                <div className="bg-green-50 border border-green-200 text-green-700 px-6 py-4 rounded-lg mb-6">
+                <div className="bg-green-50 border border-green-200 text-green-700 px-6 py-4 rounded-xl mb-6 text-sm">
                   Thank you! Your message has been sent successfully. We&apos;ll
                   get back to you soon.
                 </div>
               )}
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div>
-                  <label className="block text-sm font-medium text-[var(--color-text)] mb-1">
+                  <label className="block text-sm font-medium text-[var(--foreground)] mb-1.5">
                     Full Name *
                   </label>
                   <input
@@ -109,14 +123,14 @@ export default function ContactPage() {
                     onChange={(e) =>
                       setFormData({ ...formData, name: e.target.value })
                     }
-                    className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent"
+                    className="w-full px-4 py-3 border border-[var(--border)] rounded-xl bg-white text-[var(--foreground)] focus:outline-none focus:ring-2 focus:ring-[var(--accent)] focus:border-transparent transition-all"
                     placeholder="Enter your full name"
                   />
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   <div>
-                    <label className="block text-sm font-medium text-[var(--color-text)] mb-1">
+                    <label className="block text-sm font-medium text-[var(--foreground)] mb-1.5">
                       Email *
                     </label>
                     <input
@@ -126,12 +140,12 @@ export default function ContactPage() {
                       onChange={(e) =>
                         setFormData({ ...formData, email: e.target.value })
                       }
-                      className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent"
+                      className="w-full px-4 py-3 border border-[var(--border)] rounded-xl bg-white text-[var(--foreground)] focus:outline-none focus:ring-2 focus:ring-[var(--accent)] focus:border-transparent transition-all"
                       placeholder="your@email.com"
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-[var(--color-text)] mb-1">
+                    <label className="block text-sm font-medium text-[var(--foreground)] mb-1.5">
                       Phone *
                     </label>
                     <input
@@ -141,14 +155,14 @@ export default function ContactPage() {
                       onChange={(e) =>
                         setFormData({ ...formData, phone: e.target.value })
                       }
-                      className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent"
+                      className="w-full px-4 py-3 border border-[var(--border)] rounded-xl bg-white text-[var(--foreground)] focus:outline-none focus:ring-2 focus:ring-[var(--accent)] focus:border-transparent transition-all"
                       placeholder="+91 XXXXX XXXXX"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-[var(--color-text)] mb-1">
+                  <label className="block text-sm font-medium text-[var(--foreground)] mb-1.5">
                     Interested Course
                   </label>
                   <select
@@ -156,20 +170,20 @@ export default function ContactPage() {
                     onChange={(e) =>
                       setFormData({ ...formData, course: e.target.value })
                     }
-                    className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent bg-white"
+                    className="w-full px-4 py-3 border border-[var(--border)] rounded-xl bg-white text-[var(--foreground)] focus:outline-none focus:ring-2 focus:ring-[var(--accent)] focus:border-transparent transition-all"
                   >
                     <option value="">Select a course</option>
                     <option value="hotel-management">Hotel Management</option>
                     <option value="ac-technician">AC Technician Diploma</option>
                     <option value="spoken-english">Spoken English</option>
                     <option value="sales-marketing">
-                      Sales & Marketing Management
+                      Sales &amp; Marketing Management
                     </option>
                     <option value="beauty-academy">
-                      Makeup & Beauty Academy
+                      Makeup &amp; Beauty Academy
                     </option>
                     <option value="tailoring">
-                      Tailoring & Fashion Design
+                      Tailoring &amp; Fashion Design
                     </option>
                     <option value="career-counseling">
                       Career Counseling (DMIT)
@@ -179,7 +193,7 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-[var(--color-text)] mb-1">
+                  <label className="block text-sm font-medium text-[var(--foreground)] mb-1.5">
                     Message
                   </label>
                   <textarea
@@ -188,14 +202,14 @@ export default function ContactPage() {
                     onChange={(e) =>
                       setFormData({ ...formData, message: e.target.value })
                     }
-                    className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)] focus:border-transparent resize-none"
+                    className="w-full px-4 py-3 border border-[var(--border)] rounded-xl bg-white text-[var(--foreground)] focus:outline-none focus:ring-2 focus:ring-[var(--accent)] focus:border-transparent resize-none transition-all"
                     placeholder="Tell us about your inquiry..."
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full py-4 bg-[var(--color-accent)] text-white font-semibold rounded-lg hover:bg-[var(--color-accent-hover)] transition-colors"
+                  className="inline-flex items-center gap-2 px-8 py-3.5 bg-[var(--accent)] text-white font-medium rounded-full hover:bg-[var(--accent-hover)] transition-all duration-300"
                 >
                   Send Message
                 </button>
@@ -204,8 +218,8 @@ export default function ContactPage() {
 
             {/* Map */}
             <div>
-              <SectionTitle title="Find Us" />
-              <div className="rounded-xl overflow-hidden shadow-lg h-[500px]">
+              <SectionTitle title="Find Us" align="left" />
+              <div className="rounded-2xl overflow-hidden border border-[var(--border)] h-[500px]">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.5!2d88.02!3d22.89!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDUzJzI0LjAiTiA4OMKwMDEnMTIuMCJF!5e0!3m2!1sen!2sin!4v1600000000000"
                   width="100%"

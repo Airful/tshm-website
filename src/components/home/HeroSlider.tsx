@@ -1,150 +1,103 @@
-"use client";
-
-import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 
-const slides = [
-  {
-    title: "Tarakeswar School of\nHotel Management\n& Technical Foundation",
-    subtitle:
-      "100% Placement Opportunity | Stipend During Training | Our Students Are Working Around India & Abroad",
-    cta: "Explore Courses",
-    ctaLink: "/courses",
-    bg: "from-[#1b2a4a] to-[#243656]",
-  },
-  {
-    title: "Practical & Purposeful\nEducation with\nProfessional Training",
-    subtitle:
-      "Hotel Management | AC Technician | Beauty & Tailoring Academy | Spoken English | Career Counseling",
-    cta: "View Programs",
-    ctaLink: "/courses",
-    bg: "from-[#162040] to-[#1b2a4a]",
-  },
-  {
-    title: "Online Degree Programs\nFrom Recognized Universities",
-    subtitle:
-      "BA | B.COM | B.SC. | BBA | MBA | B.SC. in Hotel Management and many more",
-    cta: "Apply Now",
-    ctaLink: "/contact",
-    bg: "from-[#243656] to-[#1b3a5c]",
-  },
-  {
-    title: "Creating Entrepreneurs\n& Corporate Leaders",
-    subtitle:
-      "Industry Experienced Faculty & Trainers | DMIT Career Counseling | All-Round Development",
-    cta: "Know More",
-    ctaLink: "/about",
-    bg: "from-[#1b2a4a] to-[#1b3a5c]",
-  },
+const stats = [
+  "100% Job Assistance",
+  "9+ Programs",
+  "500+ Alumni",
+  "12+ Faculty",
 ];
 
 export default function HeroSlider() {
-  const [current, setCurrent] = useState(0);
-
-  const nextSlide = useCallback(() => {
-    setCurrent((prev) => (prev + 1) % slides.length);
-  }, []);
-
-  useEffect(() => {
-    const timer = setInterval(nextSlide, 5000);
-    return () => clearInterval(timer);
-  }, [nextSlide]);
-
   return (
-    <section className="relative h-screen min-h-[600px] overflow-hidden">
-      {slides.map((slide, i) => (
-        <div
-          key={i}
-          className={`absolute inset-0 transition-opacity duration-1000 bg-gradient-to-br ${slide.bg} ${
-            i === current ? "opacity-100 z-10" : "opacity-0 z-0"
-          }`}
-        >
-          {/* Subtle dot pattern overlay */}
-          <div
-            className="absolute inset-0 opacity-[0.04]"
-            style={{
-              backgroundImage:
-                "radial-gradient(circle, #ffffff 1px, transparent 1px)",
-              backgroundSize: "24px 24px",
-            }}
-          />
+    <section className="relative bg-[var(--foreground)] min-h-[calc(100vh-5rem)] flex flex-col justify-center overflow-hidden">
+      {/* Subtle diagonal decorative line */}
+      <div
+        className="absolute top-0 right-0 w-[1px] h-[200%] bg-white/5 origin-top-right"
+        style={{ transform: "rotate(-30deg)", transformOrigin: "top right" }}
+      />
+      <div
+        className="absolute top-[20%] right-[15%] w-[1px] h-[200%] bg-white/[0.03] origin-top-right"
+        style={{ transform: "rotate(-30deg)", transformOrigin: "top right" }}
+      />
 
-          {/* Decorative elements */}
-          <div className="absolute top-20 right-20 w-72 h-72 bg-[var(--color-accent)]/10 rounded-full blur-3xl" />
-          <div className="absolute bottom-20 left-20 w-96 h-96 bg-[var(--color-accent)]/5 rounded-full blur-3xl" />
+      <div className="max-w-6xl mx-auto px-6 sm:px-8 w-full py-20 lg:py-28">
+        <div className="max-w-3xl">
+          {/* Overline */}
+          <p
+            className="text-xs font-semibold uppercase tracking-[0.1em] text-[var(--accent)] mb-6"
+            style={{ fontFamily: "var(--font-body)" }}
+          >
+            Practical &amp; Purposeful Education
+          </p>
 
-          <div className="container mx-auto px-5 h-full flex items-center">
-            <div
-              className={`max-w-2xl transition-all duration-700 ${
-                i === current
-                  ? "translate-y-0 opacity-100"
-                  : "translate-y-10 opacity-0"
-              }`}
+          {/* Main heading */}
+          <h1
+            className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.08] mb-6"
+            style={{ fontFamily: "var(--font-heading)", letterSpacing: "-0.02em" }}
+          >
+            Where Every Student
+            <br />
+            Finds Their Path
+          </h1>
+
+          {/* Subtitle */}
+          <p className="text-lg md:text-xl text-white/70 max-w-2xl mb-10 leading-relaxed">
+            Tarakeswar School of Hotel Management &amp; Technical Foundation
+            &mdash; building careers through hands-on training, industry
+            mentorship, and 100% placement support.
+          </p>
+
+          {/* CTA Buttons */}
+          <div className="flex gap-4 flex-wrap">
+            <Link
+              href="/courses"
+              className="inline-flex items-center gap-2 px-7 py-3.5 bg-white text-[var(--foreground)] font-medium rounded-full hover:bg-white/90 transition-all duration-300"
             >
-              {/* Decorative badge */}
-              <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/10">
-                <span className="w-2 h-2 bg-[var(--color-accent)] rounded-full" />
-                <span className="text-[var(--color-accent-light)] text-sm font-medium tracking-wide">
-                  Est. Tarakeswar, West Bengal
-                </span>
-              </div>
-
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight whitespace-pre-line mb-6">
-                {slide.title}
-              </h2>
-              <p className="text-lg md:text-xl text-gray-300 mb-8">
-                {slide.subtitle}
-              </p>
-              <div className="flex gap-4 flex-wrap">
-                <Link
-                  href={slide.ctaLink}
-                  className="inline-block px-8 py-4 bg-[var(--color-accent)] text-white font-semibold rounded text-lg hover:bg-[var(--color-accent-hover)] transition-all hover:-translate-y-0.5 shadow-lg"
-                >
-                  {slide.cta}
-                </Link>
-                <Link
-                  href="/about"
-                  className="inline-block px-8 py-4 border-2 border-white text-white font-semibold rounded text-lg hover:bg-white hover:text-[var(--color-primary)] transition-all"
-                >
-                  Learn More
-                </Link>
-              </div>
-            </div>
+              Explore Courses
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="ml-0.5">
+                <path d="M6 3l5 5-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </Link>
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 px-7 py-3.5 border border-white/30 text-white font-medium rounded-full hover:border-white/60 hover:text-white transition-all duration-300"
+            >
+              Contact Us
+            </Link>
           </div>
         </div>
-      ))}
-
-      {/* Slide indicators */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-3">
-        {slides.map((_, i) => (
-          <button
-            key={i}
-            onClick={() => setCurrent(i)}
-            className={`h-2 rounded-full transition-all ${
-              i === current
-                ? "w-8 bg-[var(--color-accent)]"
-                : "w-2 bg-white/40 hover:bg-white/60"
-            }`}
-            aria-label={`Go to slide ${i + 1}`}
-          />
-        ))}
       </div>
 
-      {/* Arrows */}
-      <button
-        onClick={() => setCurrent((prev) => (prev - 1 + slides.length) % slides.length)}
-        className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center text-white text-2xl transition-colors"
-        aria-label="Previous slide"
-      >
-        &#8249;
-      </button>
-      <button
-        onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center text-white text-2xl transition-colors"
-        aria-label="Next slide"
-      >
-        &#8250;
-      </button>
+      {/* Stat pills at bottom */}
+      <div className="max-w-6xl mx-auto px-6 sm:px-8 w-full pb-12 lg:pb-16">
+        <div className="flex items-center gap-0 flex-wrap">
+          {stats.map((stat, i) => (
+            <span key={stat} className="flex items-center">
+              <span className="text-sm text-white/50 font-medium whitespace-nowrap">
+                {stat}
+              </span>
+              {i < stats.length - 1 && (
+                <span className="mx-4 lg:mx-6 w-px h-4 bg-white/20 hidden sm:block" />
+              )}
+              {i < stats.length - 1 && (
+                <span className="mx-3 text-white/20 sm:hidden">/</span>
+              )}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      {/* Angled white SVG at bottom */}
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+        <svg
+          viewBox="0 0 1440 60"
+          preserveAspectRatio="none"
+          className="w-full h-[40px] md:h-[60px]"
+          fill="var(--canvas)"
+        >
+          <polygon points="0,60 1440,60 1440,0" />
+        </svg>
+      </div>
     </section>
   );
 }

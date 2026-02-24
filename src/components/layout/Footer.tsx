@@ -10,57 +10,47 @@ const quickLinks = [
 
 const courseLinks = [
   { href: "/courses#hotel-management", label: "Hotel Management" },
-  { href: "/courses#ac-technician", label: "Diploma in AC Technician" },
+  { href: "/courses#ac-technician", label: "AC Technician Diploma" },
   { href: "/courses#spoken-english", label: "Spoken English" },
-  { href: "/courses#beauty-tailoring-academy", label: "Beauty & Tailoring Academy" },
-  { href: "/courses#online-degrees", label: "Online Degree Programs" },
+  { href: "/courses#beauty-tailoring-academy", label: "Beauty & Tailoring" },
+  { href: "/courses#online-degrees", label: "Online Degrees" },
   { href: "/courses#career-counseling", label: "Career Counseling" },
-];
-
-const socialLinks = [
-  { label: "Facebook", icon: "\uD83C\uDF10", href: "#facebook" },
-  { label: "Instagram", icon: "\uD83D\uDCF7", href: "#instagram" },
-  { label: "YouTube", icon: "\u25B6", href: "#youtube" },
-  { label: "LinkedIn", icon: "\uD83D\uDCBC", href: "#linkedin" },
 ];
 
 export default function Footer() {
   return (
-    <footer className="bg-[var(--color-primary)] text-white">
-      <div className="container mx-auto px-5 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+    <footer className="bg-[var(--foreground)] text-white">
+      <div className="max-w-6xl mx-auto px-6 sm:px-8 py-16 lg:py-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
           {/* About */}
           <div>
-            <div className="flex items-center gap-3 mb-5">
-              <div className="w-10 h-10 bg-[var(--color-accent)] rounded-lg flex items-center justify-center font-bold text-xs">
-                TSHM
-              </div>
-              <h3 className="text-lg font-bold">TSHM & TF</h3>
-            </div>
-            <p className="text-gray-400 text-sm leading-relaxed mb-5">
-              Tarakeswar School of Hotel Management & Technical Foundation -
-              Providing a positive, vibrant and inspiring culture where students
-              are encouraged to succeed as an active and supportive member of
-              society.
+            <h3
+              className="text-lg font-bold text-white mb-4"
+              style={{ fontFamily: "var(--font-heading)", letterSpacing: "-0.02em" }}
+            >
+              TSHM &amp; TF
+            </h3>
+            <p className="text-white/60 text-sm leading-relaxed mb-6">
+              Tarakeswar School of Hotel Management &amp; Technical Foundation
+              &mdash; providing a positive, vibrant and inspiring culture where
+              students are encouraged to succeed.
             </p>
-            <div className="flex gap-3">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  className="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center text-sm hover:bg-[var(--color-accent)] transition-colors"
-                  aria-label={social.label}
-                  title={social.label}
-                >
-                  {social.icon}
-                </a>
-              ))}
+            <div className="flex gap-4 text-sm text-white/50">
+              <a href="#facebook" className="hover:text-white/90 transition-colors">
+                Facebook
+              </a>
+              <a href="#instagram" className="hover:text-white/90 transition-colors">
+                Instagram
+              </a>
+              <a href="#youtube" className="hover:text-white/90 transition-colors">
+                YouTube
+              </a>
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-5 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-10 after:h-0.5 after:bg-[var(--color-accent)]">
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-white/80 mb-5">
               Quick Links
             </h4>
             <ul className="space-y-3">
@@ -68,9 +58,8 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-gray-400 text-sm hover:text-[var(--color-accent)] transition-colors flex items-center gap-2"
+                    className="text-white/60 text-sm hover:text-white/90 transition-colors"
                   >
-                    <span className="text-[var(--color-accent)]">&rsaquo;</span>
                     {link.label}
                   </Link>
                 </li>
@@ -80,7 +69,7 @@ export default function Footer() {
 
           {/* Courses */}
           <div>
-            <h4 className="text-lg font-semibold mb-5 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-10 after:h-0.5 after:bg-[var(--color-accent)]">
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-white/80 mb-5">
               Our Courses
             </h4>
             <ul className="space-y-3">
@@ -88,9 +77,8 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-gray-400 text-sm hover:text-[var(--color-accent)] transition-colors flex items-center gap-2"
+                    className="text-white/60 text-sm hover:text-white/90 transition-colors"
                   >
-                    <span className="text-[var(--color-accent)]">&rsaquo;</span>
                     {link.label}
                   </Link>
                 </li>
@@ -100,29 +88,27 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-lg font-semibold mb-5 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-10 after:h-0.5 after:bg-[var(--color-accent)]">
-              Contact Us
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-white/80 mb-5">
+              Contact
             </h4>
-            <ul className="space-y-4 text-gray-400 text-sm">
-              <li className="flex gap-3">
-                <span className="text-[var(--color-accent)] text-lg mt-0.5">&#9906;</span>
-                <span>
-                  College Road, Padmapukur,
-                  <br />
-                  Tarakeswar, Hooghly, 712410
-                </span>
+            <ul className="space-y-4 text-white/60 text-sm">
+              <li className="leading-relaxed">
+                College Road, Padmapukur,
+                <br />
+                Tarakeswar, Hooghly, 712410
               </li>
-              <li className="flex gap-3">
-                <span className="text-[var(--color-accent)] text-lg">&#9742;</span>
-                <a href="tel:+919635964348" className="hover:text-[var(--color-accent)] transition-colors">
+              <li>
+                <a
+                  href="tel:+919635964348"
+                  className="hover:text-white/90 transition-colors"
+                >
                   +91 96359 64348
                 </a>
               </li>
-              <li className="flex gap-3">
-                <span className="text-[var(--color-accent)] text-lg">&#9993;</span>
+              <li>
                 <a
                   href="mailto:tshm368@gmail.com"
-                  className="hover:text-[var(--color-accent)] transition-colors"
+                  className="hover:text-white/90 transition-colors"
                 >
                   tshm368@gmail.com
                 </a>
@@ -134,14 +120,12 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t border-white/10">
-        <div className="container mx-auto px-5 py-5 flex flex-col md:flex-row items-center justify-between gap-3 text-gray-500 text-sm">
+        <div className="max-w-6xl mx-auto px-6 sm:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-3 text-white/40 text-sm">
           <p>
-            Copyright &copy; {new Date().getFullYear()} TARAKESWAR SCHOOL OF
-            HOTEL MANAGEMENT & TECHNICAL FOUNDATION. All rights reserved.
+            &copy; {new Date().getFullYear()} Tarakeswar School of Hotel
+            Management &amp; Technical Foundation. All rights reserved.
           </p>
-          <p>
-            Developed with care
-          </p>
+          <p>Developed with care</p>
         </div>
       </div>
     </footer>

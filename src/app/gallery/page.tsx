@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { galleryImages, type GalleryImage } from "@/data/gallery";
-import SectionTitle from "@/components/common/SectionTitle";
 
 const filters = [
   { key: "all", label: "All" },
@@ -12,22 +11,6 @@ const filters = [
   { key: "placement", label: "Placement" },
   { key: "activities", label: "Activities" },
 ];
-
-const categoryIcons: Record<string, string> = {
-  campus: "\uD83C\uDFEB",
-  training: "\uD83D\uDCDA",
-  events: "\uD83C\uDF89",
-  placement: "\uD83C\uDF93",
-  activities: "\u26BD",
-};
-
-const categoryColors: Record<string, string> = {
-  campus: "from-[#1b2a4a]/10 to-[#243656]/10",
-  training: "from-[#c0872a]/10 to-[#a8741f]/10",
-  events: "from-[#16a34a]/10 to-[#15803d]/10",
-  placement: "from-[#1b2a4a]/10 to-[#c0872a]/10",
-  activities: "from-[#243656]/10 to-[#1b2a4a]/10",
-};
 
 export default function GalleryPage() {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -41,30 +24,33 @@ export default function GalleryPage() {
   return (
     <>
       {/* Hero Banner */}
-      <section className="pt-32 pb-20 bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-secondary)]">
-        <div className="container mx-auto px-5 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+      <section className="pt-32 pb-20 lg:pt-36 lg:pb-24 bg-[var(--foreground)]">
+        <div className="max-w-6xl mx-auto px-6 sm:px-8 text-center">
+          <h1
+            className="text-4xl md:text-5xl font-bold text-white mb-4"
+            style={{ fontFamily: "var(--font-heading)", letterSpacing: "-0.02em", lineHeight: "1.15" }}
+          >
             Gallery
           </h1>
-          <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            A glimpse into life at TSHM - our campus, events, training, and
-            student activities
+          <p className="text-white/60 text-lg max-w-2xl mx-auto">
+            A glimpse into life at TSHM &mdash; our campus, events, training,
+            and student activities
           </p>
         </div>
       </section>
 
-      {/* Filter */}
-      <section className="py-6 bg-white border-b sticky top-[72px] z-30">
-        <div className="container mx-auto px-5">
+      {/* Filter Pills */}
+      <section className="py-4 bg-[var(--canvas)] border-b border-[var(--border)] sticky top-16 lg:top-20 z-30">
+        <div className="max-w-6xl mx-auto px-6 sm:px-8">
           <div className="flex gap-3 justify-center flex-wrap">
             {filters.map((f) => (
               <button
                 key={f.key}
                 onClick={() => setActiveFilter(f.key)}
-                className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${
+                className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
                   activeFilter === f.key
-                    ? "bg-[var(--color-accent)] text-white"
-                    : "border border-gray-200 text-[var(--color-text)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]"
+                    ? "bg-[var(--accent)] text-white"
+                    : "border border-[var(--border)] text-[var(--foreground)] hover:border-[var(--accent)] hover:text-[var(--accent)]"
                 }`}
               >
                 {f.label}
@@ -75,75 +61,58 @@ export default function GalleryPage() {
       </section>
 
       {/* Gallery Grid */}
-      <section className="py-20 bg-[var(--color-bg-warm)]">
-        <div className="container mx-auto px-5">
+      <section className="py-20 lg:py-28 bg-[var(--canvas)]">
+        <div className="max-w-6xl mx-auto px-6 sm:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
             {filtered.map((img) => (
               <button
                 key={img.id}
                 onClick={() => setLightbox(img)}
-                className={`group relative overflow-hidden rounded-xl aspect-square bg-gradient-to-br ${
-                  categoryColors[img.category] || "from-gray-100 to-gray-200"
-                } border border-[var(--color-border)] cursor-pointer hover:shadow-lg transition-shadow`}
+                className="group relative overflow-hidden rounded-2xl aspect-square bg-[var(--elevated)] border border-[var(--border)] cursor-pointer hover:shadow-md transition-all duration-300"
               >
-                {/* Subtle pattern background */}
-                <div
-                  className="absolute inset-0 opacity-[0.03]"
-                  style={{
-                    backgroundImage:
-                      "radial-gradient(circle, var(--color-primary) 1px, transparent 1px)",
-                    backgroundSize: "16px 16px",
-                  }}
-                />
-                <div className="absolute inset-0 flex flex-col items-center justify-center gap-3">
-                  <span className="text-5xl group-hover:scale-110 transition-transform">
-                    {categoryIcons[img.category] || "\uD83D\uDCF7"}
-                  </span>
-                  <span className="text-[var(--color-text)] text-sm font-medium px-3 text-center">
+                <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 p-4">
+                  <span className="text-sm font-medium text-[var(--foreground)] text-center">
                     {img.alt}
                   </span>
-                  <span className="text-[var(--color-text-light)] text-xs capitalize">
+                  <span className="text-xs text-[var(--muted)] capitalize px-3 py-1 border border-[var(--border)] rounded-full">
                     {img.category}
                   </span>
                 </div>
-                <div className="absolute inset-0 bg-[var(--color-primary)]/0 group-hover:bg-[var(--color-primary)]/5 transition-colors" />
+                <div className="absolute inset-0 bg-[var(--foreground)]/0 group-hover:bg-[var(--foreground)]/5 transition-colors duration-300" />
               </button>
             ))}
           </div>
 
           {filtered.length === 0 && (
-            <p className="text-center text-[var(--color-text-light)] py-20">
+            <p className="text-center text-[var(--muted)] py-20">
               No images found in this category.
             </p>
           )}
         </div>
       </section>
 
-      {/* Lightbox */}
+      {/* Lightbox Overlay */}
       {lightbox && (
         <div
-          className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-5"
+          className="fixed inset-0 z-50 bg-[var(--foreground)]/95 flex items-center justify-center p-6"
           onClick={() => setLightbox(null)}
         >
           <button
-            className="absolute top-6 right-6 text-white text-4xl hover:text-[var(--color-accent)] transition-colors"
+            className="absolute top-6 right-6 text-white/60 hover:text-white text-3xl transition-colors"
             onClick={() => setLightbox(null)}
             aria-label="Close lightbox"
           >
             &times;
           </button>
           <div
-            className={`max-w-4xl w-full bg-gradient-to-br ${
-              categoryColors[lightbox.category] || "from-gray-100 to-gray-200"
-            } rounded-2xl aspect-video flex items-center justify-center border border-white/10`}
+            className="max-w-3xl w-full bg-[var(--elevated)] rounded-2xl aspect-video flex items-center justify-center border border-[var(--border)]"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="text-center">
-              <span className="text-8xl">
-                {categoryIcons[lightbox.category] || "\uD83D\uDCF7"}
-              </span>
-              <p className="text-[var(--color-text)] mt-4 text-lg font-medium">{lightbox.alt}</p>
-              <p className="text-[var(--color-text-light)] text-sm capitalize mt-1">
+            <div className="text-center p-8">
+              <p className="text-lg font-semibold text-[var(--foreground)] mb-2">
+                {lightbox.alt}
+              </p>
+              <p className="text-sm text-[var(--muted)] capitalize">
                 {lightbox.category}
               </p>
             </div>

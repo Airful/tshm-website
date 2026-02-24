@@ -1,45 +1,71 @@
-"use client";
-
-import { useState } from "react";
 import { placedStudents } from "@/data/team";
 import SectionTitle from "@/components/common/SectionTitle";
 
+function getInitials(name: string): string {
+  return name
+    .replace(/Mr\.\s*/, "")
+    .split(" ")
+    .map((n) => n[0])
+    .join("");
+}
+
 export default function Testimonials() {
-  const [active, setActive] = useState(0);
+  const featured = placedStudents.slice(0, 4);
+  const remaining = placedStudents.slice(4);
 
   return (
-    <section className="py-20 bg-[var(--color-bg-warm)]">
-      <div className="container mx-auto px-5">
+    <section className="py-20 lg:py-28 bg-[var(--canvas)]">
+      <div className="max-w-6xl mx-auto px-6 sm:px-8">
         <SectionTitle
-          title="Our Successful Students"
-          subtitle="Our students are working around India & abroad. Here are some of our successfully placed students."
+          overline="PLACEMENT SUCCESS"
+          title="Our Students, Their Stories"
+          subtitle="Our students are working at premier hotels and hospitality brands across India and abroad"
         />
 
-        {/* Placement Cards Grid */}
+        {/* Featured 4 cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {placedStudents.map((student, i) => (
+          {featured.map((student) => (
             <div
               key={student.id}
-              className={`bg-white rounded-xl border border-[var(--color-border)] hover:shadow-lg transition-all p-6 text-center group cursor-pointer ${
-                active === i ? "ring-2 ring-[var(--color-accent)] shadow-lg" : ""
-              }`}
-              onClick={() => setActive(i)}
+              className="bg-white rounded-2xl border border-[var(--border)] p-6 hover:shadow-md transition-all duration-300"
             >
-              <div className="w-16 h-16 mx-auto mb-4 bg-[var(--color-accent-light)] rounded-full flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
-                <span>&#127891;</span>
+              <div className="w-12 h-12 rounded-full bg-[var(--accent-soft)] flex items-center justify-center mb-4">
+                <span className="text-sm font-semibold text-[var(--accent)]">
+                  {getInitials(student.name)}
+                </span>
               </div>
-              <h4 className="font-bold text-[var(--color-primary)] text-base mb-1">
+              <h4 className="font-semibold text-[var(--foreground)] text-sm mb-1">
                 {student.name}
               </h4>
-              <p className="text-sm text-[var(--color-accent)] font-medium mb-2">
-                Placed at
-              </p>
-              <p className="text-sm text-[var(--color-text-light)] leading-snug">
+              <p className="text-xs text-[var(--muted)] mb-1">Placed at</p>
+              <p className="text-sm text-[var(--body)] leading-snug">
                 {student.placedAt}
               </p>
             </div>
           ))}
         </div>
+
+        {/* Remaining as inline list */}
+        {remaining.length > 0 && (
+          <div className="mt-10 pt-8 border-t border-[var(--border)]">
+            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
+              {remaining.map((student, i) => (
+                <span key={student.id} className="flex items-center gap-1">
+                  <span className="text-sm text-[var(--foreground)] font-medium">
+                    {student.name}
+                  </span>
+                  <span className="text-sm text-[var(--muted)]">&mdash;</span>
+                  <span className="text-sm text-[var(--body)]">
+                    {student.placedAt}
+                  </span>
+                  {i < remaining.length - 1 && (
+                    <span className="ml-5 w-1 h-1 rounded-full bg-[var(--border)] hidden sm:inline-block" />
+                  )}
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );

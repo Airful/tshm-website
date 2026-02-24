@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { courses } from "@/data/courses";
-import SectionTitle from "@/components/common/SectionTitle";
 
 export const metadata = {
   title: "Our Courses - TSHM",
@@ -17,43 +16,42 @@ const categories = [
   { key: "service", label: "Services" },
 ];
 
-const courseIcons: Record<string, string> = {
-  "hotel-management": "\uD83C\uDFE8",
-  "career-counseling": "\uD83E\uDDE0",
-  "sales-marketing": "\uD83D\uDCC8",
-  "beauty-tailoring-academy": "\uD83D\uDC84",
-  "odd-jobs": "\uD83D\uDD27",
-  "spoken-english": "\uD83D\uDCAC",
-  "ac-technician": "\u2744\uFE0F",
-  "transformation": "\uD83C\uDF1F",
-  "online-degrees": "\uD83C\uDF93",
+const categoryLabels: Record<string, string> = {
+  diploma: "Diploma",
+  certificate: "Certificate",
+  academy: "Academy",
+  online: "Online",
+  service: "Service",
 };
 
 export default function CoursesPage() {
   return (
     <>
       {/* Hero Banner */}
-      <section className="pt-32 pb-20 bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-secondary)]">
-        <div className="container mx-auto px-5 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+      <section className="pt-32 pb-20 lg:pt-36 lg:pb-24 bg-[var(--foreground)]">
+        <div className="max-w-6xl mx-auto px-6 sm:px-8 text-center">
+          <h1
+            className="text-4xl md:text-5xl font-bold text-white mb-4"
+            style={{ fontFamily: "var(--font-heading)", letterSpacing: "-0.02em", lineHeight: "1.15" }}
+          >
             Our Courses
           </h1>
-          <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+          <p className="text-white/60 text-lg max-w-2xl mx-auto">
             Choose from our comprehensive range of professional courses and
             start building your future today
           </p>
         </div>
       </section>
 
-      {/* Course Categories */}
-      <section className="py-6 bg-white border-b sticky top-[72px] z-30">
-        <div className="container mx-auto px-5">
-          <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-hide">
+      {/* Sticky Category Filter */}
+      <section className="py-4 bg-[var(--canvas)] border-b border-[var(--border)] sticky top-16 lg:top-20 z-30">
+        <div className="max-w-6xl mx-auto px-6 sm:px-8">
+          <div className="flex gap-3 overflow-x-auto pb-1">
             {categories.map((cat) => (
               <a
                 key={cat.key}
-                href={cat.key === "all" ? "#all" : `#${cat.key}`}
-                className="px-5 py-2 rounded-full text-sm font-medium whitespace-nowrap border border-gray-200 hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors"
+                href={cat.key === "all" ? "#all" : `#cat-${cat.key}`}
+                className="px-5 py-2 rounded-full text-sm font-medium whitespace-nowrap border border-[var(--border)] text-[var(--foreground)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-all duration-300"
               >
                 {cat.label}
               </a>
@@ -62,51 +60,46 @@ export default function CoursesPage() {
         </div>
       </section>
 
-      {/* All Courses */}
-      <section id="all" className="py-20 bg-[var(--color-bg-warm)]">
-        <div className="container mx-auto px-5">
-          <SectionTitle
-            title="All Programs"
-            subtitle="Comprehensive courses designed to make you industry-ready"
-          />
-
-          <div className="space-y-16">
+      {/* All Courses - Vertical Stack */}
+      <section id="all" className="py-20 lg:py-28 bg-[var(--canvas)]">
+        <div className="max-w-6xl mx-auto px-6 sm:px-8">
+          <div className="space-y-8">
             {courses.map((course) => (
               <div
                 key={course.id}
                 id={course.id}
-                className="bg-white rounded-2xl shadow-lg overflow-hidden scroll-mt-40 border border-[var(--color-border)]"
+                className="bg-white rounded-2xl border border-[var(--border)] overflow-hidden scroll-mt-40 hover:shadow-md transition-all duration-300"
               >
                 <div className="md:flex">
-                  <div className="md:w-2/5 bg-[var(--color-accent-light)] flex items-center justify-center p-12 min-h-[250px] relative">
-                    <span className="text-7xl">
-                      {courseIcons[course.id] || "\uD83D\uDCD6"}
-                    </span>
+                  {/* Left image placeholder */}
+                  <div className="md:w-2/5 bg-[var(--elevated)] flex items-center justify-center p-10 min-h-[240px] relative">
                     <div className="absolute top-6 left-6">
-                      <span className="bg-[var(--color-accent)] text-white text-xs px-3 py-1 rounded-full font-medium">
-                        {course.category.toUpperCase()}
+                      <span className="inline-block px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-[var(--accent)] bg-[var(--accent-soft)] rounded-full">
+                        {categoryLabels[course.category] || course.category}
                       </span>
                     </div>
                     <div className="absolute bottom-6 left-6">
-                      <span className="bg-[var(--color-primary)]/80 text-white text-sm px-4 py-2 rounded backdrop-blur-sm">
-                        Duration: {course.duration}
+                      <span className="inline-block px-3 py-1 text-xs font-medium text-[var(--muted)] border border-[var(--border)] rounded-full bg-white">
+                        {course.duration}
                       </span>
                     </div>
                   </div>
-                  <div className="md:w-3/5 p-8 md:p-10">
-                    <h3 className="text-2xl font-bold text-[var(--color-primary)] mb-4">
+
+                  {/* Right content */}
+                  <div className="md:w-3/5 p-8 lg:p-10">
+                    <h3 className="text-xl lg:text-2xl font-semibold text-[var(--foreground)] mb-3">
                       {course.title}
                     </h3>
-                    <p className="text-[var(--color-text-light)] leading-relaxed mb-6">
+                    <p className="text-[var(--body)] leading-relaxed mb-6">
                       {course.description}
                     </p>
-                    <div className="grid grid-cols-2 gap-3 mb-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-6">
                       {course.highlights.map((h) => (
                         <div
                           key={h}
-                          className="flex items-center gap-2 text-sm text-[var(--color-text)]"
+                          className="flex items-center gap-2 text-sm text-[var(--body)]"
                         >
-                          <span className="text-[var(--color-success)] font-bold">
+                          <span className="text-[var(--success)] font-bold text-xs shrink-0">
                             &#10003;
                           </span>
                           {h}
@@ -115,7 +108,7 @@ export default function CoursesPage() {
                     </div>
                     <Link
                       href="/contact"
-                      className="inline-block px-6 py-3 bg-[var(--color-accent)] text-white font-semibold rounded hover:bg-[var(--color-accent-hover)] transition-colors"
+                      className="inline-flex items-center gap-2 px-6 py-3 bg-[var(--accent)] text-white font-medium rounded-full hover:bg-[var(--accent-hover)] transition-all duration-300 text-sm"
                     >
                       Enquire Now
                     </Link>

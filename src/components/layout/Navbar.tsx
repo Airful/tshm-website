@@ -19,7 +19,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 50);
+    const handleScroll = () => setIsScrolled(window.scrollY > 20);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -30,23 +30,22 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 h-16 lg:h-20 flex items-center border-b border-[var(--border)] ${
         isScrolled
-          ? "bg-[var(--color-primary)] shadow-lg py-2"
-          : "bg-[var(--color-primary)]/95 py-4"
+          ? "bg-[var(--canvas)]/95 backdrop-blur-md shadow-sm"
+          : "bg-[var(--canvas)]/90 backdrop-blur-md"
       }`}
     >
-      <div className="container mx-auto px-5 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-6 sm:px-8 w-full flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3">
-          <div className="w-12 h-12 bg-[var(--color-accent)] rounded-lg flex items-center justify-center text-white font-bold text-xs tracking-tight leading-none">
-            <span className="text-center">TSHM</span>
-          </div>
-          <div className="text-white">
-            <h1 className="text-lg font-bold leading-tight">TSHM</h1>
-            <p className="text-[10px] text-gray-300 leading-tight">
+        <Link href="/" className="flex items-center gap-2.5">
+          <span className="inline-block w-2 h-2 bg-[var(--accent)] rounded-sm" />
+          <div>
+            <h1 className="text-xl font-bold text-[var(--foreground)] leading-none" style={{ fontFamily: "var(--font-heading)" }}>
+              TSHM
+            </h1>
+            <p className="text-[10px] text-[var(--muted)] leading-tight mt-0.5">
               Tarakeswar School of Hotel Management
-              <br />& Technical Foundation
             </p>
           </div>
         </Link>
@@ -57,10 +56,10 @@ export default function Navbar() {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className={`px-4 py-2 rounded text-sm font-medium transition-colors ${
+                className={`px-4 py-2 text-[15px] font-medium transition-colors duration-200 ${
                   pathname === link.href
-                    ? "text-[var(--color-accent)]"
-                    : "text-white hover:text-[var(--color-accent)]"
+                    ? "text-[var(--accent)]"
+                    : "text-[var(--foreground)] hover:text-[var(--accent)]"
                 }`}
               >
                 {link.label}
@@ -70,7 +69,7 @@ export default function Navbar() {
           <li>
             <Link
               href="/contact"
-              className="ml-3 px-5 py-2 bg-[var(--color-accent)] text-white rounded text-sm font-semibold hover:bg-[var(--color-accent-hover)] transition-colors"
+              className="ml-4 inline-flex items-center gap-2 px-6 py-2.5 bg-[var(--accent)] text-white font-medium rounded-full hover:bg-[var(--accent-hover)] transition-all duration-300 text-sm"
             >
               Apply Now
             </Link>
@@ -80,22 +79,22 @@ export default function Navbar() {
         {/* Mobile Toggle */}
         <button
           onClick={() => setIsMobileOpen(!isMobileOpen)}
-          className="lg:hidden text-white p-2"
+          className="lg:hidden p-2 text-[var(--foreground)]"
           aria-label="Toggle menu"
         >
           <div className="w-6 flex flex-col gap-1.5">
             <span
-              className={`block h-0.5 bg-white transition-transform ${
+              className={`block h-0.5 bg-[var(--foreground)] transition-all duration-300 ${
                 isMobileOpen ? "rotate-45 translate-y-2" : ""
               }`}
             />
             <span
-              className={`block h-0.5 bg-white transition-opacity ${
+              className={`block h-0.5 bg-[var(--foreground)] transition-all duration-300 ${
                 isMobileOpen ? "opacity-0" : ""
               }`}
             />
             <span
-              className={`block h-0.5 bg-white transition-transform ${
+              className={`block h-0.5 bg-[var(--foreground)] transition-all duration-300 ${
                 isMobileOpen ? "-rotate-45 -translate-y-2" : ""
               }`}
             />
@@ -105,29 +104,29 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`lg:hidden overflow-hidden transition-all duration-300 ${
-          isMobileOpen ? "max-h-96" : "max-h-0"
+        className={`lg:hidden absolute top-full left-0 w-full bg-[var(--canvas)] border-b border-[var(--border)] overflow-hidden transition-all duration-300 ${
+          isMobileOpen ? "max-h-[480px] shadow-sm" : "max-h-0"
         }`}
       >
-        <ul className="px-5 pb-5 space-y-1">
+        <ul className="max-w-6xl mx-auto px-6 sm:px-8 py-4 space-y-1">
           {navLinks.map((link) => (
             <li key={link.href}>
               <Link
                 href={link.href}
-                className={`block px-4 py-3 rounded text-sm font-medium ${
+                className={`block px-4 py-3 rounded-lg text-[15px] font-medium transition-colors ${
                   pathname === link.href
-                    ? "text-[var(--color-accent)] bg-white/10"
-                    : "text-white hover:bg-white/5"
+                    ? "text-[var(--accent)] bg-[var(--accent-soft)]"
+                    : "text-[var(--foreground)] hover:text-[var(--accent)] hover:bg-[var(--accent-soft)]"
                 }`}
               >
                 {link.label}
               </Link>
             </li>
           ))}
-          <li>
+          <li className="pt-2">
             <Link
               href="/contact"
-              className="block text-center mt-2 px-5 py-3 bg-[var(--color-accent)] text-white rounded text-sm font-semibold"
+              className="block text-center px-6 py-3 bg-[var(--accent)] text-white font-medium rounded-full hover:bg-[var(--accent-hover)] transition-all duration-300 text-sm"
             >
               Apply Now
             </Link>
