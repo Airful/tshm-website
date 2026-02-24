@@ -2,6 +2,18 @@ import Link from "next/link";
 import { courses } from "@/data/courses";
 import SectionTitle from "@/components/common/SectionTitle";
 
+const courseIcons: Record<string, string> = {
+  "hotel-management": "\uD83C\uDFE8",
+  "career-counseling": "\uD83E\uDDE0",
+  "sales-marketing": "\uD83D\uDCC8",
+  "beauty-tailoring-academy": "\uD83D\uDC84",
+  "odd-jobs": "\uD83D\uDD27",
+  "spoken-english": "\uD83D\uDCAC",
+  "ac-technician": "\u2744\uFE0F",
+  "transformation": "\uD83C\uDF1F",
+  "online-degrees": "\uD83C\uDF93",
+};
+
 export default function FeaturedCourses() {
   const featured = courses.slice(0, 6);
 
@@ -17,12 +29,12 @@ export default function FeaturedCourses() {
           {featured.map((course) => (
             <div
               key={course.id}
-              className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow group"
+              className="bg-white rounded-xl overflow-hidden border border-[var(--color-border)] hover:shadow-lg transition-shadow group"
             >
-              <div className="h-48 bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-secondary)] flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-[var(--color-accent)]/0 group-hover:bg-[var(--color-accent)]/10 transition-colors" />
-                <span className="text-white text-4xl font-bold opacity-20 group-hover:opacity-30 transition-opacity">
-                  {course.title[0]}
+              <div className="h-48 bg-[var(--color-accent-light)] flex items-center justify-center relative overflow-hidden">
+                <div className="absolute inset-0 bg-[var(--color-accent)]/0 group-hover:bg-[var(--color-accent)]/5 transition-colors" />
+                <span className="text-6xl group-hover:scale-110 transition-transform">
+                  {courseIcons[course.id] || "\uD83D\uDCD6"}
                 </span>
                 <span className="absolute top-4 right-4 bg-[var(--color-accent)] text-white text-xs px-3 py-1 rounded-full">
                   {course.duration}
@@ -61,7 +73,10 @@ export default function FeaturedCourses() {
         </div>
 
         <div className="text-center mt-12">
-          <Link href="/courses" className="btn-primary">
+          <Link
+            href="/courses"
+            className="inline-block px-8 py-3 bg-[var(--color-accent)] text-white font-semibold rounded hover:bg-[var(--color-accent-hover)] transition-colors"
+          >
             View All Courses
           </Link>
         </div>

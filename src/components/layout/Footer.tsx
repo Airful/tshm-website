@@ -17,6 +17,13 @@ const courseLinks = [
   { href: "/courses#career-counseling", label: "Career Counseling" },
 ];
 
+const socialLinks = [
+  { label: "Facebook", icon: "\uD83C\uDF10", href: "#facebook" },
+  { label: "Instagram", icon: "\uD83D\uDCF7", href: "#instagram" },
+  { label: "YouTube", icon: "\u25B6", href: "#youtube" },
+  { label: "LinkedIn", icon: "\uD83D\uDCBC", href: "#linkedin" },
+];
+
 export default function Footer() {
   return (
     <footer className="bg-[var(--color-primary)] text-white">
@@ -25,8 +32,8 @@ export default function Footer() {
           {/* About */}
           <div>
             <div className="flex items-center gap-3 mb-5">
-              <div className="w-10 h-10 bg-[var(--color-accent)] rounded-full flex items-center justify-center font-bold">
-                T
+              <div className="w-10 h-10 bg-[var(--color-accent)] rounded-lg flex items-center justify-center font-bold text-xs">
+                TSHM
               </div>
               <h3 className="text-lg font-bold">TSHM & TF</h3>
             </div>
@@ -37,18 +44,17 @@ export default function Footer() {
               society.
             </p>
             <div className="flex gap-3">
-              {["facebook", "twitter", "instagram", "linkedin", "youtube"].map(
-                (social) => (
-                  <a
-                    key={social}
-                    href={`#${social}`}
-                    className="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center text-sm hover:bg-[var(--color-accent)] transition-colors"
-                    aria-label={social}
-                  >
-                    {social[0].toUpperCase()}
-                  </a>
-                )
-              )}
+              {socialLinks.map((social) => (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  className="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center text-sm hover:bg-[var(--color-accent)] transition-colors"
+                  aria-label={social.label}
+                  title={social.label}
+                >
+                  {social.icon}
+                </a>
+              ))}
             </div>
           </div>
 
@@ -108,7 +114,7 @@ export default function Footer() {
               </li>
               <li className="flex gap-3">
                 <span className="text-[var(--color-accent)] text-lg">&#9742;</span>
-                <a href="tel:+919635964348" className="hover:text-white">
+                <a href="tel:+919635964348" className="hover:text-[var(--color-accent)] transition-colors">
                   +91 96359 64348
                 </a>
               </li>
@@ -116,7 +122,7 @@ export default function Footer() {
                 <span className="text-[var(--color-accent)] text-lg">&#9993;</span>
                 <a
                   href="mailto:tshm368@gmail.com"
-                  className="hover:text-white"
+                  className="hover:text-[var(--color-accent)] transition-colors"
                 >
                   tshm368@gmail.com
                 </a>

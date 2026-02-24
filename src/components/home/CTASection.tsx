@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function CTASection() {
   return (
-    <section className="py-20 bg-gradient-to-r from-[var(--color-accent)] to-[#c0392b] relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-accent)] relative overflow-hidden">
       <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2" />
       <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2" />
 
@@ -18,13 +18,13 @@ export default function CTASection() {
         <div className="flex gap-4 justify-center flex-wrap">
           <Link
             href="/contact"
-            className="px-8 py-4 bg-white text-[var(--color-accent)] font-bold rounded hover:bg-gray-100 transition-colors text-lg"
+            className="px-8 py-4 bg-white text-[var(--color-primary)] font-bold rounded hover:bg-gray-100 transition-colors text-lg"
           >
             Apply Now
           </Link>
           <Link
             href="/courses"
-            className="px-8 py-4 border-2 border-white text-white font-bold rounded hover:bg-white hover:text-[var(--color-accent)] transition-colors text-lg"
+            className="px-8 py-4 border-2 border-white text-white font-bold rounded hover:bg-white hover:text-[var(--color-primary)] transition-colors text-lg"
           >
             Browse Courses
           </Link>

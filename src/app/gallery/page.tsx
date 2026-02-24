@@ -13,6 +13,22 @@ const filters = [
   { key: "activities", label: "Activities" },
 ];
 
+const categoryIcons: Record<string, string> = {
+  campus: "\uD83C\uDFEB",
+  training: "\uD83D\uDCDA",
+  events: "\uD83C\uDF89",
+  placement: "\uD83C\uDF93",
+  activities: "\u26BD",
+};
+
+const categoryColors: Record<string, string> = {
+  campus: "from-[#1b2a4a]/10 to-[#243656]/10",
+  training: "from-[#c0872a]/10 to-[#a8741f]/10",
+  events: "from-[#16a34a]/10 to-[#15803d]/10",
+  placement: "from-[#1b2a4a]/10 to-[#c0872a]/10",
+  activities: "from-[#243656]/10 to-[#1b2a4a]/10",
+};
+
 export default function GalleryPage() {
   const [activeFilter, setActiveFilter] = useState("all");
   const [lightbox, setLightbox] = useState<GalleryImage | null>(null);
@@ -48,7 +64,7 @@ export default function GalleryPage() {
                 className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${
                   activeFilter === f.key
                     ? "bg-[var(--color-accent)] text-white"
-                    : "border border-gray-200 text-[var(--color-text)] hover:border-[var(--color-accent)]"
+                    : "border border-gray-200 text-[var(--color-text)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]"
                 }`}
               >
                 {f.label}
@@ -59,28 +75,38 @@ export default function GalleryPage() {
       </section>
 
       {/* Gallery Grid */}
-      <section className="py-20">
+      <section className="py-20 bg-[var(--color-bg-warm)]">
         <div className="container mx-auto px-5">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
             {filtered.map((img) => (
               <button
                 key={img.id}
                 onClick={() => setLightbox(img)}
-                className="group relative overflow-hidden rounded-xl aspect-square bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-secondary)] cursor-pointer"
+                className={`group relative overflow-hidden rounded-xl aspect-square bg-gradient-to-br ${
+                  categoryColors[img.category] || "from-gray-100 to-gray-200"
+                } border border-[var(--color-border)] cursor-pointer hover:shadow-lg transition-shadow`}
               >
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-white/10 text-6xl font-bold group-hover:text-white/20 transition-colors">
-                    {img.alt[0]}
+                {/* Subtle pattern background */}
+                <div
+                  className="absolute inset-0 opacity-[0.03]"
+                  style={{
+                    backgroundImage:
+                      "radial-gradient(circle, var(--color-primary) 1px, transparent 1px)",
+                    backgroundSize: "16px 16px",
+                  }}
+                />
+                <div className="absolute inset-0 flex flex-col items-center justify-center gap-3">
+                  <span className="text-5xl group-hover:scale-110 transition-transform">
+                    {categoryIcons[img.category] || "\uD83D\uDCF7"}
+                  </span>
+                  <span className="text-[var(--color-text)] text-sm font-medium px-3 text-center">
+                    {img.alt}
+                  </span>
+                  <span className="text-[var(--color-text-light)] text-xs capitalize">
+                    {img.category}
                   </span>
                 </div>
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors flex items-end">
-                  <div className="p-4 translate-y-full group-hover:translate-y-0 transition-transform">
-                    <p className="text-white text-sm font-medium">{img.alt}</p>
-                    <p className="text-white/60 text-xs capitalize">
-                      {img.category}
-                    </p>
-                  </div>
-                </div>
+                <div className="absolute inset-0 bg-[var(--color-primary)]/0 group-hover:bg-[var(--color-primary)]/5 transition-colors" />
               </button>
             ))}
           </div>
@@ -107,15 +133,17 @@ export default function GalleryPage() {
             &times;
           </button>
           <div
-            className="max-w-4xl w-full bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-secondary)] rounded-2xl aspect-video flex items-center justify-center"
+            className={`max-w-4xl w-full bg-gradient-to-br ${
+              categoryColors[lightbox.category] || "from-gray-100 to-gray-200"
+            } rounded-2xl aspect-video flex items-center justify-center border border-white/10`}
             onClick={(e) => e.stopPropagation()}
           >
             <div className="text-center">
-              <span className="text-white/20 text-8xl font-bold">
-                {lightbox.alt[0]}
+              <span className="text-8xl">
+                {categoryIcons[lightbox.category] || "\uD83D\uDCF7"}
               </span>
-              <p className="text-white mt-4 text-lg">{lightbox.alt}</p>
-              <p className="text-white/50 text-sm capitalize mt-1">
+              <p className="text-[var(--color-text)] mt-4 text-lg font-medium">{lightbox.alt}</p>
+              <p className="text-[var(--color-text-light)] text-sm capitalize mt-1">
                 {lightbox.category}
               </p>
             </div>

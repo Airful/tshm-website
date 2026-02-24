@@ -38,11 +38,11 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Info Cards */}
-      <section className="py-20">
+      <section className="py-20 bg-[var(--color-bg-warm)]">
         <div className="container mx-auto px-5">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            <div className="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 bg-[var(--color-accent)]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow border border-[var(--color-border)]">
+              <div className="w-16 h-16 bg-[var(--color-accent-light)] rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-3xl text-[var(--color-accent)]">&#9906;</span>
               </div>
               <h3 className="text-lg font-bold text-[var(--color-primary)] mb-2">
@@ -55,8 +55,8 @@ export default function ContactPage() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 bg-[var(--color-accent)]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow border border-[var(--color-border)]">
+              <div className="w-16 h-16 bg-[var(--color-accent-light)] rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-3xl text-[var(--color-accent)]">&#9742;</span>
               </div>
               <h3 className="text-lg font-bold text-[var(--color-primary)] mb-2">
@@ -64,14 +64,14 @@ export default function ContactPage() {
               </h3>
               <a
                 href="tel:+919635964348"
-                className="text-[var(--color-text-light)] text-sm hover:text-[var(--color-accent)]"
+                className="text-[var(--color-text-light)] text-sm hover:text-[var(--color-accent)] transition-colors"
               >
                 +91 96359 64348
               </a>
             </div>
 
-            <div className="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 bg-[var(--color-accent)]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow border border-[var(--color-border)]">
+              <div className="w-16 h-16 bg-[var(--color-accent-light)] rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-3xl text-[var(--color-accent)]">&#9993;</span>
               </div>
               <h3 className="text-lg font-bold text-[var(--color-primary)] mb-2">
@@ -79,7 +79,7 @@ export default function ContactPage() {
               </h3>
               <a
                 href="mailto:tshm368@gmail.com"
-                className="text-[var(--color-text-light)] text-sm hover:text-[var(--color-accent)]"
+                className="text-[var(--color-text-light)] text-sm hover:text-[var(--color-accent)] transition-colors"
               >
                 tshm368@gmail.com
               </a>
@@ -193,7 +193,10 @@ export default function ContactPage() {
                   />
                 </div>
 
-                <button type="submit" className="btn-primary w-full py-4">
+                <button
+                  type="submit"
+                  className="w-full py-4 bg-[var(--color-accent)] text-white font-semibold rounded-lg hover:bg-[var(--color-accent-hover)] transition-colors"
+                >
                   Send Message
                 </button>
               </form>

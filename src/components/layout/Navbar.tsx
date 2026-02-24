@@ -39,8 +39,8 @@ export default function Navbar() {
       <div className="container mx-auto px-5 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
-          <div className="w-12 h-12 bg-[var(--color-accent)] rounded-full flex items-center justify-center text-white font-bold text-lg">
-            T
+          <div className="w-12 h-12 bg-[var(--color-accent)] rounded-lg flex items-center justify-center text-white font-bold text-xs tracking-tight leading-none">
+            <span className="text-center">TSHM</span>
           </div>
           <div className="text-white">
             <h1 className="text-lg font-bold leading-tight">TSHM</h1>

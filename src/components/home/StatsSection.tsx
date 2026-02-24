@@ -3,10 +3,10 @@
 import { useEffect, useState, useRef } from "react";
 
 const stats = [
-  { value: 100, suffix: "%", label: "Job Assistance" },
-  { value: 9, suffix: "+", label: "Courses Offered" },
-  { value: 12, suffix: "+", label: "Expert Faculty & Staff" },
-  { value: 8, suffix: "+", label: "Students Placed Successfully" },
+  { icon: "\u2705", value: 100, suffix: "%", label: "Job Assistance" },
+  { icon: "\uD83D\uDCDA", value: 9, suffix: "+", label: "Programs Offered" },
+  { icon: "\uD83C\uDF93", value: 500, suffix: "+", label: "Alumni Network" },
+  { icon: "\uD83E\uDD1D", value: 15, suffix: "+", label: "Industry Partners" },
 ];
 
 function AnimatedCounter({ target, suffix }: { target: number; suffix: string }) {
@@ -56,6 +56,7 @@ export default function StatsSection() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat) => (
             <div key={stat.label} className="text-center">
+              <div className="text-3xl mb-3">{stat.icon}</div>
               <AnimatedCounter target={stat.value} suffix={stat.suffix} />
               <p className="text-gray-300 mt-2 text-sm md:text-base">
                 {stat.label}

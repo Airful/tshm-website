@@ -27,11 +27,11 @@ export default function AboutPage() {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-20">
+      <section className="py-20 bg-[var(--color-bg-warm)]">
         <div className="container mx-auto px-5">
           <div className="grid md:grid-cols-2 gap-12">
             <div className="bg-white rounded-2xl shadow-lg p-10 border-t-4 border-[var(--color-accent)]">
-              <div className="w-16 h-16 bg-[var(--color-accent)]/10 rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-[var(--color-accent-light)] rounded-full flex items-center justify-center mb-6">
                 <span className="text-3xl text-[var(--color-accent)]">&#9733;</span>
               </div>
               <h3 className="text-2xl font-bold text-[var(--color-primary)] mb-4">
@@ -44,9 +44,9 @@ export default function AboutPage() {
                 own family as well as the society.
               </p>
             </div>
-            <div className="bg-white rounded-2xl shadow-lg p-10 border-t-4 border-[var(--color-gold)]">
-              <div className="w-16 h-16 bg-[var(--color-gold)]/10 rounded-full flex items-center justify-center mb-6">
-                <span className="text-3xl text-[var(--color-gold)]">&#9786;</span>
+            <div className="bg-white rounded-2xl shadow-lg p-10 border-t-4 border-[var(--color-accent)]">
+              <div className="w-16 h-16 bg-[var(--color-accent-light)] rounded-full flex items-center justify-center mb-6">
+                <span className="text-3xl text-[var(--color-accent)]">&#9786;</span>
               </div>
               <h3 className="text-2xl font-bold text-[var(--color-primary)] mb-4">
                 Our Vision
@@ -82,7 +82,7 @@ export default function AboutPage() {
             ].map((obj, i) => (
               <div
                 key={i}
-                className="bg-white rounded-xl p-6 shadow-sm flex items-start gap-4"
+                className="bg-white rounded-xl p-6 shadow-sm flex items-start gap-4 border border-[var(--color-border)]"
               >
                 <span className="text-[var(--color-accent)] font-bold text-lg mt-0.5">
                   &#10003;
@@ -97,7 +97,7 @@ export default function AboutPage() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20">
+      <section className="py-20 bg-[var(--color-bg-warm)]">
         <div className="container mx-auto px-5">
           <SectionTitle
             title="Why Choose TSHM?"
@@ -123,7 +123,7 @@ export default function AboutPage() {
             ].map((point, i) => (
               <div
                 key={i}
-                className="flex items-start gap-3 bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow"
+                className="flex items-start gap-3 bg-white rounded-lg p-5 border border-[var(--color-border)] hover:shadow-md transition-shadow"
               >
                 <span className="text-[var(--color-success)] font-bold mt-0.5">
                   &#10003;
@@ -178,12 +178,12 @@ export default function AboutPage() {
 
       {/* R&D Head Message - Sudipta Ghosh */}
       {rdHead && (
-        <section className="py-20">
+        <section className="py-20 bg-[var(--color-bg-warm)]">
           <div className="container mx-auto px-5">
             <SectionTitle title="From Our Head of R&D" />
             <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
               <div className="md:flex flex-row-reverse">
-                <div className="md:w-1/3 bg-gradient-to-br from-[var(--color-accent)] to-[#c0392b] flex items-center justify-center p-10">
+                <div className="md:w-1/3 bg-gradient-to-br from-[var(--color-accent)] to-[var(--color-accent-hover)] flex items-center justify-center p-10">
                   <div className="w-32 h-32 bg-white/10 rounded-full flex items-center justify-center">
                     <span className="text-white text-4xl font-bold">SG</span>
                   </div>

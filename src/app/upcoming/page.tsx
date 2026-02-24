@@ -14,6 +14,7 @@ const upcomingProjects = [
     description:
       "A new specialized program focusing on international cuisine, food presentation, and modern culinary techniques. Students will learn from master chefs with hands-on experience in professional kitchens.",
     status: "Coming Soon",
+    icon: "\uD83D\uDC68\u200D\uD83C\uDF73",
     features: [
       "International cuisine modules",
       "Professional kitchen training",
@@ -27,6 +28,7 @@ const upcomingProjects = [
     description:
       "State-of-the-art computer training facility offering courses in digital literacy, web development, graphic design, and office productivity tools for the modern workplace.",
     status: "In Planning",
+    icon: "\uD83D\uDCBB",
     features: [
       "Computer literacy basics",
       "Web development fundamentals",
@@ -40,6 +42,7 @@ const upcomingProjects = [
     description:
       "An on-campus training hotel where students get real-world experience managing front desk operations, housekeeping, F&B service, and guest relations in a live environment.",
     status: "Upcoming",
+    icon: "\uD83C\uDFE8",
     features: [
       "Live hotel operations",
       "Front office management",
@@ -47,6 +50,12 @@ const upcomingProjects = [
       "Guest handling & service excellence",
     ],
   },
+];
+
+const projectColors = [
+  "bg-[var(--color-accent-light)]",
+  "bg-[var(--color-bg-section)]",
+  "bg-[var(--color-accent-light)]",
 ];
 
 export default function UpcomingPage() {
@@ -66,7 +75,7 @@ export default function UpcomingPage() {
       </section>
 
       {/* Projects */}
-      <section className="py-20">
+      <section className="py-20 bg-[var(--color-bg-warm)]">
         <div className="container mx-auto px-5">
           <SectionTitle
             title="What&apos;s Coming Next"
@@ -77,23 +86,17 @@ export default function UpcomingPage() {
             {upcomingProjects.map((project, index) => (
               <div
                 key={project.id}
-                className="bg-white rounded-2xl shadow-lg overflow-hidden"
+                className="bg-white rounded-2xl shadow-lg overflow-hidden border border-[var(--color-border)]"
               >
                 <div className={`md:flex ${index % 2 !== 0 ? "flex-row-reverse" : ""}`}>
                   <div
-                    className={`md:w-2/5 flex items-center justify-center p-12 min-h-[300px] relative ${
-                      index === 0
-                        ? "bg-gradient-to-br from-[var(--color-accent)] to-[#c0392b]"
-                        : index === 1
-                        ? "bg-gradient-to-br from-[#2980b9] to-[#3498db]"
-                        : "bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-secondary)]"
-                    }`}
+                    className={`md:w-2/5 flex items-center justify-center p-12 min-h-[300px] relative ${projectColors[index] || "bg-[var(--color-accent-light)]"}`}
                   >
-                    <span className="text-white/10 text-8xl font-bold">
-                      0{project.id}
+                    <span className="text-8xl">
+                      {project.icon}
                     </span>
                     <div className="absolute top-6 left-6">
-                      <span className="bg-white/20 text-white text-sm px-4 py-2 rounded-full backdrop-blur-sm font-medium">
+                      <span className="bg-[var(--color-accent)] text-white text-sm px-4 py-2 rounded-full font-medium">
                         {project.status}
                       </span>
                     </div>
@@ -118,7 +121,10 @@ export default function UpcomingPage() {
                         </div>
                       ))}
                     </div>
-                    <Link href="/contact" className="btn-primary">
+                    <Link
+                      href="/contact"
+                      className="inline-block px-6 py-3 bg-[var(--color-accent)] text-white font-semibold rounded hover:bg-[var(--color-accent-hover)] transition-colors"
+                    >
                       Get Notified
                     </Link>
                   </div>
@@ -139,7 +145,10 @@ export default function UpcomingPage() {
             Contact us to learn more about our upcoming projects and how you can
             be a part of them.
           </p>
-          <Link href="/contact" className="btn-primary text-lg px-8 py-4">
+          <Link
+            href="/contact"
+            className="inline-block px-8 py-4 bg-[var(--color-accent)] text-white font-semibold rounded text-lg hover:bg-[var(--color-accent-hover)] transition-colors"
+          >
             Contact Us
           </Link>
         </div>

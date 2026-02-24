@@ -17,6 +17,18 @@ const categories = [
   { key: "service", label: "Services" },
 ];
 
+const courseIcons: Record<string, string> = {
+  "hotel-management": "\uD83C\uDFE8",
+  "career-counseling": "\uD83E\uDDE0",
+  "sales-marketing": "\uD83D\uDCC8",
+  "beauty-tailoring-academy": "\uD83D\uDC84",
+  "odd-jobs": "\uD83D\uDD27",
+  "spoken-english": "\uD83D\uDCAC",
+  "ac-technician": "\u2744\uFE0F",
+  "transformation": "\uD83C\uDF1F",
+  "online-degrees": "\uD83C\uDF93",
+};
+
 export default function CoursesPage() {
   return (
     <>
@@ -51,7 +63,7 @@ export default function CoursesPage() {
       </section>
 
       {/* All Courses */}
-      <section id="all" className="py-20">
+      <section id="all" className="py-20 bg-[var(--color-bg-warm)]">
         <div className="container mx-auto px-5">
           <SectionTitle
             title="All Programs"
@@ -63,12 +75,12 @@ export default function CoursesPage() {
               <div
                 key={course.id}
                 id={course.id}
-                className="bg-white rounded-2xl shadow-lg overflow-hidden scroll-mt-40"
+                className="bg-white rounded-2xl shadow-lg overflow-hidden scroll-mt-40 border border-[var(--color-border)]"
               >
                 <div className="md:flex">
-                  <div className="md:w-2/5 bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-secondary)] flex items-center justify-center p-12 min-h-[250px] relative">
-                    <span className="text-white text-7xl font-bold opacity-10">
-                      {course.title[0]}
+                  <div className="md:w-2/5 bg-[var(--color-accent-light)] flex items-center justify-center p-12 min-h-[250px] relative">
+                    <span className="text-7xl">
+                      {courseIcons[course.id] || "\uD83D\uDCD6"}
                     </span>
                     <div className="absolute top-6 left-6">
                       <span className="bg-[var(--color-accent)] text-white text-xs px-3 py-1 rounded-full font-medium">
@@ -76,7 +88,7 @@ export default function CoursesPage() {
                       </span>
                     </div>
                     <div className="absolute bottom-6 left-6">
-                      <span className="bg-white/10 text-white text-sm px-4 py-2 rounded backdrop-blur-sm">
+                      <span className="bg-[var(--color-primary)]/80 text-white text-sm px-4 py-2 rounded backdrop-blur-sm">
                         Duration: {course.duration}
                       </span>
                     </div>
@@ -103,7 +115,7 @@ export default function CoursesPage() {
                     </div>
                     <Link
                       href="/contact"
-                      className="btn-primary inline-block"
+                      className="inline-block px-6 py-3 bg-[var(--color-accent)] text-white font-semibold rounded hover:bg-[var(--color-accent-hover)] transition-colors"
                     >
                       Enquire Now
                     </Link>
