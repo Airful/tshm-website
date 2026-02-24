@@ -1,13 +1,6 @@
+import Image from "next/image";
 import { placedStudents } from "@/data/team";
 import SectionTitle from "@/components/common/SectionTitle";
-
-function getInitials(name: string): string {
-  return name
-    .replace(/Mr\.\s*/, "")
-    .split(" ")
-    .map((n) => n[0])
-    .join("");
-}
 
 export default function Testimonials() {
   const featured = placedStudents.slice(0, 4);
@@ -29,10 +22,14 @@ export default function Testimonials() {
               key={student.id}
               className="bg-white rounded-2xl border border-[var(--border)] p-6 hover:shadow-md transition-all duration-300"
             >
-              <div className="w-12 h-12 rounded-full bg-[var(--accent-soft)] flex items-center justify-center mb-4">
-                <span className="text-sm font-semibold text-[var(--accent)]">
-                  {getInitials(student.name)}
-                </span>
+              <div className="w-14 h-14 rounded-full overflow-hidden mb-4 border-2 border-[var(--border)]">
+                <Image
+                  src={student.image}
+                  alt={student.name}
+                  width={56}
+                  height={56}
+                  className="object-cover w-full h-full"
+                />
               </div>
               <h4 className="font-semibold text-[var(--foreground)] text-sm mb-1">
                 {student.name}

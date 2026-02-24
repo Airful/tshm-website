@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { courses } from "@/data/courses";
 import SectionTitle from "@/components/common/SectionTitle";
 
@@ -29,11 +30,17 @@ export default function FeaturedCourses() {
               className="bg-white rounded-2xl border border-[var(--border)] overflow-hidden hover:shadow-md transition-all duration-300 group"
             >
               {/* Top area */}
-              <div className="h-40 bg-[var(--elevated)] relative flex items-end px-6 pb-4">
-                {/* Thin decorative line */}
-                <div className="absolute top-0 left-6 right-6 h-px bg-[var(--border)]" />
-                <div className="absolute top-6 left-6">
-                  <span className="inline-block px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-[var(--accent)] bg-[var(--accent-soft)] rounded-full">
+              <div className="h-48 relative overflow-hidden">
+                <Image
+                  src={course.image}
+                  alt={course.title}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+                <div className="absolute top-4 left-4">
+                  <span className="inline-block px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-white bg-[var(--accent)] rounded-full">
                     {categoryLabels[course.category] || course.category}
                   </span>
                 </div>

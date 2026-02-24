@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { galleryImages, type GalleryImage } from "@/data/gallery";
 
 const filters = [
@@ -70,15 +71,18 @@ export default function GalleryPage() {
                 onClick={() => setLightbox(img)}
                 className="group relative overflow-hidden rounded-2xl aspect-square bg-[var(--elevated)] border border-[var(--border)] cursor-pointer hover:shadow-md transition-all duration-300"
               >
-                <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 p-4">
-                  <span className="text-sm font-medium text-[var(--foreground)] text-center">
-                    {img.alt}
-                  </span>
-                  <span className="text-xs text-[var(--muted)] capitalize px-3 py-1 border border-[var(--border)] rounded-full">
-                    {img.category}
-                  </span>
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                  <span className="text-sm font-medium text-white">{img.alt}</span>
+                  <span className="block text-xs text-white/70 capitalize mt-1">{img.category}</span>
                 </div>
-                <div className="absolute inset-0 bg-[var(--foreground)]/0 group-hover:bg-[var(--foreground)]/5 transition-colors duration-300" />
               </button>
             ))}
           </div>
@@ -104,17 +108,17 @@ export default function GalleryPage() {
           >
             &times;
           </button>
-          <div
-            className="max-w-3xl w-full bg-[var(--elevated)] rounded-2xl aspect-video flex items-center justify-center border border-[var(--border)]"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="text-center p-8">
-              <p className="text-lg font-semibold text-[var(--foreground)] mb-2">
-                {lightbox.alt}
-              </p>
-              <p className="text-sm text-[var(--muted)] capitalize">
-                {lightbox.category}
-              </p>
+          <div className="max-w-4xl w-full relative aspect-video rounded-2xl overflow-hidden" onClick={(e) => e.stopPropagation()}>
+            <Image
+              src={lightbox.src}
+              alt={lightbox.alt}
+              fill
+              className="object-contain"
+              sizes="90vw"
+            />
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+              <p className="text-lg font-semibold text-white">{lightbox.alt}</p>
+              <p className="text-sm text-white/70 capitalize">{lightbox.category}</p>
             </div>
           </div>
         </div>

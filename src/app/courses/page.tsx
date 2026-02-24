@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { courses } from "@/data/courses";
 
 export const metadata = {
@@ -71,15 +72,23 @@ export default function CoursesPage() {
                 className="bg-white rounded-2xl border border-[var(--border)] overflow-hidden scroll-mt-40 hover:shadow-md transition-all duration-300"
               >
                 <div className="md:flex">
-                  {/* Left image placeholder */}
-                  <div className="md:w-2/5 bg-[var(--elevated)] flex items-center justify-center p-10 min-h-[240px] relative">
+                  {/* Course image */}
+                  <div className="md:w-2/5 relative min-h-[240px] overflow-hidden">
+                    <Image
+                      src={course.image}
+                      alt={course.title}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 40vw"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                     <div className="absolute top-6 left-6">
-                      <span className="inline-block px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-[var(--accent)] bg-[var(--accent-soft)] rounded-full">
+                      <span className="inline-block px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-white bg-[var(--accent)] rounded-full">
                         {categoryLabels[course.category] || course.category}
                       </span>
                     </div>
                     <div className="absolute bottom-6 left-6">
-                      <span className="inline-block px-3 py-1 text-xs font-medium text-[var(--muted)] border border-[var(--border)] rounded-full bg-white">
+                      <span className="inline-block px-3 py-1 text-xs font-medium text-white border border-white/40 rounded-full bg-black/20 backdrop-blur-sm">
                         {course.duration}
                       </span>
                     </div>

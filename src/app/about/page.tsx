@@ -1,3 +1,4 @@
+import Image from "next/image";
 import SectionTitle from "@/components/common/SectionTitle";
 import { teamMembers } from "@/data/team";
 
@@ -6,14 +7,6 @@ export const metadata = {
   description:
     "Learn about Tarakeswar School of Hotel Management & Technical Foundation - our mission, vision, objectives, and dedicated team.",
 };
-
-function getInitials(name: string): string {
-  return name
-    .replace(/Mr\.\s*/, "")
-    .split(" ")
-    .map((n) => n[0])
-    .join("");
-}
 
 const objectives = [
   "Developing students\u2019 curiosity and creativity through educational programs",
@@ -155,13 +148,14 @@ export default function AboutPage() {
             />
             <div className="max-w-4xl mx-auto bg-white rounded-2xl border border-[var(--border)] overflow-hidden">
               <div className="md:flex">
-                {/* Initials circle */}
-                <div className="md:w-1/3 bg-[var(--foreground)] flex items-center justify-center p-10 lg:p-12">
-                  <div className="w-28 h-28 rounded-full border-2 border-white/20 flex items-center justify-center">
-                    <span className="text-white text-3xl font-bold" style={{ fontFamily: "var(--font-heading)" }}>
-                      PA
-                    </span>
-                  </div>
+                <div className="md:w-1/3 relative min-h-[280px]">
+                  <Image
+                    src={director.image}
+                    alt={director.name}
+                    fill
+                    className="object-cover object-top"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                  />
                 </div>
                 {/* Message */}
                 <div className="md:w-2/3 p-8 lg:p-10">
@@ -202,13 +196,14 @@ export default function AboutPage() {
             />
             <div className="max-w-4xl mx-auto bg-white rounded-2xl border border-[var(--border)] overflow-hidden">
               <div className="md:flex flex-row-reverse">
-                {/* Initials circle */}
-                <div className="md:w-1/3 bg-[var(--foreground)] flex items-center justify-center p-10 lg:p-12">
-                  <div className="w-28 h-28 rounded-full border-2 border-white/20 flex items-center justify-center">
-                    <span className="text-white text-3xl font-bold" style={{ fontFamily: "var(--font-heading)" }}>
-                      SG
-                    </span>
-                  </div>
+                <div className="md:w-1/3 relative min-h-[280px]">
+                  <Image
+                    src={rdHead.image}
+                    alt={rdHead.name}
+                    fill
+                    className="object-cover object-top"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                  />
                 </div>
                 {/* Message */}
                 <div className="md:w-2/3 p-8 lg:p-10">
@@ -250,10 +245,14 @@ export default function AboutPage() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
             {teamMembers.map((member) => (
               <div key={member.id} className="text-center">
-                <div className="w-20 h-20 mx-auto mb-4 bg-[var(--accent-soft)] rounded-full flex items-center justify-center">
-                  <span className="text-base font-semibold text-[var(--accent)]">
-                    {getInitials(member.name)}
-                  </span>
+                <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden border-2 border-[var(--border)]">
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    width={80}
+                    height={80}
+                    className="object-cover w-full h-full"
+                  />
                 </div>
                 <h4 className="font-semibold text-[var(--foreground)] text-sm">
                   {member.name}
