@@ -5,16 +5,17 @@ const quickLinks = [
   { href: "/courses", label: "Our Courses" },
   { href: "/gallery", label: "Gallery" },
   { href: "/contact", label: "Contact Us" },
+  { href: "/faq", label: "FAQ" },
   { href: "/upcoming", label: "Upcoming Projects" },
 ];
 
 const courseLinks = [
-  { href: "/courses#hotel-management", label: "Hotel Management" },
-  { href: "/courses#ac-technician", label: "AC Technician Diploma" },
-  { href: "/courses#spoken-english", label: "Spoken English" },
-  { href: "/courses#beauty-tailoring-academy", label: "Beauty & Tailoring" },
-  { href: "/courses#online-degrees", label: "Online Degrees" },
-  { href: "/courses#career-counseling", label: "Career Counseling" },
+  { href: "/courses/hotel-management", label: "Hotel Management" },
+  { href: "/courses/ac-technician", label: "AC Technician Diploma" },
+  { href: "/courses/spoken-english", label: "Spoken English" },
+  { href: "/courses/beauty-tailoring-academy", label: "Beauty & Tailoring" },
+  { href: "/courses/online-degrees", label: "Online Degrees" },
+  { href: "/courses/career-counseling", label: "Career Counseling" },
 ];
 
 export default function Footer() {

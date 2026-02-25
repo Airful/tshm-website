@@ -1,11 +1,23 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { courses } from "@/data/courses";
 
-export const metadata = {
-  title: "Our Courses - TSHM",
+export const metadata: Metadata = {
+  title: "Courses - Hotel Management, AC Technician, Beauty Academy & More",
   description:
-    "Explore TSHM's wide range of courses - Hotel Management, AC Technician, Beauty Academy, Spoken English, Online Degrees, and more.",
+    "Explore TSHM's vocational courses in Tarakeswar — Hotel Management Diploma, AC Technician Diploma, Makeup & Beauty Academy, Spoken English, Sales & Marketing, Online Degrees (BA, B.COM, BBA, MBA). No entrance exam. 100% job assistance.",
+  keywords:
+    "hotel management course Tarakeswar, AC technician diploma Hooghly, beauty academy West Bengal, spoken english course, online degree BA BBA MBA, vocational courses after 10th, diploma courses near Tarakeswar",
+  openGraph: {
+    title: "Courses at TSHM & TF - Vocational Training in Tarakeswar",
+    description:
+      "Hotel Management, AC Technician, Beauty Academy, Spoken English, Online Degrees. No entrance exam, 100% job assistance.",
+    url: "https://tshm.co.in/courses",
+  },
+  alternates: {
+    canonical: "https://tshm.co.in/courses",
+  },
 };
 
 const categories = [
@@ -96,9 +108,11 @@ export default function CoursesPage() {
 
                   {/* Right content */}
                   <div className="md:w-3/5 p-8 lg:p-10">
-                    <h3 className="text-xl lg:text-2xl font-semibold text-[var(--foreground)] mb-3">
-                      {course.title}
-                    </h3>
+                    <Link href={`/courses/${course.id}`}>
+                      <h3 className="text-xl lg:text-2xl font-semibold text-[var(--foreground)] mb-3 hover:text-[var(--accent)] transition-colors">
+                        {course.title}
+                      </h3>
+                    </Link>
                     <p className="text-[var(--body)] leading-relaxed mb-6">
                       {course.description}
                     </p>
@@ -116,10 +130,10 @@ export default function CoursesPage() {
                       ))}
                     </div>
                     <Link
-                      href="/contact"
+                      href={`/courses/${course.id}`}
                       className="inline-flex items-center gap-2 px-6 py-3 bg-[var(--accent)] text-white font-medium rounded-full hover:bg-[var(--accent-hover)] transition-all duration-300 text-sm"
                     >
-                      Enquire Now
+                      Learn More
                     </Link>
                   </div>
                 </div>

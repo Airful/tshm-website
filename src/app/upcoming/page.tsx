@@ -1,10 +1,22 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import SectionTitle from "@/components/common/SectionTitle";
 
-export const metadata = {
-  title: "Upcoming Projects - TSHM",
+export const metadata: Metadata = {
+  title: "Upcoming Projects & New Courses",
   description:
-    "Discover upcoming projects and new initiatives at TSHM - expanding opportunities for students.",
+    "Discover upcoming projects at TSHM & TF — Advanced Culinary Arts, Digital Skills Training Center, and Hospitality Training Hotel. New career opportunities coming soon in Tarakeswar.",
+  keywords:
+    "TSHM new courses, upcoming vocational training Tarakeswar, culinary arts course Hooghly, digital skills training West Bengal",
+  openGraph: {
+    title: "Upcoming Projects - TSHM & TF Tarakeswar",
+    description:
+      "New programs coming soon — Advanced Culinary Arts, Digital Skills, Hospitality Training Hotel.",
+    url: "https://tshm.co.in/upcoming",
+  },
+  alternates: {
+    canonical: "https://tshm.co.in/upcoming",
+  },
 };
 
 const upcomingProjects = [

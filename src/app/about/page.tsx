@@ -1,11 +1,23 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import SectionTitle from "@/components/common/SectionTitle";
 import { teamMembers } from "@/data/team";
 
-export const metadata = {
-  title: "About Us - TSHM & Technical Foundation",
+export const metadata: Metadata = {
+  title: "About Us - Mission, Vision & Team",
   description:
-    "Learn about Tarakeswar School of Hotel Management & Technical Foundation - our mission, vision, objectives, and dedicated team.",
+    "Learn about Tarakeswar School of Hotel Management & Technical Foundation — our mission, vision, objectives, leadership team, and commitment to practical vocational education in Hooghly, West Bengal. Industry-experienced faculty & trainers.",
+  keywords:
+    "about TSHM, TSHM Tarakeswar team, hotel management faculty Hooghly, vocational education mission, TSHM director, Pinaki Adak TSHM",
+  openGraph: {
+    title: "About TSHM & TF - Our Mission & Team",
+    description:
+      "Meet the dedicated team behind TSHM & TF. Industry-experienced faculty committed to practical vocational education in Tarakeswar.",
+    url: "https://tshm.co.in/about",
+  },
+  alternates: {
+    canonical: "https://tshm.co.in/about",
+  },
 };
 
 const objectives = [
