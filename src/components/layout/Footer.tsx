@@ -1,13 +1,10 @@
 import Link from "next/link";
 
-const quickLinks = [
-  { href: "/about", label: "About Us" },
-  { href: "/courses", label: "Our Courses" },
-  { href: "/gallery", label: "Gallery" },
-  { href: "/contact", label: "Contact Us" },
-  { href: "/faq", label: "FAQ" },
-  { href: "/upcoming", label: "Upcoming Projects" },
-];
+interface FooterProps {
+  locale: string;
+  nav: Record<string, string>;
+  footer: Record<string, string>;
+}
 
 const courseLinks = [
   { href: "/courses/hotel-management", label: "Hotel Management" },
@@ -18,7 +15,16 @@ const courseLinks = [
   { href: "/courses/career-counseling", label: "Career Counseling" },
 ];
 
-export default function Footer() {
+export default function Footer({ locale, nav, footer }: FooterProps) {
+  const quickLinks = [
+    { href: `/${locale}/about`, label: nav.about },
+    { href: `/${locale}/courses`, label: nav.courses },
+    { href: `/${locale}/gallery`, label: nav.gallery },
+    { href: `/${locale}/contact`, label: nav.contact },
+    { href: `/${locale}/faq`, label: nav.faq },
+    { href: `/${locale}/upcoming`, label: nav.upcoming },
+  ];
+
   return (
     <footer className="bg-[var(--foreground)] text-white">
       <div className="max-w-6xl mx-auto px-6 sm:px-8 py-16 lg:py-20">
@@ -32,9 +38,7 @@ export default function Footer() {
               TSHM &amp; TF
             </h3>
             <p className="text-white/60 text-sm leading-relaxed mb-6">
-              Tarakeswar School of Hotel Management &amp; Technical Foundation
-              &mdash; providing a positive, vibrant and inspiring culture where
-              students are encouraged to succeed.
+              {footer.tagline}
             </p>
             <div className="flex gap-4 text-sm text-white/50">
               <a href="#facebook" className="hover:text-white/90 transition-colors">
@@ -52,7 +56,7 @@ export default function Footer() {
           {/* Quick Links */}
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-wider text-white/80 mb-5">
-              Quick Links
+              {footer.quickLinks}
             </h4>
             <ul className="space-y-3">
               {quickLinks.map((link) => (
@@ -71,13 +75,13 @@ export default function Footer() {
           {/* Courses */}
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-wider text-white/80 mb-5">
-              Our Courses
+              {footer.ourCourses}
             </h4>
             <ul className="space-y-3">
               {courseLinks.map((link) => (
                 <li key={link.href}>
                   <Link
-                    href={link.href}
+                    href={`/${locale}${link.href}`}
                     className="text-white/60 text-sm hover:text-white/90 transition-colors"
                   >
                     {link.label}
@@ -90,7 +94,7 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-wider text-white/80 mb-5">
-              Contact
+              {footer.contact}
             </h4>
             <ul className="space-y-4 text-white/60 text-sm">
               <li className="leading-relaxed">
@@ -123,10 +127,9 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="max-w-6xl mx-auto px-6 sm:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-3 text-white/40 text-sm">
           <p>
-            &copy; {new Date().getFullYear()} Tarakeswar School of Hotel
-            Management &amp; Technical Foundation. All rights reserved.
+            &copy; {new Date().getFullYear()} {footer.copyright}
           </p>
-          <p>Developed with care</p>
+          <p>{footer.developedWith}</p>
         </div>
       </div>
     </footer>

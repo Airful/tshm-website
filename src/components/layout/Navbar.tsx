@@ -4,19 +4,31 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About Us" },
-  { href: "/courses", label: "Our Courses" },
-  { href: "/gallery", label: "Gallery" },
-  { href: "/contact", label: "Contact Us" },
-  { href: "/upcoming", label: "Upcoming" },
-];
+interface NavbarProps {
+  locale: string;
+  nav: Record<string, string>;
+  logoTagline: string;
+}
 
-export default function Navbar() {
+export default function Navbar({ locale, nav, logoTagline }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   const pathname = usePathname();
+
+  const pathWithoutLocale = pathname.replace(/^\/(en|bn)/, "") || "/";
+
+  const navLinks = [
+    { href: "/", label: nav.home },
+    { href: "/about", label: nav.about },
+    { href: "/courses", label: nav.courses },
+    { href: "/gallery", label: nav.gallery },
+    { href: "/contact", label: nav.contact },
+    { href: "/upcoming", label: nav.upcoming },
+  ];
+
+  const otherLocale = locale === "en" ? "bn" : "en";
+  const otherLocaleLabel = locale === "en" ? "\u09AC\u09BE\u0982" : "EN";
+  const switchHref = `/${otherLocale}${pathWithoutLocale === "/" ? "" : pathWithoutLocale}`;
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
@@ -38,14 +50,14 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-6 sm:px-8 w-full flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2.5">
+        <Link href={`/${locale}`} className="flex items-center gap-2.5">
           <span className="inline-block w-2 h-2 bg-[var(--accent)] rounded-sm" />
           <div>
             <h1 className="text-xl font-bold text-[var(--foreground)] leading-none" style={{ fontFamily: "var(--font-heading)" }}>
               TSHM
             </h1>
             <p className="text-[10px] text-[var(--muted)] leading-tight mt-0.5">
-              Tarakeswar School of Hotel Management
+              {logoTagline}
             </p>
           </div>
         </Link>
@@ -55,9 +67,9 @@ export default function Navbar() {
           {navLinks.map((link) => (
             <li key={link.href}>
               <Link
-                href={link.href}
+                href={`/${locale}${link.href === "/" ? "" : link.href}`}
                 className={`px-4 py-2 text-[15px] font-medium transition-colors duration-200 ${
-                  pathname === link.href
+                  pathWithoutLocale === link.href
                     ? "text-[var(--accent)]"
                     : "text-[var(--foreground)] hover:text-[var(--accent)]"
                 }`}
@@ -66,12 +78,21 @@ export default function Navbar() {
               </Link>
             </li>
           ))}
+          {/* Language Switcher — Desktop */}
           <li>
             <Link
-              href="/contact"
-              className="ml-4 inline-flex items-center gap-2 px-6 py-2.5 bg-[var(--accent)] text-white font-medium rounded-full hover:bg-[var(--accent-hover)] transition-all duration-300 text-sm"
+              href={switchHref}
+              className="px-3 py-1.5 text-xs font-semibold border border-[var(--border)] rounded-full text-[var(--muted)] hover:text-[var(--accent)] hover:border-[var(--accent)] transition-colors duration-200"
             >
-              Apply Now
+              {otherLocaleLabel}
+            </Link>
+          </li>
+          <li>
+            <Link
+              href={`/${locale}/contact`}
+              className="ml-3 inline-flex items-center gap-2 px-6 py-2.5 bg-[var(--accent)] text-white font-medium rounded-full hover:bg-[var(--accent-hover)] transition-all duration-300 text-sm"
+            >
+              {nav.applyNow}
             </Link>
           </li>
         </ul>
@@ -112,9 +133,9 @@ export default function Navbar() {
           {navLinks.map((link) => (
             <li key={link.href}>
               <Link
-                href={link.href}
+                href={`/${locale}${link.href === "/" ? "" : link.href}`}
                 className={`block px-4 py-3 rounded-lg text-[15px] font-medium transition-colors ${
-                  pathname === link.href
+                  pathWithoutLocale === link.href
                     ? "text-[var(--accent)] bg-[var(--accent-soft)]"
                     : "text-[var(--foreground)] hover:text-[var(--accent)] hover:bg-[var(--accent-soft)]"
                 }`}
@@ -123,12 +144,21 @@ export default function Navbar() {
               </Link>
             </li>
           ))}
+          {/* Language Switcher — Mobile */}
+          <li>
+            <Link
+              href={switchHref}
+              className="block px-4 py-3 rounded-lg text-[15px] font-medium text-[var(--muted)] hover:text-[var(--accent)] hover:bg-[var(--accent-soft)] transition-colors"
+            >
+              {locale === "en" ? "বাংলা" : "English"}
+            </Link>
+          </li>
           <li className="pt-2">
             <Link
-              href="/contact"
+              href={`/${locale}/contact`}
               className="block text-center px-6 py-3 bg-[var(--accent)] text-white font-medium rounded-full hover:bg-[var(--accent-hover)] transition-all duration-300 text-sm"
             >
-              Apply Now
+              {nav.applyNow}
             </Link>
           </li>
         </ul>

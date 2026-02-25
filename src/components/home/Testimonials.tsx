@@ -2,7 +2,16 @@ import Image from "next/image";
 import { placedStudents } from "@/data/team";
 import SectionTitle from "@/components/common/SectionTitle";
 
-export default function Testimonials() {
+interface TestimonialsProps {
+  t: {
+    overline: string;
+    title: string;
+    subtitle: string;
+    placedAt: string;
+  };
+}
+
+export default function Testimonials({ t }: TestimonialsProps) {
   const featured = placedStudents.slice(0, 4);
   const remaining = placedStudents.slice(4);
 
@@ -10,9 +19,9 @@ export default function Testimonials() {
     <section className="py-20 lg:py-28 bg-[var(--canvas)]">
       <div className="max-w-6xl mx-auto px-6 sm:px-8">
         <SectionTitle
-          overline="PLACEMENT SUCCESS"
-          title="Our Students, Their Stories"
-          subtitle="Our students are working at premier hotels and hospitality brands across India and abroad"
+          overline={t.overline}
+          title={t.title}
+          subtitle={t.subtitle}
         />
 
         {/* Featured 4 cards */}
@@ -34,7 +43,7 @@ export default function Testimonials() {
               <h4 className="font-semibold text-[var(--foreground)] text-sm mb-1">
                 {student.name}
               </h4>
-              <p className="text-xs text-[var(--muted)] mb-1">Placed at</p>
+              <p className="text-xs text-[var(--muted)] mb-1">{t.placedAt}</p>
               <p className="text-sm text-[var(--body)] leading-snug">
                 {student.placedAt}
               </p>

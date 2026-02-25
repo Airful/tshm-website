@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "title": "Courses - Hotel Management, AC Technician, Beauty Academy & More",
+    "description": "Explore TSHM's vocational courses in Tarakeswar — Hotel Management Diploma, AC Technician Diploma, Makeup & Beauty Academy, Spoken English, Sales & Marketing, Online Degrees (BA, B.COM, BBA, MBA). No entrance exam. 100% job assistance.",
+    "keywords": "hotel management course Tarakeswar, AC technician diploma Hooghly, beauty academy West Bengal, spoken english course, online degree BA BBA MBA, vocational courses after 10th, diploma courses near Tarakeswar"
+  },
+  "hero": {
+    "title": "Our Courses",
+    "subtitle": "Choose from our comprehensive range of professional courses and start building your future today"
+  },
+  "categories": {
+    "all": "All Courses",
+    "diploma": "Diploma",
+    "certificate": "Certificate",
+    "academy": "Academy",
+    "online": "Online Degrees",
+    "service": "Services"
+  },
+  "categoryLabels": {
+    "diploma": "Diploma",
+    "certificate": "Certificate",
+    "academy": "Academy",
+    "online": "Online",
+    "service": "Service"
+  },
+  "detail": {
+    "courseHighlights": "Course Highlights",
+    "careerProspects": "Career Prospects",
+    "quickInfo": "Quick Info",
+    "duration": "Duration",
+    "category": "Category",
+    "eligibility": "Eligibility",
+    "jobAssistance": "Job Assistance",
+    "jobAssistanceValue": "100%",
+    "entranceExam": "Entrance Exam",
+    "entranceExamValue": "Not Required",
+    "enquireNow": "Enquire Now",
+    "callUs": "Call +91 96359 64348",
+    "learnMore": "Learn More",
+    "applyNow": "Apply Now",
+    "viewAllCourses": "View All Courses",
+    "readyToStart": "Ready to Start Your Journey?",
+    "readySubtitle": "Take the first step towards a rewarding career. Contact us today for admission details and guidance.",
+    "breadcrumbHome": "Home",
+    "breadcrumbCourses": "Courses"
+  }
+}

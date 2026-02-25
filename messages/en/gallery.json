@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "title": "Gallery - Campus, Events & Student Life",
+    "description": "Explore TSHM & TF's photo gallery — campus life, training sessions, cultural events, student activities, and placement celebrations at Tarakeswar School of Hotel Management.",
+    "keywords": "TSHM gallery, Tarakeswar school photos, hotel management training photos, campus life Hooghly, student activities TSHM"
+  },
+  "hero": {
+    "title": "Gallery",
+    "subtitle": "A glimpse into life at TSHM — our campus, events, training, and student activities"
+  },
+  "filters": {
+    "all": "All",
+    "campus": "Campus",
+    "training": "Training",
+    "events": "Events",
+    "placement": "Placement",
+    "activities": "Activities"
+  },
+  "empty": "No images found in this category.",
+  "closeLightbox": "Close lightbox"
+}

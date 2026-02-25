@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "title": "About Us - Mission, Vision & Team",
+    "description": "Learn about Tarakeswar School of Hotel Management & Technical Foundation — our mission, vision, objectives, leadership team, and commitment to practical vocational education in Hooghly, West Bengal. Industry-experienced faculty & trainers.",
+    "keywords": "about TSHM, TSHM Tarakeswar team, hotel management faculty Hooghly, vocational education mission, TSHM director, Pinaki Adak TSHM"
+  },
+  "hero": {
+    "title": "About Us",
+    "subtitle": "Tarakeswar School of Hotel Management & Technical Foundation"
+  },
+  "mission": {
+    "title": "Our Mission",
+    "text": "Tarakeswar School of Hotel Management & Technical Foundation provides a positive, vibrant and inspiring culture where students are encouraged to succeed as an active and supportive member of own family as well as the society."
+  },
+  "vision": {
+    "title": "Our Vision",
+    "text": "Tarakeswar School of Hotel Management & Technical Foundation encourages the all-round development of the student. Our motto is to support learners in becoming creative, curious, helpful, sustainable decision maker and critical thinker as an Indian citizen."
+  },
+  "objectives": {
+    "overline": "OUR COMMITMENT",
+    "title": "Our Objectives",
+    "subtitle": "What we are committed to achieving for our students",
+    "items": [
+      "Developing students' curiosity and creativity through educational programs",
+      "Creating responsible and engaged learners",
+      "Fostering care for others",
+      "Building student responsibility and self-esteem",
+      "Providing relevant curriculum enabling all students to succeed",
+      "Promoting strong partnerships between institution and community",
+      "Maintaining high expectations of themselves and others"
+    ]
+  },
+  "whyChoose": {
+    "overline": "OUR STRENGTHS",
+    "title": "Why Choose TSHM?",
+    "subtitle": "What makes us the preferred choice for vocational education",
+    "items": [
+      "Effective alternate career options for students",
+      "Physical, intellectual, and all-round development",
+      "Practical and purposeful education with professional training",
+      "Education delivered with care, love, and understanding",
+      "Fostering moral and ethical values",
+      "Developing discipline, duty, dedication, and character strength",
+      "Job preparation emphasizing individual student potential",
+      "Unfoldment of latent talent for keen learners",
+      "Encouraging self-learning over passive instruction",
+      "Proper man-making education",
+      "100% job assistance",
+      "Stipend during training",
+      "Industry experienced faculty & trainers",
+      "Career counseling services",
+      "DMIT (Dermatoglyphics Multiple Intelligence Test)"
+    ]
+  },
+  "directorMessage": {
+    "overline": "LEADERSHIP",
+    "title": "Director's Message"
+  },
+  "rdMessage": {
+    "overline": "RESEARCH & DEVELOPMENT",
+    "title": "From Our Head of R&D"
+  },
+  "team": {
+    "overline": "OUR PEOPLE",
+    "title": "Our Team",
+    "subtitle": "Meet the dedicated professionals behind TSHM & TF"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "title": "TSHM & TF - Best Vocational Training Institute in Tarakeswar, Hooghly",
+    "description": "Tarakeswar School of Hotel Management & Technical Foundation — the leading vocational training institute in Tarakeswar, Hooghly, West Bengal. Hotel Management, AC Technician, Beauty Academy, Spoken English, Online Degrees. 100% job assistance, stipend during training. No entrance exam required. Admissions open.",
+    "keywords": "hotel management course Tarakeswar, TSHM Tarakeswar, vocational training Hooghly, hotel management West Bengal, AC technician course near me, beauty academy Tarakeswar, spoken english course Hooghly, diploma after 10th West Bengal, no entrance exam hotel management, best hotel management institute Hooghly"
+  },
+  "hero": {
+    "overline": "Practical & Purposeful Education",
+    "heading1": "Where Every Student",
+    "heading2": "Finds Their Path",
+    "subtitle": "Tarakeswar School of Hotel Management & Technical Foundation — building careers through hands-on training, industry mentorship, and 100% placement support.",
+    "exploreCourses": "Explore Courses",
+    "contactUs": "Contact Us",
+    "stats": [
+      "100% Job Assistance",
+      "9+ Programs",
+      "500+ Alumni",
+      "12+ Faculty"
+    ]
+  },
+  "stats": [
+    { "value": "100%", "label": "Job Assistance" },
+    { "value": "9+", "label": "Programs Offered" },
+    { "value": "500+", "label": "Alumni Network" },
+    { "value": "15+", "label": "Industry Partners" }
+  ],
+  "featured": {
+    "overline": "OUR PROGRAMS",
+    "title": "Courses That Launch Careers",
+    "subtitle": "Explore our comprehensive range of professional courses designed for real-world readiness",
+    "learnMore": "Learn More",
+    "viewAll": "View All Courses",
+    "categoryLabels": {
+      "diploma": "Diploma",
+      "certificate": "Certificate",
+      "academy": "Academy",
+      "online": "Online",
+      "service": "Service"
+    }
+  },
+  "testimonials": {
+    "overline": "PLACEMENT SUCCESS",
+    "title": "Our Students, Their Stories",
+    "subtitle": "Our students are working at premier hotels and hospitality brands across India and abroad",
+    "placedAt": "Placed at"
+  },
+  "partners": {
+    "overline": "WHY TSHM",
+    "title": "Built for Your Success",
+    "subtitle": "We combine practical education with career support to ensure every student thrives",
+    "items": [
+      {
+        "title": "100% Job Assistance",
+        "description": "Every graduate receives dedicated placement support to launch their career in hospitality and beyond."
+      },
+      {
+        "title": "Stipend During Training",
+        "description": "Earn while you learn with stipend-supported industrial training at leading hotels and companies."
+      },
+      {
+        "title": "Industry Faculty",
+        "description": "Learn from faculty drawn from top B-schools and the hospitality industry with real-world expertise."
+      },
+      {
+        "title": "Career Counseling",
+        "description": "DMIT-based scientific career guidance helps students identify their innate strengths and ideal path."
+      },
+      {
+        "title": "All-Round Development",
+        "description": "Physical, intellectual, and moral growth through discipline, creativity, and character building."
+      },
+      {
+        "title": "Recognized Degrees",
+        "description": "Pursue BA, B.COM, BBA, MBA, B.SC. in Hotel Management and more from reputed universities online."
+      }
+    ]
+  },
+  "cta": {
+    "overline": "Begin Your Journey",
+    "title": "Ready to Shape Your Future?",
+    "subtitle": "Join TSHM & TF today. We provide practical education with professional training, 100% job assistance, and stipend during training. Your career starts here.",
+    "applyNow": "Apply Now",
+    "browseCourses": "Browse Courses"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "courses": "Our Courses",
+    "gallery": "Gallery",
+    "contact": "Contact Us",
+    "upcoming": "Upcoming",
+    "faq": "FAQ",
+    "applyNow": "Apply Now"
+  },
+  "logoTagline": "Tarakeswar School of Hotel Management",
+  "footer": {
+    "tagline": "Tarakeswar School of Hotel Management & Technical Foundation — providing a positive, vibrant and inspiring culture where students are encouraged to succeed.",
+    "quickLinks": "Quick Links",
+    "ourCourses": "Our Courses",
+    "contact": "Contact",
+    "upcomingProjects": "Upcoming Projects",
+    "copyright": "Tarakeswar School of Hotel Management & Technical Foundation. All rights reserved.",
+    "developedWith": "Developed with care"
+  },
+  "whatsapp": {
+    "ariaLabel": "Chat on WhatsApp",
+    "message": "Hello, I want to know more about TSHM courses"
+  },
+  "categoryLabels": {
+    "all": "All Courses",
+    "diploma": "Diploma",
+    "certificate": "Certificate",
+    "academy": "Academy",
+    "online": "Online",
+    "service": "Service"
+  }
+}

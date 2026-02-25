@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "title": "Contact Us - Admissions & Enquiries",
+    "description": "Contact Tarakeswar School of Hotel Management & Technical Foundation for admissions, course enquiries, and campus visits. Located at College Road, Padmapukur, Tarakeswar, Hooghly 712410. Call +91 96359 64348.",
+    "keywords": "TSHM contact, hotel management admission Tarakeswar, vocational training enquiry Hooghly, TSHM phone number, TSHM address, admission form Tarakeswar"
+  },
+  "hero": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with us for admissions, inquiries, or any other information"
+  },
+  "cards": {
+    "visitUs": "Visit Us",
+    "callUs": "Call Us",
+    "emailUs": "Email Us"
+  },
+  "address": "College Road, Padmapukur, Tarakeswar, Hooghly, 712410",
+  "phone": "+91 96359 64348",
+  "email": "tshm368@gmail.com",
+  "form": {
+    "title": "Send Us a Message",
+    "fullName": "Full Name",
+    "fullNamePlaceholder": "Enter your full name",
+    "email": "Email",
+    "emailPlaceholder": "your@email.com",
+    "phone": "Phone",
+    "phonePlaceholder": "+91 XXXXX XXXXX",
+    "interestedCourse": "Interested Course",
+    "selectCourse": "Select a course",
+    "message": "Message",
+    "messagePlaceholder": "Tell us about your inquiry...",
+    "sendMessage": "Send Message",
+    "successMessage": "Thank you! Your message has been sent successfully. We'll get back to you soon.",
+    "required": "*",
+    "courseOptions": {
+      "hotelManagement": "Hotel Management",
+      "acTechnician": "AC Technician Diploma",
+      "spokenEnglish": "Spoken English",
+      "salesMarketing": "Sales & Marketing Management",
+      "beautyAcademy": "Makeup & Beauty Academy",
+      "tailoring": "Tailoring & Fashion Design",
+      "careerCounseling": "Career Counseling (DMIT)",
+      "onlineDegree": "Online Degree Programs"
+    }
+  },
+  "map": {
+    "title": "Find Us"
+  }
+}

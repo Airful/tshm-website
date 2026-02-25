@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "title": "Upcoming Projects & New Courses",
+    "description": "Discover upcoming projects at TSHM & TF — Advanced Culinary Arts, Digital Skills Training Center, and Hospitality Training Hotel. New career opportunities coming soon in Tarakeswar.",
+    "keywords": "TSHM new courses, upcoming vocational training Tarakeswar, culinary arts course Hooghly, digital skills training West Bengal"
+  },
+  "hero": {
+    "title": "Upcoming Projects",
+    "subtitle": "Exciting new initiatives and programs coming soon to expand learning opportunities for our students"
+  },
+  "section": {
+    "overline": "WHAT'S NEXT",
+    "title": "Coming Soon",
+    "subtitle": "We are constantly expanding to bring you more career opportunities"
+  },
+  "projects": [
+    {
+      "title": "Advanced Culinary Arts Program",
+      "description": "A new specialized program focusing on international cuisine, food presentation, and modern culinary techniques. Students will learn from master chefs with hands-on experience in professional kitchens.",
+      "status": "Coming Soon",
+      "features": [
+        "International cuisine modules",
+        "Professional kitchen training",
+        "Food photography & presentation",
+        "Restaurant management basics"
+      ]
+    },
+    {
+      "title": "Digital Skills & IT Training Center",
+      "description": "State-of-the-art computer training facility offering courses in digital literacy, web development, graphic design, and office productivity tools for the modern workplace.",
+      "status": "In Planning",
+      "features": [
+        "Computer literacy basics",
+        "Web development fundamentals",
+        "Graphic design & multimedia",
+        "Digital marketing essentials"
+      ]
+    },
+    {
+      "title": "Hospitality Training Hotel",
+      "description": "An on-campus training hotel where students get real-world experience managing front desk operations, housekeeping, F&B service, and guest relations in a live environment.",
+      "status": "Upcoming",
+      "features": [
+        "Live hotel operations",
+        "Front office management",
+        "Housekeeping standards",
+        "Guest handling & service excellence"
+      ]
+    }
+  ],
+  "getNotified": "Get Notified",
+  "cta": {
+    "title": "Want to Know More?",
+    "subtitle": "Contact us to learn more about our upcoming projects and how you can be a part of them.",
+    "contactUs": "Contact Us"
+  }
+}

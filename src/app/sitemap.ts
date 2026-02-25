@@ -1,25 +1,41 @@
 import type { MetadataRoute } from "next";
 import { courses } from "@/data/courses";
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://tshm.co.in";
+const baseUrl = "https://tshm.co.in";
+const locales = ["en", "bn"] as const;
 
-  const staticPages: MetadataRoute.Sitemap = [
-    { url: baseUrl, lastModified: new Date(), changeFrequency: "weekly", priority: 1 },
-    { url: `${baseUrl}/about`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/courses`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
-    { url: `${baseUrl}/contact`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${baseUrl}/gallery`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
-    { url: `${baseUrl}/upcoming`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.5 },
-    { url: `${baseUrl}/faq`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
+function localizedEntry(
+  path: string,
+  opts: { changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"]; priority: number }
+): MetadataRoute.Sitemap {
+  return locales.map((locale) => ({
+    url: `${baseUrl}/${locale}${path}`,
+    lastModified: new Date(),
+    changeFrequency: opts.changeFrequency,
+    priority: opts.priority,
+    alternates: {
+      languages: Object.fromEntries([
+        ...locales.map((l) => [l, `${baseUrl}/${l}${path}`]),
+        ["x-default", `${baseUrl}/en${path}`],
+      ]),
+    },
+  }));
+}
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const staticPages = [
+    ...localizedEntry("", { changeFrequency: "weekly", priority: 1 }),
+    ...localizedEntry("/about", { changeFrequency: "monthly", priority: 0.8 }),
+    ...localizedEntry("/courses", { changeFrequency: "weekly", priority: 0.9 }),
+    ...localizedEntry("/contact", { changeFrequency: "monthly", priority: 0.7 }),
+    ...localizedEntry("/gallery", { changeFrequency: "monthly", priority: 0.6 }),
+    ...localizedEntry("/upcoming", { changeFrequency: "monthly", priority: 0.5 }),
+    ...localizedEntry("/faq", { changeFrequency: "monthly", priority: 0.7 }),
   ];
 
-  const coursePages: MetadataRoute.Sitemap = courses.map((course) => ({
-    url: `${baseUrl}/courses/${course.id}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.8,
-  }));
+  const coursePages = courses.flatMap((course) =>
+    localizedEntry(`/courses/${course.id}`, { changeFrequency: "monthly", priority: 0.8 })
+  );
 
   return [...staticPages, ...coursePages];
 }

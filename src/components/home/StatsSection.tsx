@@ -1,20 +1,17 @@
-const stats = [
-  { value: "100%", label: "Job Assistance" },
-  { value: "9+", label: "Programs Offered" },
-  { value: "500+", label: "Alumni Network" },
-  { value: "15+", label: "Industry Partners" },
-];
+interface StatsSectionProps {
+  t: { value: string; label: string }[];
+}
 
-export default function StatsSection() {
+export default function StatsSection({ t }: StatsSectionProps) {
   return (
     <section className="py-20 lg:py-28 bg-[var(--canvas)]">
       <div className="max-w-6xl mx-auto px-6 sm:px-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          {stats.map((stat, i) => (
+          {t.map((stat, i) => (
             <div
               key={stat.label}
               className={`text-center ${
-                i < stats.length - 1
+                i < t.length - 1
                   ? "md:border-r md:border-[var(--border)]"
                   : ""
               }`}
