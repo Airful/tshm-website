@@ -6,6 +6,7 @@ import Footer from "@/components/layout/Footer";
 import WhatsAppButton from "@/components/common/WhatsAppButton";
 import { locales, type Locale } from "@/app/lib/i18n";
 import { getTranslations } from "@/app/lib/i18n";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const poppins = Poppins({
   variable: "--font-heading",
@@ -151,6 +152,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
+      <GoogleAnalytics gaId="G-JS5W7M0SNB" />
       <body className={`${poppins.variable} ${openSans.variable} antialiased`}>
         <script
           type="application/ld+json"
