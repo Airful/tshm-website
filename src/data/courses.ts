@@ -27,7 +27,7 @@ export interface Course {
 export const courses: Course[] = [
   {
     id: "hotel-management",
-    title: "Hotel Management",
+    title: "Diploma in Hotel Management & Technical Foundation",
     title_bn: "হোটেল ম্যানেজমেন্ট",
     description:
       "Comprehensive hotel management program covering front office, housekeeping, food & beverage service, and hospitality operations. Get practical and purposeful education with professional training from industry-experienced faculty.",
@@ -39,7 +39,7 @@ export const courses: Course[] = [
       "TSHM & TF-এর হোটেল ম্যানেজমেন্ট প্রোগ্রামটি শিক্ষার্থীদের হসপিটালিটি ইন্ডাস্ট্রির সম্পূর্ণ ধারণা দেওয়ার জন্য তৈরি করা হয়েছে। পাঠ্যক্রমে ফ্রন্ট অফিস অপারেশনস, হাউসকিপিং ম্যানেজমেন্ট, ফুড অ্যান্ড বেভারেজ সার্ভিস, কিচেন ম্যানেজমেন্ট এবং গেস্ট রিলেশনস অন্তর্ভুক্ত। শিক্ষার্থীরা প্রকৃত হসপিটালিটি পরিবেশে হাতে-কলমে প্রশিক্ষণ পায়, ইন্ডাস্ট্রি-অভিজ্ঞ শিক্ষক ও প্রশিক্ষকদের কাছ থেকে শেখে। ১০০% চাকরির সহায়তা এবং প্রশিক্ষণকালীন স্টাইপেন্ড সহ, আমাদের স্নাতকরা ভারত ও বিদেশের নামকরা হোটেল, রেস্তোরাঁ এবং হসপিটালিটি প্রতিষ্ঠানে কাজ করছে।",
     duration: "1-3 Years",
     duration_bn: "১-৩ বছর",
-    image: "/images/courses/hotel-management.jpg",
+    image: "/images/courses/hotel-management.jpeg",
     category: "diploma",
     highlights: [
       "100% job assistance",
@@ -87,49 +87,234 @@ export const courses: Course[] = [
     ],
   },
   {
-    id: "career-counseling",
-    title: "Career Counseling",
-    title_bn: "ক্যারিয়ার কাউন্সেলিং",
+    id: "hospitality-cruise-line",
+    title: "Diploma in Hospitality & Cruise Line Management",
+    title_bn: "হসপিটালিটি ও ক্রুজ লাইন ম্যানেজমেন্ট ডিপ্লোমা",
     description:
-      "Scientific career counseling using DMIT (Dermatoglyphics Multiple Intelligence Test) to identify innate strengths and ideal career paths. Personalized guidance for students and parents to make informed career decisions.",
+      "Specialized diploma program in hospitality and cruise line management covering cruise ship operations, guest services, food & beverage management, housekeeping, and international hospitality standards for a global career at sea.",
     description_bn:
-      "DMIT (ডার্মাটোগ্লিফিক্স মাল্টিপল ইন্টেলিজেন্স টেস্ট) ব্যবহার করে বৈজ্ঞানিক ক্যারিয়ার কাউন্সেলিং — জন্মগত শক্তি ও আদর্শ ক্যারিয়ার পথ চিহ্নিত করতে। শিক্ষার্থী ও অভিভাবকদের জন্য সঠিক ক্যারিয়ার সিদ্ধান্ত নেওয়ার ব্যক্তিগত গাইডেন্স।",
+      "ক্রুজ শিপ অপারেশনস, গেস্ট সার্ভিসেস, ফুড অ্যান্ড বেভারেজ ম্যানেজমেন্ট, হাউসকিপিং এবং আন্তর্জাতিক হসপিটালিটি স্ট্যান্ডার্ড নিয়ে হসপিটালিটি ও ক্রুজ লাইন ম্যানেজমেন্টে বিশেষায়িত ডিপ্লোমা প্রোগ্রাম।",
     longDescription:
-      "TSHM & TF's Career Counseling service uses the scientifically-backed DMIT (Dermatoglyphics Multiple Intelligence Test) method to identify a student's innate strengths, learning style, and ideal career paths. Through detailed fingerprint analysis and aptitude testing, our trained counselors create personalized career roadmaps for each student. This service is invaluable for students confused about career choices after Madhyamik or Higher Secondary, and for parents looking to support their children's career decisions with data-driven insights.",
+      "The Diploma in Hospitality & Cruise Line Management at TSHM & TF prepares students for exciting careers in the international cruise and hospitality industry. The program covers cruise ship operations, front office and guest relations, food & beverage service and management, housekeeping, safety and emergency procedures, and international hospitality standards. Students receive hands-on training and industry exposure to develop the skills needed for working on luxury cruise liners and premium hospitality establishments worldwide. With 100% job assistance and industry connections, our graduates secure positions on leading cruise lines and international hotels.",
     longDescription_bn:
-      "TSHM & TF-এর ক্যারিয়ার কাউন্সেলিং সেবা বৈজ্ঞানিকভাবে প্রমাণিত DMIT (ডার্মাটোগ্লিফিক্স মাল্টিপল ইন্টেলিজেন্স টেস্ট) পদ্ধতি ব্যবহার করে শিক্ষার্থীর জন্মগত শক্তি, শেখার ধরন এবং আদর্শ ক্যারিয়ার পথ চিহ্নিত করে। বিস্তারিত ফিঙ্গারপ্রিন্ট বিশ্লেষণ ও অ্যাপটিটিউড টেস্টের মাধ্যমে আমাদের প্রশিক্ষিত কাউন্সেলররা প্রতিটি শিক্ষার্থীর জন্য ব্যক্তিগত ক্যারিয়ার রোডম্যাপ তৈরি করেন। মাধ্যমিক বা উচ্চমাধ্যমিকের পর ক্যারিয়ার নিয়ে দ্বিধায় থাকা শিক্ষার্থীদের জন্য এবং তথ্যনির্ভর সিদ্ধান্তে সন্তানদের সহায়তা করতে চাওয়া অভিভাবকদের জন্য এই সেবা অমূল্য।",
-    duration: "Ongoing",
-    duration_bn: "চলমান",
-    image: "/images/courses/career-counseling.jpg",
-    category: "service",
+      "TSHM & TF-এর হসপিটালিটি ও ক্রুজ লাইন ম্যানেজমেন্ট ডিপ্লোমা শিক্ষার্থীদের আন্তর্জাতিক ক্রুজ ও হসপিটালিটি ইন্ডাস্ট্রিতে উত্তেজনাপূর্ণ ক্যারিয়ারের জন্য প্রস্তুত করে। প্রোগ্রামে ক্রুজ শিপ অপারেশনস, ফ্রন্ট অফিস ও গেস্ট রিলেশনস, ফুড অ্যান্ড বেভারেজ সার্ভিস ও ম্যানেজমেন্ট, হাউসকিপিং, সেফটি ও ইমার্জেন্সি প্রসিডিউর এবং আন্তর্জাতিক হসপিটালিটি স্ট্যান্ডার্ড অন্তর্ভুক্ত।",
+    duration: "1-2 Years",
+    duration_bn: "১-২ বছর",
+    image: "/images/courses/cruise-line.jpg",
+    category: "diploma",
     highlights: [
-      "DMIT assessment",
-      "Personalized career roadmap",
-      "Aptitude & potential analysis",
-      "Parent-student counseling",
+      "Cruise line job preparation",
+      "International hospitality standards",
+      "100% job assistance",
+      "Industry experienced trainers",
     ],
     highlights_bn: [
-      "DMIT মূল্যায়ন",
-      "ব্যক্তিগত ক্যারিয়ার রোডম্যাপ",
-      "অ্যাপটিটিউড ও সম্ভাবনা বিশ্লেষণ",
-      "অভিভাবক-শিক্ষার্থী কাউন্সেলিং",
+      "ক্রুজ লাইনে চাকরির প্রস্তুতি",
+      "আন্তর্জাতিক হসপিটালিটি স্ট্যান্ডার্ড",
+      "১০০% চাকরির সহায়তা",
+      "ইন্ডাস্ট্রি-অভিজ্ঞ প্রশিক্ষক",
     ],
-    seoTitle: "Career Counseling & DMIT Assessment in Tarakeswar",
-    seoTitle_bn: "তারকেশ্বরে ক্যারিয়ার কাউন্সেলিং ও DMIT মূল্যায়ন",
+    seoTitle: "Hospitality & Cruise Line Management Diploma in Tarakeswar",
+    seoTitle_bn: "তারকেশ্বরে হসপিটালিটি ও ক্রুজ লাইন ম্যানেজমেন্ট ডিপ্লোমা",
     seoDescription:
-      "Scientific career counseling using DMIT at TSHM Tarakeswar. Identify innate strengths, get personalized career guidance. For students after Madhyamik & HS in Hooghly, West Bengal.",
+      "Join TSHM's Hospitality & Cruise Line Management diploma in Tarakeswar, Hooghly. 1-2 year program with 100% job assistance, cruise ship training, international hospitality standards.",
     seoDescription_bn:
-      "TSHM তারকেশ্বরে DMIT ব্যবহার করে বৈজ্ঞানিক ক্যারিয়ার কাউন্সেলিং। জন্মগত শক্তি চিহ্নিত করুন, ব্যক্তিগত ক্যারিয়ার গাইডেন্স পান। হুগলি, পশ্চিমবঙ্গে মাধ্যমিক ও উচ্চমাধ্যমিকের পর শিক্ষার্থীদের জন্য।",
+      "তারকেশ্বর, হুগলিতে TSHM-এর হসপিটালিটি ও ক্রুজ লাইন ম্যানেজমেন্ট ডিপ্লোমায় ভর্তি হন। ১-২ বছরের প্রোগ্রাম, ১০০% চাকরির সহায়তা, ক্রুজ শিপ প্রশিক্ষণ।",
     seoKeywords:
-      "career counseling Tarakeswar, DMIT test Hooghly, career guidance after 10th, career counseling West Bengal, aptitude test near me",
+      "cruise line management course Tarakeswar, hospitality diploma Hooghly, cruise ship training West Bengal, cruise line career India",
     seoKeywords_bn:
-      "তারকেশ্বরে ক্যারিয়ার কাউন্সেলিং, হুগলিতে DMIT টেস্ট, দশম শ্রেণীর পর ক্যারিয়ার গাইডেন্স, পশ্চিমবঙ্গে ক্যারিয়ার কাউন্সেলিং, অ্যাপটিটিউড টেস্ট",
-    eligibility: "Open to all students and parents. Recommended for students in Class 8-12 and recent graduates.",
-    eligibility_bn: "সকল শিক্ষার্থী ও অভিভাবকদের জন্য উন্মুক্ত। অষ্টম থেকে দ্বাদশ শ্রেণীর শিক্ষার্থী এবং সদ্য স্নাতকদের জন্য বিশেষভাবে প্রযোজ্য।",
+      "তারকেশ্বরে ক্রুজ লাইন ম্যানেজমেন্ট কোর্স, হুগলিতে হসপিটালিটি ডিপ্লোমা, পশ্চিমবঙ্গে ক্রুজ শিপ প্রশিক্ষণ",
+    eligibility: "Class 10 (Madhyamik) or Class 12 (Higher Secondary) pass from any recognized board. No entrance exam required.",
+    eligibility_bn: "যেকোনো স্বীকৃত বোর্ড থেকে দশম শ্রেণী (মাধ্যমিক) বা দ্বাদশ শ্রেণী (উচ্চমাধ্যমিক) পাশ। কোনো ভর্তি পরীক্ষার প্রয়োজন নেই।",
+    careerProspects: [
+      "Cruise Ship Staff",
+      "Guest Relations Officer",
+      "F&B Manager (Cruise)",
+      "Housekeeping Supervisor (Cruise)",
+      "Shore Excursion Coordinator",
+      "International Hotel Staff",
+    ],
+    careerProspects_bn: [
+      "ক্রুজ শিপ স্টাফ",
+      "গেস্ট রিলেশনস অফিসার",
+      "F&B ম্যানেজার (ক্রুজ)",
+      "হাউসকিপিং সুপারভাইজার (ক্রুজ)",
+      "শোর এক্সকারশন কোঅর্ডিনেটর",
+      "আন্তর্জাতিক হোটেল স্টাফ",
+    ],
+  },
+  {
+    id: "health-assistant",
+    title: "Diploma in Health Assistant",
+    title_bn: "হেলথ অ্যাসিস্ট্যান্ট ডিপ্লোমা",
+    description:
+      "Professional diploma program training students in basic healthcare, patient care, first aid, vital signs monitoring, and clinical assistance to support doctors and healthcare professionals.",
+    description_bn:
+      "মৌলিক স্বাস্থ্যসেবা, রোগী পরিচর্যা, প্রাথমিক চিকিৎসা, ভাইটাল সাইনস মনিটরিং এবং ডাক্তার ও স্বাস্থ্য পেশাদারদের সহায়তায় ক্লিনিক্যাল অ্যাসিস্ট্যান্সে শিক্ষার্থীদের প্রশিক্ষণ দেওয়ার পেশাদার ডিপ্লোমা প্রোগ্রাম।",
+    longDescription:
+      "The Diploma in Health Assistant at TSHM & TF is designed to train students in essential healthcare skills required to assist doctors, nurses, and other medical professionals. The program covers patient care fundamentals, first aid and emergency response, vital signs monitoring, medical terminology, clinical procedures, hygiene and infection control, and basic pharmacology. Students receive hands-on practical training in clinical settings, preparing them for immediate employment in hospitals, clinics, diagnostic centres, and home healthcare services.",
+    longDescription_bn:
+      "TSHM & TF-এর হেলথ অ্যাসিস্ট্যান্ট ডিপ্লোমা শিক্ষার্থীদের ডাক্তার, নার্স এবং অন্যান্য চিকিৎসা পেশাদারদের সহায়তার জন্য প্রয়োজনীয় স্বাস্থ্যসেবা দক্ষতায় প্রশিক্ষণ দেওয়ার জন্য তৈরি। প্রোগ্রামে রোগী পরিচর্যার মূল বিষয়, প্রাথমিক চিকিৎসা ও জরুরি প্রতিক্রিয়া, ভাইটাল সাইনস মনিটরিং, মেডিকেল টার্মিনোলজি, ক্লিনিক্যাল প্রসিডিউর, স্বাস্থ্যবিধি ও সংক্রমণ নিয়ন্ত্রণ এবং বেসিক ফার্মাকোলজি অন্তর্ভুক্ত।",
+    duration: "1 Year",
+    duration_bn: "১ বছর",
+    image: "/images/courses/health-assistant.jpg",
+    category: "diploma",
+    highlights: [
+      "Patient care training",
+      "Clinical hands-on experience",
+      "100% job assistance",
+      "Hospital & clinic placements",
+    ],
+    highlights_bn: [
+      "রোগী পরিচর্যা প্রশিক্ষণ",
+      "ক্লিনিক্যাল হাতে-কলমে অভিজ্ঞতা",
+      "১০০% চাকরির সহায়তা",
+      "হাসপাতাল ও ক্লিনিকে প্লেসমেন্ট",
+    ],
+    seoTitle: "Health Assistant Diploma Course in Tarakeswar",
+    seoTitle_bn: "তারকেশ্বরে হেলথ অ্যাসিস্ট্যান্ট ডিপ্লোমা কোর্স",
+    seoDescription:
+      "Join TSHM's Health Assistant diploma in Tarakeswar, Hooghly. 1 year program with patient care training, clinical experience, and 100% job assistance in hospitals and clinics.",
+    seoDescription_bn:
+      "তারকেশ্বর, হুগলিতে TSHM-এর হেলথ অ্যাসিস্ট্যান্ট ডিপ্লোমায় ভর্তি হন। ১ বছরের প্রোগ্রাম, রোগী পরিচর্যা প্রশিক্ষণ, ক্লিনিক্যাল অভিজ্ঞতা এবং ১০০% চাকরির সহায়তা।",
+    seoKeywords:
+      "health assistant course Tarakeswar, health assistant diploma Hooghly, medical assistant training West Bengal, healthcare course near me",
+    seoKeywords_bn:
+      "তারকেশ্বরে হেলথ অ্যাসিস্ট্যান্ট কোর্স, হুগলিতে হেলথ অ্যাসিস্ট্যান্ট ডিপ্লোমা, পশ্চিমবঙ্গে মেডিকেল অ্যাসিস্ট্যান্ট প্রশিক্ষণ",
+    eligibility: "Class 10 (Madhyamik) or Class 12 (Higher Secondary) pass from any recognized board. No entrance exam required.",
+    eligibility_bn: "যেকোনো স্বীকৃত বোর্ড থেকে দশম শ্রেণী (মাধ্যমিক) বা দ্বাদশ শ্রেণী (উচ্চমাধ্যমিক) পাশ। কোনো ভর্তি পরীক্ষার প্রয়োজন নেই।",
+    careerProspects: [
+      "Hospital Health Assistant",
+      "Clinical Assistant",
+      "Home Healthcare Aide",
+      "Diagnostic Centre Assistant",
+      "Pharmacy Assistant",
+      "Community Health Worker",
+    ],
+    careerProspects_bn: [
+      "হাসপাতাল হেলথ অ্যাসিস্ট্যান্ট",
+      "ক্লিনিক্যাল অ্যাসিস্ট্যান্ট",
+      "হোম হেলথকেয়ার এইড",
+      "ডায়াগনস্টিক সেন্টার অ্যাসিস্ট্যান্ট",
+      "ফার্মেসি অ্যাসিস্ট্যান্ট",
+      "কমিউনিটি হেলথ ওয়ার্কার",
+    ],
+  },
+  {
+    id: "cms-ed",
+    title: "Diploma in Community Medical Services & Essential Drugs (CMS & ED)",
+    title_bn: "কমিউনিটি মেডিকেল সার্ভিসেস অ্যান্ড এসেনশিয়াল ড্রাগস (CMS & ED)",
+    description:
+      "Certificate course in Community Medical Services & Essential Drugs covering primary healthcare, essential drug dispensing, community health management, and basic clinical skills for rural and urban healthcare delivery.",
+    description_bn:
+      "প্রাইমারি হেলথকেয়ার, এসেনশিয়াল ড্রাগ ডিসপেন্সিং, কমিউনিটি হেলথ ম্যানেজমেন্ট এবং গ্রামীণ ও শহুরে স্বাস্থ্যসেবা প্রদানের জন্য বেসিক ক্লিনিক্যাল দক্ষতা নিয়ে কমিউনিটি মেডিকেল সার্ভিসেস অ্যান্ড এসেনশিয়াল ড্রাগসে সার্টিফিকেট কোর্স।",
+    longDescription:
+      "The Certificate in Community Medical Services & Essential Drugs (CMS & ED) at TSHM & TF trains students in primary healthcare delivery, essential drug management, and community health services. The program covers pharmacology basics, essential drug dispensing and storage, common disease identification and first-line treatment, patient counseling, community health education, and basic diagnostic skills. This course prepares students to serve as qualified community healthcare providers, bridging the gap between rural communities and quality healthcare access.",
+    longDescription_bn:
+      "TSHM & TF-এর কমিউনিটি মেডিকেল সার্ভিসেস অ্যান্ড এসেনশিয়াল ড্রাগস (CMS & ED) সার্টিফিকেট শিক্ষার্থীদের প্রাইমারি হেলথকেয়ার প্রদান, এসেনশিয়াল ড্রাগ ম্যানেজমেন্ট এবং কমিউনিটি হেলথ সার্ভিসে প্রশিক্ষণ দেয়। প্রোগ্রামে ফার্মাকোলজির মূল বিষয়, এসেনশিয়াল ড্রাগ ডিসপেন্সিং ও স্টোরেজ, সাধারণ রোগ চিহ্নিতকরণ ও প্রাথমিক চিকিৎসা, রোগী কাউন্সেলিং, কমিউনিটি হেলথ এডুকেশন এবং বেসিক ডায়াগনস্টিক দক্ষতা অন্তর্ভুক্ত।",
+    duration: "6 Months - 1 Year",
+    duration_bn: "৬ মাস - ১ বছর",
+    image: "/images/courses/cms-ed.jpeg",
+    category: "diploma",
+    highlights: [
+      "Essential drug dispensing training",
+      "Community healthcare skills",
+      "Primary healthcare delivery",
+      "Job assistance & self-employment",
+    ],
+    highlights_bn: [
+      "এসেনশিয়াল ড্রাগ ডিসপেন্সিং প্রশিক্ষণ",
+      "কমিউনিটি হেলথকেয়ার দক্ষতা",
+      "প্রাইমারি হেলথকেয়ার প্রদান",
+      "চাকরির সহায়তা ও স্বনির্ভরতা",
+    ],
+    seoTitle: "CMS & ED Certificate Course in Tarakeswar",
+    seoTitle_bn: "তারকেশ্বরে CMS & ED সার্টিফিকেট কোর্স",
+    seoDescription:
+      "Certificate in Community Medical Services & Essential Drugs (CMS & ED) at TSHM Tarakeswar. Primary healthcare, drug dispensing, community health training in Hooghly, West Bengal.",
+    seoDescription_bn:
+      "TSHM তারকেশ্বরে কমিউনিটি মেডিকেল সার্ভিসেস অ্যান্ড এসেনশিয়াল ড্রাগস (CMS & ED) সার্টিফিকেট। হুগলি, পশ্চিমবঙ্গে প্রাইমারি হেলথকেয়ার, ড্রাগ ডিসপেন্সিং, কমিউনিটি হেলথ প্রশিক্ষণ।",
+    seoKeywords:
+      "CMS ED course Tarakeswar, community medical services certificate Hooghly, essential drugs course West Bengal, healthcare certificate near me",
+    seoKeywords_bn:
+      "তারকেশ্বরে CMS ED কোর্স, হুগলিতে কমিউনিটি মেডিকেল সার্ভিসেস সার্টিফিকেট, পশ্চিমবঙ্গে এসেনশিয়াল ড্রাগস কোর্স",
+    eligibility: "Class 10 (Madhyamik) or Class 12 (Higher Secondary) pass from any recognized board.",
+    eligibility_bn: "যেকোনো স্বীকৃত বোর্ড থেকে দশম শ্রেণী (মাধ্যমিক) বা দ্বাদশ শ্রেণী (উচ্চমাধ্যমিক) পাশ।",
+    careerProspects: [
+      "Community Health Provider",
+      "Rural Health Practitioner",
+      "Pharmacy Assistant",
+      "Healthcare Clinic Assistant",
+      "Drug Store Manager",
+      "Community Health Educator",
+    ],
+    careerProspects_bn: [
+      "কমিউনিটি হেলথ প্রোভাইডার",
+      "গ্রামীণ স্বাস্থ্য চিকিৎসক",
+      "ফার্মেসি অ্যাসিস্ট্যান্ট",
+      "হেলথকেয়ার ক্লিনিক অ্যাসিস্ট্যান্ট",
+      "ড্রাগ স্টোর ম্যানেজার",
+      "কমিউনিটি হেলথ এডুকেটর",
+    ],
+  },
+  {
+    id: "refrigerator-ac",
+    title: "Certificate in Refrigerator & Aircondition",
+    title_bn: "রেফ্রিজারেটর ও এয়ারকন্ডিশন সার্টিফিকেট",
+    description:
+      "Certificate program covering refrigerator and air conditioner installation, repair, maintenance, and troubleshooting. Hands-on practical training for a career in the rapidly growing cooling and refrigeration industry.",
+    description_bn:
+      "রেফ্রিজারেটর ও এয়ার কন্ডিশনার ইনস্টলেশন, মেরামত, রক্ষণাবেক্ষণ এবং ট্রাবলশুটিং নিয়ে সার্টিফিকেট প্রোগ্রাম। দ্রুত বর্ধনশীল কুলিং ও রেফ্রিজারেশন ইন্ডাস্ট্রিতে ক্যারিয়ারের জন্য হাতে-কলমে প্রশিক্ষণ।",
+    longDescription:
+      "The Certificate in Refrigerator & Aircondition at TSHM & TF provides focused training in refrigeration and air conditioning systems. The program covers refrigerator repair and maintenance, split and window AC servicing, gas charging and leak detection, electrical wiring and troubleshooting, compressor repair, and thermostat calibration. Students gain hands-on experience with modern equipment, preparing them for immediate employment or self-employment in this high-demand field.",
+    longDescription_bn:
+      "TSHM & TF-এর রেফ্রিজারেটর ও এয়ারকন্ডিশন সার্টিফিকেট রেফ্রিজারেশন ও এয়ার কন্ডিশনিং সিস্টেমে কেন্দ্রীভূত প্রশিক্ষণ দেয়। প্রোগ্রামে রেফ্রিজারেটর মেরামত ও রক্ষণাবেক্ষণ, স্প্লিট ও উইন্ডো এসি সার্ভিসিং, গ্যাস চার্জিং ও লিক ডিটেকশন, ইলেকট্রিক্যাল ওয়্যারিং ও ট্রাবলশুটিং, কম্প্রেসর মেরামত এবং থার্মোস্ট্যাট ক্যালিব্রেশন অন্তর্ভুক্ত।",
+    duration: "1 Year",
+    duration_bn: "১ বছর",
+    image: "/images/courses/ac-technician.jpg",
+    category: "certificate",
+    highlights: [
+      "Refrigerator & AC repair training",
+      "Hands-on practical experience",
+      "Self-employment opportunity",
+      "High-demand industry skills",
+    ],
+    highlights_bn: [
+      "রেফ্রিজারেটর ও এসি মেরামত প্রশিক্ষণ",
+      "হাতে-কলমে ব্যবহারিক অভিজ্ঞতা",
+      "স্বনির্ভরতার সুযোগ",
+      "উচ্চ চাহিদার ইন্ডাস্ট্রি দক্ষতা",
+    ],
+    seoTitle: "Refrigerator & AC Certificate Course in Tarakeswar",
+    seoTitle_bn: "তারকেশ্বরে রেফ্রিজারেটর ও এসি সার্টিফিকেট কোর্স",
+    seoDescription:
+      "Certificate in Refrigerator & Aircondition at TSHM Tarakeswar. 6-month program with hands-on training in fridge and AC repair, maintenance, and installation. Hooghly, West Bengal.",
+    seoDescription_bn:
+      "TSHM তারকেশ্বরে রেফ্রিজারেটর ও এয়ারকন্ডিশন সার্টিফিকেট। ৬ মাসের প্রোগ্রাম, ফ্রিজ ও এসি মেরামত, রক্ষণাবেক্ষণ ও ইনস্টলেশনে হাতে-কলমে প্রশিক্ষণ।",
+    seoKeywords:
+      "refrigerator repair course Tarakeswar, AC certificate course Hooghly, fridge repair training West Bengal, refrigeration course near me",
+    seoKeywords_bn:
+      "তারকেশ্বরে রেফ্রিজারেটর মেরামত কোর্স, হুগলিতে এসি সার্টিফিকেট কোর্স, পশ্চিমবঙ্গে ফ্রিজ মেরামত প্রশিক্ষণ",
+    eligibility: "Class 8 pass or equivalent. No prior technical knowledge required.",
+    eligibility_bn: "অষ্টম শ্রেণী পাশ বা সমমান। পূর্ববর্তী কারিগরি জ্ঞানের প্রয়োজন নেই।",
+    careerProspects: [
+      "Refrigerator Repair Technician",
+      "AC Service Technician",
+      "Appliance Repair Specialist",
+      "Service Centre Technician",
+      "Self-employed Repair Business",
+    ],
+    careerProspects_bn: [
+      "রেফ্রিজারেটর মেরামত টেকনিশিয়ান",
+      "এসি সার্ভিস টেকনিশিয়ান",
+      "অ্যাপ্লায়েন্স মেরামত স্পেশালিস্ট",
+      "সার্ভিস সেন্টার টেকনিশিয়ান",
+      "স্বনির্ভর মেরামত ব্যবসা",
+    ],
   },
   {
     id: "sales-marketing",
-    title: "Certificate in Sales and Marketing Management",
+    title: "Certificate in Sales & Marketing Management",
     title_bn: "সেলস অ্যান্ড মার্কেটিং ম্যানেজমেন্ট সার্টিফিকেট",
     description:
       "Certificate program covering sales strategy, marketing management, customer relationship building, and business development techniques for career-ready professionals.",
@@ -183,9 +368,50 @@ export const courses: Course[] = [
     ],
   },
   {
+    id: "tshm-studies",
+    title: "TSHM Studies",
+    title_bn: "TSHM স্টাডিজ",
+    description:
+      "A comprehensive academic support and study program by TSHM & TF designed to help students build strong foundations in core subjects, develop effective study habits, and achieve academic excellence alongside vocational training.",
+    description_bn:
+      "TSHM & TF-এর একটি সম্পূর্ণ একাডেমিক সহায়তা ও অধ্যয়ন প্রোগ্রাম যা শিক্ষার্থীদের মূল বিষয়ে দৃঢ় ভিত্তি তৈরি, কার্যকর অধ্যয়ন অভ্যাস গড়ে তোলা এবং বৃত্তিমূলক প্রশিক্ষণের পাশাপাশি একাডেমিক উৎকর্ষ অর্জনে সহায়তা করে।",
+    longDescription:
+      "TSHM Studies is a dedicated academic wing of TSHM & TF that provides structured study programs, tutoring, and academic guidance for students pursuing vocational courses alongside their regular education. The program offers supplementary classes, exam preparation, study skill development, and personalized academic mentoring to ensure students excel in both their vocational and academic pursuits.",
+    longDescription_bn:
+      "TSHM স্টাডিজ হলো TSHM & TF-এর একটি নিবেদিত একাডেমিক শাখা যা বৃত্তিমূলক কোর্সের পাশাপাশি নিয়মিত শিক্ষা অনুসরণকারী শিক্ষার্থীদের জন্য কাঠামোবদ্ধ অধ্যয়ন প্রোগ্রাম, টিউটরিং এবং একাডেমিক গাইডেন্স প্রদান করে।",
+    duration: "Flexible",
+    duration_bn: "নমনীয়",
+    image: "/images/courses/tshm-studies.jpg",
+    category: "academy",
+    highlights: [
+      "Academic support & tutoring",
+      "Exam preparation guidance",
+      "Study skill development",
+      "Personalized mentoring",
+    ],
+    highlights_bn: [
+      "একাডেমিক সহায়তা ও টিউটরিং",
+      "পরীক্ষার প্রস্তুতি গাইডেন্স",
+      "অধ্যয়ন দক্ষতা উন্নয়ন",
+      "ব্যক্তিগত মেন্টরিং",
+    ],
+    seoTitle: "TSHM Studies - Academic Support Program in Tarakeswar",
+    seoTitle_bn: "TSHM স্টাডিজ - তারকেশ্বরে একাডেমিক সহায়তা প্রোগ্রাম",
+    seoDescription:
+      "TSHM Studies academic support program in Tarakeswar. Tutoring, exam preparation, study skills, and personalized mentoring for students in Hooghly, West Bengal.",
+    seoDescription_bn:
+      "তারকেশ্বরে TSHM স্টাডিজ একাডেমিক সহায়তা প্রোগ্রাম। হুগলি, পশ্চিমবঙ্গে শিক্ষার্থীদের জন্য টিউটরিং, পরীক্ষার প্রস্তুতি, অধ্যয়ন দক্ষতা এবং ব্যক্তিগত মেন্টরিং।",
+    seoKeywords:
+      "TSHM studies Tarakeswar, academic support Hooghly, tutoring program West Bengal, study center near me",
+    seoKeywords_bn:
+      "তারকেশ্বরে TSHM স্টাডিজ, হুগলিতে একাডেমিক সহায়তা, পশ্চিমবঙ্গে টিউটরিং প্রোগ্রাম",
+    eligibility: "Open to all students from Class 8 onwards.",
+    eligibility_bn: "অষ্টম শ্রেণী থেকে সকল শিক্ষার্থীদের জন্য উন্মুক্ত।",
+  },
+  {
     id: "beauty-tailoring-academy",
-    title: "TSHM & TF Make Up Beauty Tailoring Academy",
-    title_bn: "TSHM & TF মেকআপ বিউটি একাডেমি ও টেইলারিং",
+    title: "TSHM Makeup, Beauty & Tailoring Academy",
+    title_bn: "TSHM মেকআপ, বিউটি ও টেইলারিং একাডেমি",
     description:
       "Learn professional makeup, beauty therapy, skincare, hairstyling, and tailoring techniques from industry experts. Comprehensive academy program for self-employment and career growth.",
     description_bn:
@@ -240,155 +466,168 @@ export const courses: Course[] = [
     ],
   },
   {
-    id: "odd-jobs",
-    title: "TSHM & TF Odd Jobs Services",
-    title_bn: "TSHM & TF অড জবস সার্ভিসেস",
+    id: "career-counseling",
+    title: "Career Counseling",
+    title_bn: "ক্যারিয়ার কাউন্সেলিং",
     description:
-      "Effective alternate career options for students with job preparation emphasizing individual student potential. Practical skills training for various service industry roles.",
+      "Scientific career counseling using DMIT (Dermatoglyphics Multiple Intelligence Test) to identify innate strengths and ideal career paths. Personalized guidance for students and parents to make informed career decisions.",
     description_bn:
-      "শিক্ষার্থীদের ব্যক্তিগত সম্ভাবনার উপর জোর দিয়ে কার্যকর বিকল্প ক্যারিয়ারের সুযোগ এবং চাকরির প্রস্তুতি। বিভিন্ন সার্ভিস ইন্ডাস্ট্রি ভূমিকার জন্য ব্যবহারিক দক্ষতা প্রশিক্ষণ।",
+      "DMIT (ডার্মাটোগ্লিফিক্স মাল্টিপল ইন্টেলিজেন্স টেস্ট) ব্যবহার করে বৈজ্ঞানিক ক্যারিয়ার কাউন্সেলিং — জন্মগত শক্তি ও আদর্শ ক্যারিয়ার পথ চিহ্নিত করতে। শিক্ষার্থী ও অভিভাবকদের জন্য সঠিক ক্যারিয়ার সিদ্ধান্ত নেওয়ার ব্যক্তিগত গাইডেন্স।",
     longDescription:
-      "TSHM & TF Odd Jobs Services provides practical skills training for various service industry roles. This program is designed for students seeking alternate career paths, with a focus on identifying and developing individual potential. Students receive hands-on training in multiple service skills, job preparation coaching, and placement assistance.",
+      "TSHM & TF's Career Counseling service uses the scientifically-backed DMIT (Dermatoglyphics Multiple Intelligence Test) method to identify a student's innate strengths, learning style, and ideal career paths. Through detailed fingerprint analysis and aptitude testing, our trained counselors create personalized career roadmaps for each student. This service is invaluable for students confused about career choices after Madhyamik or Higher Secondary, and for parents looking to support their children's career decisions with data-driven insights.",
     longDescription_bn:
-      "TSHM & TF অড জবস সার্ভিসেস বিভিন্ন সার্ভিস ইন্ডাস্ট্রি ভূমিকার জন্য ব্যবহারিক দক্ষতা প্রশিক্ষণ দেয়। এই প্রোগ্রামটি বিকল্প ক্যারিয়ার পথ খুঁজছেন এমন শিক্ষার্থীদের জন্য তৈরি, যেখানে ব্যক্তিগত সম্ভাবনা চিহ্নিত করা ও বিকাশের উপর বিশেষ মনোযোগ দেওয়া হয়। শিক্ষার্থীরা একাধিক সেবা দক্ষতায় হাতে-কলমে প্রশিক্ষণ, চাকরির প্রস্তুতি কোচিং এবং প্লেসমেন্ট সহায়তা পায়।",
-    duration: "Flexible",
-    duration_bn: "নমনীয়",
-    image: "/images/courses/odd-jobs.jpg",
+      "TSHM & TF-এর ক্যারিয়ার কাউন্সেলিং সেবা বৈজ্ঞানিকভাবে প্রমাণিত DMIT (ডার্মাটোগ্লিফিক্স মাল্টিপল ইন্টেলিজেন্স টেস্ট) পদ্ধতি ব্যবহার করে শিক্ষার্থীর জন্মগত শক্তি, শেখার ধরন এবং আদর্শ ক্যারিয়ার পথ চিহ্নিত করে। বিস্তারিত ফিঙ্গারপ্রিন্ট বিশ্লেষণ ও অ্যাপটিটিউড টেস্টের মাধ্যমে আমাদের প্রশিক্ষিত কাউন্সেলররা প্রতিটি শিক্ষার্থীর জন্য ব্যক্তিগত ক্যারিয়ার রোডম্যাপ তৈরি করেন। মাধ্যমিক বা উচ্চমাধ্যমিকের পর ক্যারিয়ার নিয়ে দ্বিধায় থাকা শিক্ষার্থীদের জন্য এবং তথ্যনির্ভর সিদ্ধান্তে সন্তানদের সহায়তা করতে চাওয়া অভিভাবকদের জন্য এই সেবা অমূল্য।",
+    duration: "Ongoing",
+    duration_bn: "চলমান",
+    image: "/images/courses/career-counseling.jpeg",
     category: "service",
     highlights: [
-      "Alternate career options",
-      "Individual potential focus",
-      "Job preparation",
-      "Placement assistance",
+      "DMIT assessment",
+      "Personalized career roadmap",
+      "Aptitude & potential analysis",
+      "Parent-student counseling",
     ],
     highlights_bn: [
-      "বিকল্প ক্যারিয়ারের সুযোগ",
-      "ব্যক্তিগত সম্ভাবনায় মনোযোগ",
-      "চাকরির প্রস্তুতি",
-      "প্লেসমেন্ট সহায়তা",
+      "DMIT মূল্যায়ন",
+      "ব্যক্তিগত ক্যারিয়ার রোডম্যাপ",
+      "অ্যাপটিটিউড ও সম্ভাবনা বিশ্লেষণ",
+      "অভিভাবক-শিক্ষার্থী কাউন্সেলিং",
     ],
-    seoTitle: "Odd Jobs & Service Skills Training in Tarakeswar",
-    seoTitle_bn: "তারকেশ্বরে অড জবস ও সার্ভিস স্কিলস প্রশিক্ষণ",
+    seoTitle: "Career Counseling & DMIT Assessment in Tarakeswar",
+    seoTitle_bn: "তারকেশ্বরে ক্যারিয়ার কাউন্সেলিং ও DMIT মূল্যায়ন",
     seoDescription:
-      "Practical service industry skills training at TSHM Tarakeswar. Alternate career options with job preparation and placement assistance.",
+      "Scientific career counseling using DMIT at TSHM Tarakeswar. Identify innate strengths, get personalized career guidance. For students after Madhyamik & HS in Hooghly, West Bengal.",
     seoDescription_bn:
-      "TSHM তারকেশ্বরে ব্যবহারিক সার্ভিস ইন্ডাস্ট্রি দক্ষতা প্রশিক্ষণ। চাকরির প্রস্তুতি ও প্লেসমেন্ট সহায়তা সহ বিকল্প ক্যারিয়ারের সুযোগ।",
+      "TSHM তারকেশ্বরে DMIT ব্যবহার করে বৈজ্ঞানিক ক্যারিয়ার কাউন্সেলিং। জন্মগত শক্তি চিহ্নিত করুন, ব্যক্তিগত ক্যারিয়ার গাইডেন্স পান। হুগলি, পশ্চিমবঙ্গে মাধ্যমিক ও উচ্চমাধ্যমিকের পর শিক্ষার্থীদের জন্য।",
     seoKeywords:
-      "odd jobs training Tarakeswar, service skills course Hooghly, job preparation West Bengal",
+      "career counseling Tarakeswar, DMIT test Hooghly, career guidance after 10th, career counseling West Bengal, aptitude test near me",
     seoKeywords_bn:
-      "তারকেশ্বরে অড জবস প্রশিক্ষণ, হুগলিতে সার্ভিস স্কিলস কোর্স, পশ্চিমবঙ্গে চাকরির প্রস্তুতি",
-    eligibility: "Open to all. No minimum educational qualification required.",
-    eligibility_bn: "সকলের জন্য উন্মুক্ত। কোনো ন্যূনতম শিক্ষাগত যোগ্যতার প্রয়োজন নেই।",
+      "তারকেশ্বরে ক্যারিয়ার কাউন্সেলিং, হুগলিতে DMIT টেস্ট, দশম শ্রেণীর পর ক্যারিয়ার গাইডেন্স, পশ্চিমবঙ্গে ক্যারিয়ার কাউন্সেলিং, অ্যাপটিটিউড টেস্ট",
+    eligibility: "Open to all students and parents. Recommended for students in Class 8-12 and recent graduates.",
+    eligibility_bn: "সকল শিক্ষার্থী ও অভিভাবকদের জন্য উন্মুক্ত। অষ্টম থেকে দ্বাদশ শ্রেণীর শিক্ষার্থী এবং সদ্য স্নাতকদের জন্য বিশেষভাবে প্রযোজ্য।",
   },
   {
-    id: "spoken-english",
-    title: "Spoken English",
-    title_bn: "স্পোকেন ইংলিশ",
+    id: "consultancy-services",
+    title: "Consultancy Services",
+    title_bn: "কনসালট্যান্সি সার্ভিসেস",
     description:
-      "Improve your English communication skills with our structured spoken English program. Focus on fluency, pronunciation, confidence building, and personality development for professional success.",
+      "Professional consultancy services by TSHM & TF offering expert guidance on career planning, business development, skill assessment, and institutional partnerships for individuals and organizations.",
     description_bn:
-      "আমাদের কাঠামোবদ্ধ স্পোকেন ইংলিশ প্রোগ্রামে আপনার ইংরেজি যোগাযোগ দক্ষতা উন্নত করুন। পেশাদার সাফল্যের জন্য ফ্লুয়েন্সি, উচ্চারণ, আত্মবিশ্বাস তৈরি এবং ব্যক্তিত্ব বিকাশে মনোযোগ।",
+      "TSHM & TF-এর পেশাদার কনসালট্যান্সি সার্ভিসেস — ক্যারিয়ার পরিকল্পনা, ব্যবসা উন্নয়ন, দক্ষতা মূল্যায়ন এবং প্রাতিষ্ঠানিক অংশীদারিত্বের জন্য ব্যক্তি ও প্রতিষ্ঠানকে বিশেষজ্ঞ গাইডেন্স।",
     longDescription:
-      "The Spoken English program at TSHM & TF is a structured course designed to transform students' English communication abilities. Available in 3-month and 6-month formats, the program focuses on building fluency, improving pronunciation, developing confidence in public speaking, and enhancing personality for professional environments. Students practice through group discussions, mock interviews, presentations, and real-world conversation scenarios. This course is essential for anyone seeking employment in the hospitality, corporate, or service industries.",
+      "TSHM & TF Consultancy Services provides expert guidance and advisory support for individuals and organizations. Our consultancy covers career planning, business setup and development, skill gap assessment, educational institution partnerships, and workforce development strategies. We help students, professionals, and entrepreneurs make informed decisions to achieve their goals.",
     longDescription_bn:
-      "TSHM & TF-এর স্পোকেন ইংলিশ প্রোগ্রাম একটি কাঠামোবদ্ধ কোর্স যা শিক্ষার্থীদের ইংরেজি যোগাযোগ দক্ষতাকে রূপান্তরিত করতে তৈরি। ৩ মাস ও ৬ মাসের ফরম্যাটে পাওয়া যায়, এই প্রোগ্রামটি ফ্লুয়েন্সি তৈরি, উচ্চারণ উন্নতি, পাবলিক স্পিকিং-এ আত্মবিশ্বাস বাড়ানো এবং পেশাদার পরিবেশের জন্য ব্যক্তিত্ব বিকাশে মনোযোগ দেয়। শিক্ষার্থীরা গ্রুপ ডিসকাশন, মক ইন্টারভিউ, প্রেজেন্টেশন এবং বাস্তব কথোপকথনের মাধ্যমে অনুশীলন করে। হসপিটালিটি, কর্পোরেট বা সার্ভিস ইন্ডাস্ট্রিতে চাকরি খুঁজছেন এমন যেকোনো ব্যক্তির জন্য এই কোর্সটি অপরিহার্য।",
-    duration: "3 Months & 6 Months",
-    duration_bn: "৩ মাস ও ৬ মাস",
+      "TSHM & TF কনসালট্যান্সি সার্ভিসেস ব্যক্তি ও প্রতিষ্ঠানের জন্য বিশেষজ্ঞ গাইডেন্স ও উপদেষ্টা সহায়তা প্রদান করে। আমাদের কনসালট্যান্সিতে ক্যারিয়ার পরিকল্পনা, ব্যবসা স্থাপন ও উন্নয়ন, দক্ষতার ঘাটতি মূল্যায়ন, শিক্ষা প্রতিষ্ঠান অংশীদারিত্ব এবং কর্মশক্তি উন্নয়ন কৌশল অন্তর্ভুক্ত।",
+    duration: "Flexible",
+    duration_bn: "নমনীয়",
+    image: "/images/courses/career-counseling.jpg",
+    category: "service",
+    highlights: [
+      "Expert career guidance",
+      "Business development advisory",
+      "Skill gap assessment",
+      "Institutional partnerships",
+    ],
+    highlights_bn: [
+      "বিশেষজ্ঞ ক্যারিয়ার গাইডেন্স",
+      "ব্যবসা উন্নয়ন উপদেশ",
+      "দক্ষতার ঘাটতি মূল্যায়ন",
+      "প্রাতিষ্ঠানিক অংশীদারিত্ব",
+    ],
+    seoTitle: "Consultancy Services in Tarakeswar - TSHM & TF",
+    seoTitle_bn: "তারকেশ্বরে কনসালট্যান্সি সার্ভিসেস - TSHM & TF",
+    seoDescription:
+      "Professional consultancy services at TSHM Tarakeswar. Career planning, business development, skill assessment, and institutional partnership advisory in Hooghly, West Bengal.",
+    seoDescription_bn:
+      "TSHM তারকেশ্বরে পেশাদার কনসালট্যান্সি সার্ভিসেস। হুগলি, পশ্চিমবঙ্গে ক্যারিয়ার পরিকল্পনা, ব্যবসা উন্নয়ন, দক্ষতা মূল্যায়ন ও প্রাতিষ্ঠানিক অংশীদারিত্ব উপদেষ্টা।",
+    seoKeywords:
+      "consultancy services Tarakeswar, career consultancy Hooghly, business advisory West Bengal, skill assessment near me",
+    seoKeywords_bn:
+      "তারকেশ্বরে কনসালট্যান্সি সার্ভিসেস, হুগলিতে ক্যারিয়ার কনসালট্যান্সি, পশ্চিমবঙ্গে ব্যবসা উপদেষ্টা",
+    eligibility: "Open to individuals, professionals, and organizations seeking expert guidance.",
+    eligibility_bn: "বিশেষজ্ঞ গাইডেন্স খুঁজছেন এমন ব্যক্তি, পেশাদার ও প্রতিষ্ঠানের জন্য উন্মুক্ত।",
+  },
+  {
+    id: "job-grooming",
+    title: "Job Grooming",
+    title_bn: "জব গ্রুমিং",
+    description:
+      "Comprehensive job grooming program designed to prepare candidates for the professional world with interview skills, resume building, workplace etiquette, and personality development training.",
+    description_bn:
+      "ইন্টারভিউ দক্ষতা, রেজিউমে তৈরি, কর্মক্ষেত্রের শিষ্টাচার এবং ব্যক্তিত্ব বিকাশ প্রশিক্ষণের মাধ্যমে প্রার্থীদের পেশাদার জগতের জন্য প্রস্তুত করতে ডিজাইন করা সম্পূর্ণ জব গ্রুমিং প্রোগ্রাম।",
+    longDescription:
+      "The Job Grooming program at TSHM & TF is a focused training initiative that prepares students and job seekers for successful careers. The program covers resume and CV writing, interview preparation and mock interviews, workplace communication and etiquette, professional dress code and grooming, confidence building and public speaking, and corporate culture orientation. This program bridges the gap between education and employment readiness.",
+    longDescription_bn:
+      "TSHM & TF-এর জব গ্রুমিং প্রোগ্রাম একটি কেন্দ্রীভূত প্রশিক্ষণ উদ্যোগ যা শিক্ষার্থী ও চাকরি প্রার্থীদের সফল ক্যারিয়ারের জন্য প্রস্তুত করে। প্রোগ্রামে রেজিউমে ও সিভি লেখা, ইন্টারভিউ প্রস্তুতি ও মক ইন্টারভিউ, কর্মক্ষেত্রে যোগাযোগ ও শিষ্টাচার, পেশাদার ড্রেস কোড ও গ্রুমিং, আত্মবিশ্বাস তৈরি ও পাবলিক স্পিকিং এবং কর্পোরেট কালচার ওরিয়েন্টেশন অন্তর্ভুক্ত।",
+    duration: "Flexible",
+    duration_bn: "নমনীয়",
     image: "/images/courses/spoken-english.jpg",
-    category: "certificate",
+    category: "service",
     highlights: [
-      "3 months & 6 months options",
-      "Personality development",
       "Interview preparation",
-      "Communication skills building",
+      "Resume & CV building",
+      "Personality development",
+      "Workplace etiquette training",
     ],
     highlights_bn: [
-      "৩ মাস ও ৬ মাসের অপশন",
-      "ব্যক্তিত্ব বিকাশ",
       "ইন্টারভিউ প্রস্তুতি",
-      "যোগাযোগ দক্ষতা তৈরি",
+      "রেজিউমে ও সিভি তৈরি",
+      "ব্যক্তিত্ব বিকাশ",
+      "কর্মক্ষেত্রের শিষ্টাচার প্রশিক্ষণ",
     ],
-    seoTitle: "Spoken English Course in Tarakeswar - 3 & 6 Month Programs",
-    seoTitle_bn: "তারকেশ্বরে স্পোকেন ইংলিশ কোর্স - ৩ ও ৬ মাসের প্রোগ্রাম",
+    seoTitle: "Job Grooming Program in Tarakeswar - TSHM & TF",
+    seoTitle_bn: "তারকেশ্বরে জব গ্রুমিং প্রোগ্রাম - TSHM & TF",
     seoDescription:
-      "Join spoken English classes at TSHM Tarakeswar. 3 & 6 month programs for fluency, pronunciation, interview preparation & personality development. Hooghly, West Bengal.",
+      "Job grooming and interview preparation at TSHM Tarakeswar. Resume building, personality development, workplace etiquette training in Hooghly, West Bengal.",
     seoDescription_bn:
-      "TSHM তারকেশ্বরে স্পোকেন ইংলিশ ক্লাসে যোগ দিন। ফ্লুয়েন্সি, উচ্চারণ, ইন্টারভিউ প্রস্তুতি ও ব্যক্তিত্ব বিকাশের জন্য ৩ ও ৬ মাসের প্রোগ্রাম। হুগলি, পশ্চিমবঙ্গ।",
+      "TSHM তারকেশ্বরে জব গ্রুমিং ও ইন্টারভিউ প্রস্তুতি। হুগলি, পশ্চিমবঙ্গে রেজিউমে তৈরি, ব্যক্তিত্ব বিকাশ, কর্মক্ষেত্রের শিষ্টাচার প্রশিক্ষণ।",
     seoKeywords:
-      "spoken english course Tarakeswar, english speaking classes Hooghly, personality development course, interview preparation training West Bengal, spoken english near me",
+      "job grooming Tarakeswar, interview preparation Hooghly, resume building course West Bengal, personality development near me",
     seoKeywords_bn:
-      "তারকেশ্বরে স্পোকেন ইংলিশ কোর্স, হুগলিতে ইংরেজি বলার ক্লাস, ব্যক্তিত্ব বিকাশ কোর্স, পশ্চিমবঙ্গে ইন্টারভিউ প্রস্তুতি প্রশিক্ষণ",
-    eligibility: "Open to all age groups and educational backgrounds.",
-    eligibility_bn: "সকল বয়স ও শিক্ষাগত পটভূমির জন্য উন্মুক্ত।",
-    careerProspects: [
-      "Improved job interview performance",
-      "Better workplace communication",
-      "Enhanced personality & confidence",
-      "Customer-facing role readiness",
-    ],
-    careerProspects_bn: [
-      "চাকরির ইন্টারভিউতে উন্নত পারফরম্যান্স",
-      "কর্মক্ষেত্রে আরও ভালো যোগাযোগ",
-      "উন্নত ব্যক্তিত্ব ও আত্মবিশ্বাস",
-      "কাস্টমার-ফেসিং ভূমিকার জন্য প্রস্তুতি",
-    ],
+      "তারকেশ্বরে জব গ্রুমিং, হুগলিতে ইন্টারভিউ প্রস্তুতি, পশ্চিমবঙ্গে রেজিউমে তৈরি কোর্স, ব্যক্তিত্ব বিকাশ",
+    eligibility: "Open to all students and job seekers.",
+    eligibility_bn: "সকল শিক্ষার্থী ও চাকরি প্রার্থীদের জন্য উন্মুক্ত।",
   },
   {
-    id: "ac-technician",
-    title: "Diploma in AC Technician",
-    title_bn: "এসি টেকনিশিয়ান ডিপ্লোমা",
+    id: "pgsep",
+    title: "Professional Growth & Skill Enhancement Program (PGSEP)",
+    title_bn: "প্রফেশনাল গ্রোথ অ্যান্ড স্কিল এনহ্যান্সমেন্ট প্রোগ্রাম (PGSEP)",
     description:
-      "Professional diploma course covering AC installation, repair, maintenance, and troubleshooting for residential and commercial systems. Hands-on practical training with modern equipment.",
+      "A structured professional development program focused on upskilling, leadership development, advanced communication, and career advancement for working professionals and graduates.",
     description_bn:
-      "আবাসিক ও বাণিজ্যিক সিস্টেমের জন্য এসি ইনস্টলেশন, মেরামত, রক্ষণাবেক্ষণ এবং ট্রাবলশুটিং নিয়ে পেশাদার ডিপ্লোমা কোর্স। আধুনিক সরঞ্জাম দিয়ে হাতে-কলমে ব্যবহারিক প্রশিক্ষণ।",
+      "কর্মরত পেশাদার ও স্নাতকদের জন্য আপস্কিলিং, লিডারশিপ ডেভেলপমেন্ট, অ্যাডভান্সড কমিউনিকেশন এবং ক্যারিয়ার অগ্রগতিতে কেন্দ্রীভূত একটি কাঠামোবদ্ধ পেশাদার উন্নয়ন প্রোগ্রাম।",
     longDescription:
-      "The 1-year Diploma in AC Technician at TSHM & TF provides comprehensive training in air conditioning installation, repair, maintenance, and troubleshooting for both residential and commercial systems. Students work with modern equipment in our training lab, learning from experienced technicians. The program covers split AC, window AC, central air conditioning systems, refrigeration basics, and electrical fundamentals. With the growing demand for AC technicians in India, this diploma opens doors to immediate employment and self-employment opportunities.",
+      "The Professional Growth & Skill Enhancement Program (PGSEP) at TSHM & TF is designed to accelerate career growth for working professionals and recent graduates. The program focuses on leadership and management skills, advanced communication techniques, professional networking, time management and productivity, critical thinking and problem solving, and industry-specific skill enhancement. PGSEP helps participants stay competitive in today's evolving job market.",
     longDescription_bn:
-      "TSHM & TF-এ ১ বছরের এসি টেকনিশিয়ান ডিপ্লোমা আবাসিক ও বাণিজ্যিক উভয় সিস্টেমের জন্য এয়ার কন্ডিশনিং ইনস্টলেশন, মেরামত, রক্ষণাবেক্ষণ এবং ট্রাবলশুটিং-এ সম্পূর্ণ প্রশিক্ষণ দেয়। শিক্ষার্থীরা আমাদের ট্রেনিং ল্যাবে আধুনিক সরঞ্জাম নিয়ে কাজ করে, অভিজ্ঞ টেকনিশিয়ানদের কাছ থেকে শেখে। প্রোগ্রামে স্প্লিট এসি, উইন্ডো এসি, সেন্ট্রাল এয়ার কন্ডিশনিং সিস্টেম, রেফ্রিজারেশনের মূল বিষয় এবং ইলেকট্রিক্যাল ফান্ডামেন্টালস অন্তর্ভুক্ত। ভারতে এসি টেকনিশিয়ানদের ক্রমবর্ধমান চাহিদার সাথে, এই ডিপ্লোমা তাৎক্ষণিক চাকরি ও স্বনির্ভরতার সুযোগ খুলে দেয়।",
-    duration: "1 Year",
-    duration_bn: "১ বছর",
-    image: "/images/courses/ac-technician.jpg",
-    category: "diploma",
+      "TSHM & TF-এর প্রফেশনাল গ্রোথ অ্যান্ড স্কিল এনহ্যান্সমেন্ট প্রোগ্রাম (PGSEP) কর্মরত পেশাদার ও সদ্য স্নাতকদের ক্যারিয়ার বৃদ্ধি ত্বরান্বিত করতে ডিজাইন করা হয়েছে। প্রোগ্রামে লিডারশিপ ও ম্যানেজমেন্ট দক্ষতা, অ্যাডভান্সড কমিউনিকেশন টেকনিক, প্রফেশনাল নেটওয়ার্কিং, টাইম ম্যানেজমেন্ট ও প্রোডাক্টিভিটি, ক্রিটিক্যাল থিংকিং ও সমস্যা সমাধান এবং ইন্ডাস্ট্রি-নির্দিষ্ট দক্ষতা বৃদ্ধি অন্তর্ভুক্ত।",
+    duration: "Flexible",
+    duration_bn: "নমনীয়",
+    image: "/images/courses/pgsep.jpg",
+    category: "service",
     highlights: [
-      "Hands-on practical training",
-      "Industry certification",
-      "Job placement support",
-      "Modern equipment lab",
+      "Leadership development",
+      "Advanced communication skills",
+      "Professional networking",
+      "Career advancement support",
     ],
     highlights_bn: [
-      "হাতে-কলমে ব্যবহারিক প্রশিক্ষণ",
-      "ইন্ডাস্ট্রি সার্টিফিকেশন",
-      "চাকরিতে প্লেসমেন্ট সহায়তা",
-      "আধুনিক সরঞ্জামের ল্যাব",
+      "লিডারশিপ ডেভেলপমেন্ট",
+      "অ্যাডভান্সড কমিউনিকেশন দক্ষতা",
+      "প্রফেশনাল নেটওয়ার্কিং",
+      "ক্যারিয়ার অগ্রগতি সহায়তা",
     ],
-    seoTitle: "AC Technician Diploma Course in Tarakeswar - 1 Year Program",
-    seoTitle_bn: "তারকেশ্বরে এসি টেকনিশিয়ান ডিপ্লোমা কোর্স - ১ বছরের প্রোগ্রাম",
+    seoTitle: "Professional Growth & Skill Enhancement Program in Tarakeswar",
+    seoTitle_bn: "তারকেশ্বরে প্রফেশনাল গ্রোথ ও স্কিল এনহ্যান্সমেন্ট প্রোগ্রাম",
     seoDescription:
-      "1-year AC Technician Diploma at TSHM Tarakeswar. Learn AC installation, repair & maintenance. Hands-on training, industry certification, job placement support. Hooghly, West Bengal.",
+      "PGSEP at TSHM Tarakeswar. Leadership development, advanced communication, professional networking, and career growth program in Hooghly, West Bengal.",
     seoDescription_bn:
-      "TSHM তারকেশ্বরে ১ বছরের এসি টেকনিশিয়ান ডিপ্লোমা। এসি ইনস্টলেশন, মেরামত ও রক্ষণাবেক্ষণ শিখুন। হাতে-কলমে প্রশিক্ষণ, ইন্ডাস্ট্রি সার্টিফিকেশন, চাকরিতে প্লেসমেন্ট সহায়তা। হুগলি, পশ্চিমবঙ্গ।",
+      "TSHM তারকেশ্বরে PGSEP। হুগলি, পশ্চিমবঙ্গে লিডারশিপ ডেভেলপমেন্ট, অ্যাডভান্সড কমিউনিকেশন, প্রফেশনাল নেটওয়ার্কিং ও ক্যারিয়ার গ্রোথ প্রোগ্রাম।",
     seoKeywords:
-      "AC technician course Tarakeswar, AC repair training Hooghly, AC technician diploma West Bengal, HVAC course near me, AC mechanic training",
+      "professional growth program Tarakeswar, skill enhancement Hooghly, leadership development West Bengal, PGSEP course near me",
     seoKeywords_bn:
-      "তারকেশ্বরে এসি টেকনিশিয়ান কোর্স, হুগলিতে এসি মেরামত প্রশিক্ষণ, পশ্চিমবঙ্গে এসি টেকনিশিয়ান ডিপ্লোমা, HVAC কোর্স, এসি মেকানিক প্রশিক্ষণ",
-    eligibility: "Class 8 pass or equivalent. Basic understanding of electrical concepts preferred but not required.",
-    eligibility_bn: "অষ্টম শ্রেণী পাশ বা সমমান। ইলেকট্রিক্যাল বিষয়ে প্রাথমিক ধারণা থাকলে ভালো, তবে বাধ্যতামূলক নয়।",
-    careerProspects: [
-      "AC Technician",
-      "HVAC Technician",
-      "AC Installation Specialist",
-      "Refrigeration Mechanic",
-      "Service Center Technician",
-      "Self-employed AC Repair",
-    ],
-    careerProspects_bn: [
-      "এসি টেকনিশিয়ান",
-      "HVAC টেকনিশিয়ান",
-      "এসি ইনস্টলেশন স্পেশালিস্ট",
-      "রেফ্রিজারেশন মেকানিক",
-      "সার্ভিস সেন্টার টেকনিশিয়ান",
-      "স্বনির্ভর এসি মেরামত",
-    ],
+      "তারকেশ্বরে প্রফেশনাল গ্রোথ প্রোগ্রাম, হুগলিতে স্কিল এনহ্যান্সমেন্ট, পশ্চিমবঙ্গে লিডারশিপ ডেভেলপমেন্ট",
+    eligibility: "Open to working professionals, graduates, and anyone seeking career advancement.",
+    eligibility_bn: "কর্মরত পেশাদার, স্নাতক এবং ক্যারিয়ার অগ্রগতি খুঁজছেন এমন যেকোনো ব্যক্তির জন্য উন্মুক্ত।",
   },
   {
     id: "transformation",

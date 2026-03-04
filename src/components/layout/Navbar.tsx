@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 interface NavbarProps {
@@ -50,10 +51,17 @@ export default function Navbar({ locale, nav, logoTagline }: NavbarProps) {
     >
       <div className="max-w-6xl mx-auto px-6 sm:px-8 w-full flex items-center justify-between">
         {/* Logo */}
-        <Link href={`/${locale}`} className="flex items-center gap-2.5">
-          <span className="inline-block w-2 h-2 bg-[var(--accent)] rounded-sm" />
+        <Link href={`/${locale}`} className="flex items-center gap-3">
+          <Image
+            src="/images/LOGO.jpeg"
+            alt="TSHM Logo"
+            width={44}
+            height={44}
+            className="rounded-full object-cover ring-1 ring-[var(--border)] lg:w-12 lg:h-12 w-10 h-10"
+            priority
+          />
           <div>
-            <h1 className="text-xl font-bold text-[var(--foreground)] leading-none" style={{ fontFamily: "var(--font-heading)" }}>
+            <h1 className="text-xl font-bold text-[var(--foreground)] leading-none tracking-tight" style={{ fontFamily: "var(--font-heading)" }}>
               TSHM
             </h1>
             <p className="text-[10px] text-[var(--muted)] leading-tight mt-0.5">

@@ -19,4 +19,6 @@ export const galleryImages: GalleryImage[] = [
   { id: "g10", src: "/images/gallery/gallery-10.jpg", alt: "Lab Session", alt_bn: "ল্যাব সেশন", category: "training" },
   { id: "g11", src: "/images/gallery/gallery-11.jpg", alt: "Industry Visit", alt_bn: "শিল্প পরিদর্শন", category: "activities" },
   { id: "g12", src: "/images/gallery/gallery-12.jpg", alt: "Graduation Day", alt_bn: "স্নাতক দিবস", category: "events" },
+  { id: "g13", src: "/images/gallery/gallery-events.jpeg", alt: "Gallery Events", alt_bn: "গ্যালারি ইভেন্টস", category: "events" },
+  { id: "g14", src: "/images/gallery/gallery-campus.jpeg", alt: "Gallery Campus", alt_bn: "গ্যালারি ক্যাম্পাস", category: "campus" },
 ];
