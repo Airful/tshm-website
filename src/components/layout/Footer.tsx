@@ -41,15 +41,13 @@ export default function Footer({ locale, nav, footer }: FooterProps) {
               {footer.tagline}
             </p>
             <div className="flex gap-4 text-sm text-white/50">
-              <a href="#facebook" className="hover:text-white/90 transition-colors">
+              <a href="https://www.facebook.com/tshm2019/" target="_blank" rel="noopener noreferrer" className="hover:text-white/90 transition-colors">
                 Facebook
               </a>
-              <a href="#instagram" className="hover:text-white/90 transition-colors">
+              <a href="https://www.instagram.com/explore/locations/474147166481677/tarakeswar-school-of-hotel-management/" target="_blank" rel="noopener noreferrer" className="hover:text-white/90 transition-colors">
                 Instagram
               </a>
-              <a href="#youtube" className="hover:text-white/90 transition-colors">
-                YouTube
-              </a>
+
             </div>
           </div>
 
