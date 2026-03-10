@@ -8,6 +8,29 @@
     "title": "About Us",
     "subtitle": "Tarakeswar School of Hotel Management & Technical Foundation"
   },
+  "credentials": {
+    "overline": "RECOGNITION & ACCREDITATION",
+    "title": "Our Credentials",
+    "subtitle": "Officially recognized and certified for excellence in vocational education",
+    "items": [
+      {
+        "label": "Govt. of India Registration",
+        "value": "Reg. No — 258878"
+      },
+      {
+        "label": "ISO Certified",
+        "value": "ISO 9001:2015 (IAF) & ISO 21001:2018"
+      },
+      {
+        "label": "MSME Registered",
+        "value": "UCS8022-2310035"
+      },
+      {
+        "label": "Affiliated By",
+        "value": "All India Council for Vocational Training & Asian International University"
+      }
+    ]
+  },
   "mission": {
     "title": "Our Mission",
     "text": "Tarakeswar School of Hotel Management & Technical Foundation provides a positive, vibrant and inspiring culture where students are encouraged to succeed as an active and supportive member of own family as well as the society."

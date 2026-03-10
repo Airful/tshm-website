@@ -27,7 +27,7 @@ export interface Course {
 export const courses: Course[] = [
   {
     id: "hotel-management",
-    title: "Diploma in Hotel Management & Technical Foundation",
+    title: "Diploma In Hotel Management",
     title_bn: "হোটেল ম্যানেজমেন্ট",
     description:
       "Comprehensive hotel management program covering front office, housekeeping, food & beverage service, and hospitality operations. Get practical and purposeful education with professional training from industry-experienced faculty.",
@@ -100,7 +100,7 @@ export const courses: Course[] = [
       "TSHM & TF-এর হসপিটালিটি ও ক্রুজ লাইন ম্যানেজমেন্ট ডিপ্লোমা শিক্ষার্থীদের আন্তর্জাতিক ক্রুজ ও হসপিটালিটি ইন্ডাস্ট্রিতে উত্তেজনাপূর্ণ ক্যারিয়ারের জন্য প্রস্তুত করে। প্রোগ্রামে ক্রুজ শিপ অপারেশনস, ফ্রন্ট অফিস ও গেস্ট রিলেশনস, ফুড অ্যান্ড বেভারেজ সার্ভিস ও ম্যানেজমেন্ট, হাউসকিপিং, সেফটি ও ইমার্জেন্সি প্রসিডিউর এবং আন্তর্জাতিক হসপিটালিটি স্ট্যান্ডার্ড অন্তর্ভুক্ত।",
     duration: "1-2 Years",
     duration_bn: "১-২ বছর",
-    image: "/images/courses/cruise-line.jpg",
+    image: "/images/courses/Cruiseline.jpeg",
     category: "diploma",
     highlights: [
       "Cruise line job preparation",
@@ -205,7 +205,7 @@ export const courses: Course[] = [
     title: "Diploma in Community Medical Services & Essential Drugs (CMS & ED)",
     title_bn: "কমিউনিটি মেডিকেল সার্ভিসেস অ্যান্ড এসেনশিয়াল ড্রাগস (CMS & ED)",
     description:
-      "Certificate course in Community Medical Services & Essential Drugs covering primary healthcare, essential drug dispensing, community health management, and basic clinical skills for rural and urban healthcare delivery.",
+      "Diploma Courses in Community Medical Services & Essential Drugs covering primary healthcare, essential drug dispensing, community health management, and basic clinical skills for rural and urban healthcare delivery.",
     description_bn:
       "প্রাইমারি হেলথকেয়ার, এসেনশিয়াল ড্রাগ ডিসপেন্সিং, কমিউনিটি হেলথ ম্যানেজমেন্ট এবং গ্রামীণ ও শহুরে স্বাস্থ্যসেবা প্রদানের জন্য বেসিক ক্লিনিক্যাল দক্ষতা নিয়ে কমিউনিটি মেডিকেল সার্ভিসেস অ্যান্ড এসেনশিয়াল ড্রাগসে সার্টিফিকেট কোর্স।",
     longDescription:
@@ -214,7 +214,7 @@ export const courses: Course[] = [
       "TSHM & TF-এর কমিউনিটি মেডিকেল সার্ভিসেস অ্যান্ড এসেনশিয়াল ড্রাগস (CMS & ED) সার্টিফিকেট শিক্ষার্থীদের প্রাইমারি হেলথকেয়ার প্রদান, এসেনশিয়াল ড্রাগ ম্যানেজমেন্ট এবং কমিউনিটি হেলথ সার্ভিসে প্রশিক্ষণ দেয়। প্রোগ্রামে ফার্মাকোলজির মূল বিষয়, এসেনশিয়াল ড্রাগ ডিসপেন্সিং ও স্টোরেজ, সাধারণ রোগ চিহ্নিতকরণ ও প্রাথমিক চিকিৎসা, রোগী কাউন্সেলিং, কমিউনিটি হেলথ এডুকেশন এবং বেসিক ডায়াগনস্টিক দক্ষতা অন্তর্ভুক্ত।",
     duration: "6 Months - 1 Year",
     duration_bn: "৬ মাস - ১ বছর",
-    image: "/images/courses/cms-ed.jpeg",
+    image: "/images/courses/CMS & ED.jpeg",
     category: "diploma",
     highlights: [
       "Essential drug dispensing training",
@@ -372,7 +372,7 @@ export const courses: Course[] = [
     title: "TSHM Studies",
     title_bn: "TSHM স্টাডিজ",
     description:
-      "A comprehensive academic support and study program by TSHM & TF designed to help students build strong foundations in core subjects, develop effective study habits, and achieve academic excellence alongside vocational training.",
+      "A comprehensive academic support and study program by TSHM & TF designed to help students build strong foundations in core subjects, develop effective study habits, and achieve academic excellence alongside competitive foundation.",
     description_bn:
       "TSHM & TF-এর একটি সম্পূর্ণ একাডেমিক সহায়তা ও অধ্যয়ন প্রোগ্রাম যা শিক্ষার্থীদের মূল বিষয়ে দৃঢ় ভিত্তি তৈরি, কার্যকর অধ্যয়ন অভ্যাস গড়ে তোলা এবং বৃত্তিমূলক প্রশিক্ষণের পাশাপাশি একাডেমিক উৎকর্ষ অর্জনে সহায়তা করে।",
     longDescription:
@@ -429,12 +429,14 @@ export const courses: Course[] = [
       "Tailoring & fashion skills",
       "Self-employment guidance",
       "Unfoldment of latent talent",
+      "We provide franchise certificate",
     ],
     highlights_bn: [
       "বিউটি ও ওয়েলনেস প্রশিক্ষণ",
       "টেইলারিং ও ফ্যাশন দক্ষতা",
       "স্বনির্ভরতার দিকনির্দেশনা",
       "সুপ্ত প্রতিভার বিকাশ",
+      "আমরা ফ্র্যাঞ্চাইজি সার্টিফিকেট প্রদান করি",
     ],
     seoTitle: "Beauty Academy & Tailoring Course in Tarakeswar",
     seoTitle_bn: "তারকেশ্বরে বিউটি একাডেমি ও টেইলারিং কোর্স",
@@ -628,47 +630,6 @@ export const courses: Course[] = [
       "তারকেশ্বরে প্রফেশনাল গ্রোথ প্রোগ্রাম, হুগলিতে স্কিল এনহ্যান্সমেন্ট, পশ্চিমবঙ্গে লিডারশিপ ডেভেলপমেন্ট",
     eligibility: "Open to working professionals, graduates, and anyone seeking career advancement.",
     eligibility_bn: "কর্মরত পেশাদার, স্নাতক এবং ক্যারিয়ার অগ্রগতি খুঁজছেন এমন যেকোনো ব্যক্তির জন্য উন্মুক্ত।",
-  },
-  {
-    id: "transformation",
-    title: "Transformation",
-    title_bn: "ট্রান্সফরমেশন",
-    description:
-      "A holistic development program focusing on physical, intellectual, and all-round development of students. Building discipline, duty, dedication, and character strength through proper man-making education.",
-    description_bn:
-      "শিক্ষার্থীদের শারীরিক, বুদ্ধিবৃত্তিক ও সার্বিক বিকাশের উপর কেন্দ্রীভূত একটি সামগ্রিক উন্নয়ন প্রোগ্রাম। সঠিক মানুষ-গড়ার শিক্ষার মাধ্যমে শৃঙ্খলা, কর্তব্য, নিষ্ঠা ও চরিত্র শক্তি তৈরি।",
-    longDescription:
-      "The Transformation program at TSHM & TF is a unique holistic development initiative focused on building the complete individual. Going beyond academic and vocational skills, this program emphasizes physical fitness, intellectual growth, moral and ethical values, discipline, duty, dedication, and character strength. Through structured activities, mentorship, and experiential learning, students develop the confidence and resilience needed to succeed in any career and in life.",
-    longDescription_bn:
-      "TSHM & TF-এর ট্রান্সফরমেশন প্রোগ্রাম একটি অনন্য সামগ্রিক উন্নয়ন উদ্যোগ যা সম্পূর্ণ ব্যক্তিত্ব গড়ে তোলার উপর কেন্দ্রীভূত। একাডেমিক ও বৃত্তিমূলক দক্ষতার বাইরে গিয়ে, এই প্রোগ্রামে শারীরিক ফিটনেস, বুদ্ধিবৃত্তিক বিকাশ, নৈতিক মূল্যবোধ, শৃঙ্খলা, কর্তব্য, নিষ্ঠা এবং চরিত্র শক্তির উপর জোর দেওয়া হয়। কাঠামোবদ্ধ কার্যক্রম, মেন্টরশিপ এবং অভিজ্ঞতামূলক শিক্ষার মাধ্যমে শিক্ষার্থীরা যেকোনো ক্যারিয়ার ও জীবনে সফল হওয়ার জন্য প্রয়োজনীয় আত্মবিশ্বাস ও মানসিক দৃঢ়তা অর্জন করে।",
-    duration: "Ongoing",
-    duration_bn: "চলমান",
-    image: "/images/courses/transformation.jpg",
-    category: "service",
-    highlights: [
-      "All-round development",
-      "Moral & ethical values",
-      "Character building",
-      "Self-learning encouragement",
-    ],
-    highlights_bn: [
-      "সার্বিক বিকাশ",
-      "নৈতিক মূল্যবোধ",
-      "চরিত্র গঠন",
-      "স্ব-শিক্ষার উৎসাহ",
-    ],
-    seoTitle: "Personality & Holistic Development Program in Tarakeswar",
-    seoTitle_bn: "তারকেশ্বরে ব্যক্তিত্ব ও সামগ্রিক উন্নয়ন প্রোগ্রাম",
-    seoDescription:
-      "Holistic personality development at TSHM Tarakeswar. All-round development, character building, moral values, and self-learning encouragement for students.",
-    seoDescription_bn:
-      "TSHM তারকেশ্বরে সামগ্রিক ব্যক্তিত্ব বিকাশ। শিক্ষার্থীদের জন্য সার্বিক বিকাশ, চরিত্র গঠন, নৈতিক মূল্যবোধ এবং স্ব-শিক্ষার উৎসাহ।",
-    seoKeywords:
-      "personality development Tarakeswar, holistic education Hooghly, character building program West Bengal",
-    seoKeywords_bn:
-      "তারকেশ্বরে ব্যক্তিত্ব বিকাশ, হুগলিতে সামগ্রিক শিক্ষা, পশ্চিমবঙ্গে চরিত্র গঠন প্রোগ্রাম",
-    eligibility: "Open to all TSHM students and external enrollees.",
-    eligibility_bn: "TSHM-এর সকল শিক্ষার্থী ও বাহ্যিক ভর্তিচ্ছুদের জন্য উন্মুক্ত।",
   },
   {
     id: "online-degrees",

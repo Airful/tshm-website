@@ -16,6 +16,7 @@ export default function GalleryClient({ locale, t }: { locale: string; t: Record
     { key: "events", label: filters.events },
     { key: "placement", label: filters.placement },
     { key: "activities", label: filters.activities },
+    { key: "associate", label: filters.associate },
   ];
 
   const [activeFilter, setActiveFilter] = useState("all");

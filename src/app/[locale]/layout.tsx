@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins, Open_Sans } from "next/font/google";
+
 import { notFound } from "next/navigation";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -9,17 +9,6 @@ import { getTranslations } from "@/app/lib/i18n";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import Script from "next/script";
 
-const poppins = Poppins({
-  variable: "--font-heading",
-  subsets: ["latin", "devanagari"],
-  weight: ["400", "500", "600", "700", "800"],
-});
-
-const openSans = Open_Sans({
-  variable: "--font-body",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://tshm.co.in"),
@@ -152,29 +141,27 @@ export default async function LocaleLayout({
   const logoTagline = common.logoTagline as string;
 
   return (
-    <html lang={locale}>
+    <>
       <GoogleAnalytics gaId="G-JS5W7M0SNB" />
-      <body className={`${poppins.variable} ${openSans.variable} antialiased`}>
-        <Script id="microsoft-clarity" strategy="afterInteractive">
-          {`(function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-          })(window, document, "clarity", "script", "vqwnz8cmbm");`}
-        </Script>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
-        />
-        <Navbar locale={locale} nav={nav} logoTagline={logoTagline} />
-        <main>{children}</main>
-        <Footer locale={locale} nav={nav} footer={footer} />
-        <WhatsAppButton message={whatsapp.message} ariaLabel={whatsapp.ariaLabel} />
-      </body>
-    </html>
+      <Script id="microsoft-clarity" strategy="afterInteractive">
+        {`(function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "vqwnz8cmbm");`}
+      </Script>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+      />
+      <Navbar locale={locale} nav={nav} logoTagline={logoTagline} />
+      <main>{children}</main>
+      <Footer locale={locale} nav={nav} footer={footer} />
+      <WhatsAppButton message={whatsapp.message} ariaLabel={whatsapp.ariaLabel} />
+    </>
   );
 }

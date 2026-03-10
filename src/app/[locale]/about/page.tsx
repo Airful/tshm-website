@@ -38,6 +38,7 @@ export default async function AboutPage({
   const { about } = await getPageTranslations(locale as Locale, ["about"]);
 
   const hero = about.hero as { title: string; subtitle: string };
+  const credentials = about.credentials as { overline: string; title: string; subtitle: string; items: { label: string; value: string }[] };
   const mission = about.mission as { title: string; text: string };
   const vision = about.vision as { title: string; text: string };
   const objectives = about.objectives as { overline: string; title: string; subtitle: string; items: string[] };
@@ -63,6 +64,21 @@ export default async function AboutPage({
           <p className="text-white/60 text-lg max-w-2xl mx-auto">
             {hero.subtitle}
           </p>
+        </div>
+      </section>
+
+      {/* Credentials & Recognition */}
+      <section className="py-16 lg:py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-6 sm:px-8">
+          <SectionTitle overline={credentials.overline} title={credentials.title} subtitle={credentials.subtitle} />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+            {credentials.items.map((item, i) => (
+              <div key={i} className="text-center bg-[var(--canvas)] rounded-2xl border border-[var(--border)] p-6 hover:shadow-md transition-all duration-300">
+                <p className="text-xs font-semibold uppercase tracking-wider text-[var(--accent)] mb-2">{item.label}</p>
+                <p className="text-sm font-medium text-[var(--foreground)] leading-snug">{item.value}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
