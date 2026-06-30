@@ -60,7 +60,7 @@ export default function GalleryClient({ locale, t }: { locale: string; t: Record
         <div className="fixed inset-0 z-50 bg-[var(--foreground)]/95 flex items-center justify-center p-6" onClick={() => setLightbox(null)}>
           <button className="absolute top-6 right-6 text-white/60 hover:text-white text-3xl transition-colors" onClick={() => setLightbox(null)} aria-label={closeLightboxLabel}>&times;</button>
           <div className="max-w-4xl w-full relative aspect-video rounded-2xl overflow-hidden" onClick={(e) => e.stopPropagation()}>
-            <Image src={lightbox.src} alt={getAlt(lightbox)} fill className="object-contain" sizes="90vw" />
+            <Image src={lightbox.src} alt={getAlt(lightbox)} fill className="object-contain" sizes="(max-width: 896px) 90vw, 896px" />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
               <p className="text-lg font-semibold text-white">{getAlt(lightbox)}</p>
               <p className="text-sm text-white/70 capitalize">{lightbox.category}</p>
