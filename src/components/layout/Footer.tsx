@@ -102,10 +102,10 @@ export default function Footer({ locale, nav, footer }: FooterProps) {
               </li>
               <li>
                 <a
-                  href="tel:+919635964348"
+                  href="tel:+917551863265"
                   className="hover:text-white/90 transition-colors"
                 >
-                  +91 96359 64348
+                  +91 75518 63265
                 </a>
               </li>
               <li>

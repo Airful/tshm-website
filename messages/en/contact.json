@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Contact Us - Admissions & Enquiries",
-    "description": "Contact Tarakeswar School of Hotel Management & Technical Foundation for admissions, course enquiries, and campus visits. Located at College Road, Padmapukur, Tarakeswar, Hooghly 712410. Call +91 96359 64348.",
+    "description": "Contact Tarakeswar School of Hotel Management & Technical Foundation for admissions, course enquiries, and campus visits. Located at College Road, Padmapukur, Tarakeswar, Hooghly 712410. Call +91 75518 63265.",
     "keywords": "TSHM contact, hotel management admission Tarakeswar, vocational training enquiry Hooghly, TSHM phone number, TSHM address, admission form Tarakeswar"
   },
   "hero": {
@@ -14,7 +14,7 @@
     "emailUs": "Email Us"
   },
   "address": "College Road, Padmapukur, Tarakeswar, Hooghly, 712410",
-  "phone": "+91 96359 64348",
+  "phone": "+91 75518 63265",
   "email": "tshm368@gmail.com",
   "form": {
     "title": "Send Us a Message",
@@ -33,6 +33,10 @@
     "required": "*",
     "courseOptions": {
       "hotelManagement": "Hotel Management",
+      "advanceDiplomaHospitality": "Advance Diploma in Hospitality Management",
+      "bbaHospitality": "BBA in Hospitality Management",
+      "bhmctHotelManagement": "BHMCT in Hotel Management",
+      "bvocHotelManagement": "B.Voc in Hotel Management",
       "acTechnician": "AC Technician Diploma",
       "spokenEnglish": "Spoken English",
       "salesMarketing": "Sales & Marketing Management",

@@ -78,7 +78,7 @@ export default async function FAQPage({ params }: { params: Promise<{ locale: st
           <SectionTitle overline={cta.overline} title={cta.title} subtitle={cta.subtitle} />
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href={`/${locale}/contact`} className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-[var(--accent)] text-white font-medium rounded-full hover:bg-[var(--accent-hover)] transition-all duration-300">{cta.contactUs}</Link>
-            <a href="tel:+919635964348" className="inline-flex items-center justify-center gap-2 px-7 py-3.5 border border-[var(--border)] text-[var(--foreground)] font-medium rounded-full hover:border-[var(--accent)] hover:text-[var(--accent)] transition-all duration-300">{cta.callUs}</a>
+            <a href="tel:+917551863265" className="inline-flex items-center justify-center gap-2 px-7 py-3.5 border border-[var(--border)] text-[var(--foreground)] font-medium rounded-full hover:border-[var(--accent)] hover:text-[var(--accent)] transition-all duration-300">{cta.callUs}</a>
           </div>
         </div>
       </section>

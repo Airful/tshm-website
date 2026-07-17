@@ -50,7 +50,7 @@ const organizationJsonLd = {
   name: "Tarakeswar School of Hotel Management & Technical Foundation",
   alternateName: "TSHM & TF",
   url: "https://tshm.co.in",
-  telephone: "+919635964348",
+  telephone: "+917551863265",
   email: "tshm368@gmail.com",
   address: {
     "@type": "PostalAddress",
@@ -92,7 +92,7 @@ const localBusinessJsonLd = {
   "@id": "https://tshm.co.in/#localbusiness",
   name: "TSHM & TF",
   image: "https://tshm.co.in/images/logo.jpeg",
-  telephone: "+919635964348",
+  telephone: "+917551863265",
   email: "tshm368@gmail.com",
   address: {
     "@type": "PostalAddress",

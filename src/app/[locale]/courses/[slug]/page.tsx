@@ -169,7 +169,7 @@ export default async function CourseDetailPage({ params }: { params: Promise<{ l
                   </div>
                 </div>
                 <Link href={`/${locale}/contact`} className="mt-6 w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[var(--accent)] text-white font-medium rounded-full hover:bg-[var(--accent-hover)] transition-all duration-300 text-sm">{detail.enquireNow}</Link>
-                <a href="tel:+919635964348" className="mt-3 w-full inline-flex items-center justify-center gap-2 px-6 py-3 border border-[var(--border)] text-[var(--foreground)] font-medium rounded-full hover:border-[var(--accent)] hover:text-[var(--accent)] transition-all duration-300 text-sm">{detail.callUs}</a>
+                <a href="tel:+917551863265" className="mt-3 w-full inline-flex items-center justify-center gap-2 px-6 py-3 border border-[var(--border)] text-[var(--foreground)] font-medium rounded-full hover:border-[var(--accent)] hover:text-[var(--accent)] transition-all duration-300 text-sm">{detail.callUs}</a>
               </div>
             </div>
           </div>
