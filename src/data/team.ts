@@ -87,13 +87,6 @@ export const teamMembers: TeamMember[] = [
     image: "/images/team/namita-prasad.jpg",
   },
   {
-    id: "soumita-maity",
-    name: "Soumita Maity",
-    role: "MCO (Management Coordinator Officer)",
-    qualification: "",
-    image: "/images/team/soumita-maity.jpg",
-  },
-  {
     id: "dev-das-roy",
     name: "Mr. Dev Das Roy",
     role: "Faculty - Finance Management",
