@@ -7,6 +7,7 @@ interface ContactTranslations {
   cards: { visitUs: string; callUs: string; emailUs: string };
   address: string;
   phone: string;
+  phone2?: string;
   email: string;
   form: {
     title: string;
@@ -34,6 +35,7 @@ export default function ContactClient({ t }: { t: Record<string, unknown> }) {
   const map = t.map as ContactTranslations["map"];
   const address = t.address as string;
   const phone = t.phone as string;
+  const phone2 = t.phone2 as string | undefined;
   const email = t.email as string;
 
   const [formData, setFormData] = useState({ name: "", email: "", phone: "", course: "", message: "" });
@@ -68,7 +70,12 @@ export default function ContactClient({ t }: { t: Record<string, unknown> }) {
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" /></svg>
               </div>
               <h3 className="text-base font-semibold text-[var(--foreground)] mb-2">{cards.callUs}</h3>
-              <a href={`tel:${phone.replace(/\s/g, "")}`} className="text-sm text-[var(--body)] hover:text-[var(--accent)] transition-colors">{phone}</a>
+              <div className="flex flex-col gap-1">
+                <a href={`tel:${phone.replace(/\s/g, "")}`} className="text-sm text-[var(--body)] hover:text-[var(--accent)] transition-colors">{phone}</a>
+                {phone2 && (
+                  <a href={`tel:${phone2.replace(/\s/g, "")}`} className="text-sm text-[var(--body)] hover:text-[var(--accent)] transition-colors">{phone2}</a>
+                )}
+              </div>
             </div>
             {/* Email */}
             <div className="bg-white rounded-2xl border border-[var(--border)] p-8 text-center hover:shadow-md transition-all duration-300">
