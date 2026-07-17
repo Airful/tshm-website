@@ -110,6 +110,14 @@ export default function Footer({ locale, nav, footer }: FooterProps) {
               </li>
               <li>
                 <a
+                  href="tel:+919635964348"
+                  className="hover:text-white/90 transition-colors"
+                >
+                  +91 96359 64348
+                </a>
+              </li>
+              <li>
+                <a
                   href="mailto:tshm368@gmail.com"
                   className="hover:text-white/90 transition-colors"
                 >
