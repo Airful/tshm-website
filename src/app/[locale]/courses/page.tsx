@@ -28,6 +28,7 @@ export default async function CoursesPage({ params }: { params: Promise<{ locale
   const categoryList = [
     { key: "all", label: categories.all },
     { key: "diploma", label: categories.diploma },
+    { key: "degree", label: categories.degree },
     { key: "certificate", label: categories.certificate },
     { key: "academy", label: categories.academy },
     { key: "online", label: categories.online },

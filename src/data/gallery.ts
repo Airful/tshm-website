@@ -36,4 +36,12 @@ export const galleryImages: GalleryImage[] = [
   { id: "a13", src: "/images/gallery/Assosiate Group/Asso13.png", alt: "Sayaji Indore", alt_bn: "সায়াজি ইন্দোর", category: "associate" },
   { id: "a14", src: "/images/gallery/Assosiate Group/Asso14.jpeg", alt: "Grand Mercure Surya Palace", alt_bn: "গ্র্যান্ড মার্কিউর সূর্য প্যালেস", category: "associate" },
   { id: "a15", src: "/images/gallery/Assosiate Group/HOTEL LORDS.jpg.jpeg", alt: "Hotel Lords", alt_bn: "হোটেল লর্ডস", category: "associate" },
+  { id: "g15", src: "/images/gallery/practical-class-1.jpg", alt: "Practical Cooking Class", alt_bn: "ব্যবহারিক রান্নার ক্লাস", category: "training" },
+  { id: "g16", src: "/images/gallery/practical-class-2.jpg", alt: "Practical Training Session", alt_bn: "ব্যবহারিক প্রশিক্ষণ সেশন", category: "training" },
+  { id: "g17", src: "/images/gallery/activity-1.jpg", alt: "Student Counselling Session", alt_bn: "শিক্ষার্থী কাউন্সেলিং সেশন", category: "activities" },
+  { id: "g18", src: "/images/gallery/practical-class-3.jpg", alt: "Kitchen Practical Class", alt_bn: "কিচেন ব্যবহারিক ক্লাস", category: "training" },
+  { id: "g19", src: "/images/gallery/activity-2.jpg", alt: "Felicitation Ceremony", alt_bn: "সংবর্ধনা অনুষ্ঠান", category: "activities" },
+  { id: "g20", src: "/images/gallery/activity-3.jpg", alt: "Student Group Activity", alt_bn: "শিক্ষার্থীদের গ্রুপ কার্যক্রম", category: "activities" },
+  { id: "g21", src: "/images/gallery/menu-1.jpg", alt: "Variety of Menu — Pasta", alt_bn: "মেনুর বৈচিত্র্য — পাস্তা", category: "campus" },
+  { id: "g22", src: "/images/gallery/menu-2.jpg", alt: "Variety of Menu — Sandwich", alt_bn: "মেনুর বৈচিত্র্য — স্যান্ডউইচ", category: "campus" },
 ];
