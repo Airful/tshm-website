@@ -11,6 +11,7 @@
   "categories": {
     "all": "All Courses",
     "diploma": "Diploma",
+    "degree": "Degree",
     "certificate": "Certificate",
     "academy": "Academy",
     "online": "Online Degrees",
@@ -18,6 +19,7 @@
   },
   "categoryLabels": {
     "diploma": "Diploma",
+    "degree": "Degree",
     "certificate": "Certificate",
     "academy": "Academy",
     "online": "Online",

@@ -9,7 +9,7 @@ export interface Course {
   duration: string;
   duration_bn?: string;
   image: string;
-  category: "diploma" | "certificate" | "academy" | "online" | "service";
+  category: "diploma" | "degree" | "certificate" | "academy" | "online" | "service";
   highlights: string[];
   highlights_bn?: string[];
   seoTitle?: string;
@@ -141,6 +141,242 @@ export const courses: Course[] = [
       "হাউসকিপিং সুপারভাইজার (ক্রুজ)",
       "শোর এক্সকারশন কোঅর্ডিনেটর",
       "আন্তর্জাতিক হোটেল স্টাফ",
+    ],
+  },
+  {
+    id: "advance-diploma-hospitality-management",
+    title: "Advance Diploma in Hospitality Management",
+    title_bn: "অ্যাডভান্স ডিপ্লোমা ইন হসপিটালিটি ম্যানেজমেন্ট",
+    description:
+      "Advanced two-year diploma building on core hospitality skills — covering hotel operations, food & beverage management, front office, housekeeping supervision, and hospitality business management for supervisory roles.",
+    description_bn:
+      "মূল হসপিটালিটি দক্ষতার উপর ভিত্তি করে দুই বছরের অ্যাডভান্স ডিপ্লোমা — হোটেল অপারেশনস, ফুড অ্যান্ড বেভারেজ ম্যানেজমেন্ট, ফ্রন্ট অফিস, হাউসকিপিং সুপারভিশন এবং সুপারভাইজরি ভূমিকার জন্য হসপিটালিটি বিজনেস ম্যানেজমেন্ট অন্তর্ভুক্ত।",
+    longDescription:
+      "The Advance Diploma in Hospitality Management at TSHM & TF is a two-year programme for students who want to go beyond entry-level hospitality training and prepare for supervisory and management positions. The curriculum covers advanced front office operations, food & beverage service and production management, housekeeping supervision, hospitality accounting and cost control, guest relationship management, and hospitality marketing. Students train in real hospitality environments under industry-experienced faculty, and complete an extended industrial exposure component. With 100% job assistance and stipend during training, graduates move into supervisory roles across hotels, restaurants, resorts, and catering establishments in India and abroad.",
+    longDescription_bn:
+      "TSHM & TF-এর অ্যাডভান্স ডিপ্লোমা ইন হসপিটালিটি ম্যানেজমেন্ট হলো দুই বছরের একটি প্রোগ্রাম, যা প্রাথমিক স্তরের হসপিটালিটি প্রশিক্ষণের বাইরে গিয়ে শিক্ষার্থীদের সুপারভাইজরি ও ম্যানেজমেন্ট পদের জন্য প্রস্তুত করে। পাঠ্যক্রমে অ্যাডভান্সড ফ্রন্ট অফিস অপারেশনস, ফুড অ্যান্ড বেভারেজ সার্ভিস ও প্রোডাকশন ম্যানেজমেন্ট, হাউসকিপিং সুপারভিশন, হসপিটালিটি অ্যাকাউন্টিং ও কস্ট কন্ট্রোল, গেস্ট রিলেশনশিপ ম্যানেজমেন্ট এবং হসপিটালিটি মার্কেটিং অন্তর্ভুক্ত। শিক্ষার্থীরা ইন্ডাস্ট্রি-অভিজ্ঞ শিক্ষকদের তত্ত্বাবধানে প্রকৃত হসপিটালিটি পরিবেশে প্রশিক্ষণ নেয় এবং দীর্ঘমেয়াদি ইন্ডাস্ট্রিয়াল এক্সপোজার সম্পন্ন করে। ১০০% চাকরির সহায়তা ও প্রশিক্ষণকালীন স্টাইপেন্ড সহ, স্নাতকরা ভারত ও বিদেশের হোটেল, রেস্তোরাঁ, রিসর্ট ও ক্যাটারিং প্রতিষ্ঠানে সুপারভাইজরি ভূমিকায় যোগ দেয়।",
+    duration: "2 Years",
+    duration_bn: "২ বছর",
+    image: "/images/courses/hotel-management.jpeg",
+    category: "diploma",
+    highlights: [
+      "Supervisory & management focus",
+      "Extended industrial exposure",
+      "100% job assistance",
+      "Stipend during training",
+    ],
+    highlights_bn: [
+      "সুপারভাইজরি ও ম্যানেজমেন্ট কেন্দ্রিক",
+      "দীর্ঘমেয়াদি ইন্ডাস্ট্রিয়াল এক্সপোজার",
+      "১০০% চাকরির সহায়তা",
+      "প্রশিক্ষণকালীন স্টাইপেন্ড",
+    ],
+    seoTitle: "Advance Diploma in Hospitality Management in Tarakeswar - 2 Years",
+    seoTitle_bn: "তারকেশ্বরে অ্যাডভান্স ডিপ্লোমা ইন হসপিটালিটি ম্যানেজমেন্ট - ২ বছর",
+    seoDescription:
+      "Join TSHM's 2-year Advance Diploma in Hospitality Management in Tarakeswar, Hooghly. Supervisory-level training in hotel operations, F&B management, front office. 100% job assistance.",
+    seoDescription_bn:
+      "তারকেশ্বর, হুগলিতে TSHM-এর ২ বছরের অ্যাডভান্স ডিপ্লোমা ইন হসপিটালিটি ম্যানেজমেন্টে ভর্তি হন। হোটেল অপারেশনস, F&B ম্যানেজমেন্ট, ফ্রন্ট অফিসে সুপারভাইজরি স্তরের প্রশিক্ষণ। ১০০% চাকরির সহায়তা।",
+    seoKeywords:
+      "advance diploma hospitality management Tarakeswar, 2 year hospitality course Hooghly, hospitality management diploma West Bengal, advanced hotel management course near me",
+    seoKeywords_bn:
+      "তারকেশ্বরে অ্যাডভান্স ডিপ্লোমা হসপিটালিটি ম্যানেজমেন্ট, হুগলিতে ২ বছরের হসপিটালিটি কোর্স, পশ্চিমবঙ্গে হসপিটালিটি ম্যানেজমেন্ট ডিপ্লোমা",
+    eligibility: "Class 10 (Madhyamik) or Class 12 (Higher Secondary) pass from any recognized board. No entrance exam required.",
+    eligibility_bn: "যেকোনো স্বীকৃত বোর্ড থেকে দশম শ্রেণী (মাধ্যমিক) বা দ্বাদশ শ্রেণী (উচ্চমাধ্যমিক) পাশ। কোনো ভর্তি পরীক্ষার প্রয়োজন নেই।",
+    careerProspects: [
+      "Front Office Supervisor",
+      "F&B Service Supervisor",
+      "Executive Housekeeper",
+      "Restaurant Manager",
+      "Banquet Supervisor",
+      "Resort Operations Executive",
+      "Catering Manager",
+    ],
+    careerProspects_bn: [
+      "ফ্রন্ট অফিস সুপারভাইজার",
+      "F&B সার্ভিস সুপারভাইজার",
+      "এক্সিকিউটিভ হাউসকিপার",
+      "রেস্তোরাঁ ম্যানেজার",
+      "ব্যাঙ্কোয়েট সুপারভাইজার",
+      "রিসর্ট অপারেশনস এক্সিকিউটিভ",
+      "ক্যাটারিং ম্যানেজার",
+    ],
+  },
+  {
+    id: "bba-hospitality-management",
+    title: "BBA in Hospitality Management",
+    title_bn: "হসপিটালিটি ম্যানেজমেন্টে BBA",
+    description:
+      "Three-year Bachelor of Business Administration in Hospitality Management, offered in collaboration with recognized universities. Combines business management fundamentals with specialised hospitality operations training.",
+    description_bn:
+      "স্বীকৃত বিশ্ববিদ্যালয়ের সহযোগিতায় প্রদত্ত তিন বছরের ব্যাচেলর অফ বিজনেস অ্যাডমিনিস্ট্রেশন ইন হসপিটালিটি ম্যানেজমেন্ট। বিজনেস ম্যানেজমেন্টের মূল বিষয়ের সঙ্গে বিশেষায়িত হসপিটালিটি অপারেশনস প্রশিক্ষণের সমন্বয়।",
+    longDescription:
+      "The BBA in Hospitality Management is a three-year undergraduate degree programme facilitated by TSHM & TF in collaboration with recognized universities. The programme blends core business administration subjects — management principles, accounting, marketing, human resources, and organisational behaviour — with hospitality specialisation covering hotel operations, food & beverage management, front office administration, and tourism management. Students benefit from TSHM's industry-experienced faculty, practical training facilities, and placement network while earning a university-recognized degree. The degree is awarded by the partnering university; TSHM & TF provides the training, academic support, and industry exposure.",
+    longDescription_bn:
+      "হসপিটালিটি ম্যানেজমেন্টে BBA হলো তিন বছরের একটি স্নাতক ডিগ্রি প্রোগ্রাম, যা TSHM & TF স্বীকৃত বিশ্ববিদ্যালয়ের সহযোগিতায় পরিচালনা করে। প্রোগ্রামটি বিজনেস অ্যাডমিনিস্ট্রেশনের মূল বিষয় — ম্যানেজমেন্ট প্রিন্সিপলস, অ্যাকাউন্টিং, মার্কেটিং, হিউম্যান রিসোর্সেস ও অর্গানাইজেশনাল বিহেভিয়ার — এবং হোটেল অপারেশনস, ফুড অ্যান্ড বেভারেজ ম্যানেজমেন্ট, ফ্রন্ট অফিস অ্যাডমিনিস্ট্রেশন ও ট্যুরিজম ম্যানেজমেন্ট নিয়ে হসপিটালিটি বিশেষায়নের সমন্বয় ঘটায়। শিক্ষার্থীরা বিশ্ববিদ্যালয়-স্বীকৃত ডিগ্রি অর্জনের পাশাপাশি TSHM-এর ইন্ডাস্ট্রি-অভিজ্ঞ শিক্ষক, ব্যবহারিক প্রশিক্ষণ সুবিধা ও প্লেসমেন্ট নেটওয়ার্কের সুবিধা পায়। ডিগ্রিটি সহযোগী বিশ্ববিদ্যালয় প্রদান করে; TSHM & TF প্রশিক্ষণ, একাডেমিক সহায়তা ও ইন্ডাস্ট্রি এক্সপোজার প্রদান করে।",
+    duration: "3 Years",
+    duration_bn: "৩ বছর",
+    image: "/images/courses/online-degree.jpg",
+    category: "degree",
+    highlights: [
+      "University-recognized degree",
+      "Business management + hospitality",
+      "Industry exposure & internships",
+      "Placement support",
+    ],
+    highlights_bn: [
+      "বিশ্ববিদ্যালয়-স্বীকৃত ডিগ্রি",
+      "বিজনেস ম্যানেজমেন্ট + হসপিটালিটি",
+      "ইন্ডাস্ট্রি এক্সপোজার ও ইন্টার্নশিপ",
+      "প্লেসমেন্ট সহায়তা",
+    ],
+    seoTitle: "BBA in Hospitality Management in Tarakeswar - 3 Year Degree",
+    seoTitle_bn: "তারকেশ্বরে হসপিটালিটি ম্যানেজমেন্টে BBA - ৩ বছরের ডিগ্রি",
+    seoDescription:
+      "Pursue a 3-year BBA in Hospitality Management at TSHM Tarakeswar, in collaboration with recognized universities. Business management with hospitality specialisation. Hooghly, West Bengal.",
+    seoDescription_bn:
+      "TSHM তারকেশ্বরে স্বীকৃত বিশ্ববিদ্যালয়ের সহযোগিতায় ৩ বছরের হসপিটালিটি ম্যানেজমেন্টে BBA করুন। হসপিটালিটি বিশেষায়ন সহ বিজনেস ম্যানেজমেন্ট। হুগলি, পশ্চিমবঙ্গ।",
+    seoKeywords:
+      "BBA hospitality management Tarakeswar, BBA hotel management Hooghly, hospitality degree West Bengal, BBA after 12th Tarakeswar, hospitality management degree near me",
+    seoKeywords_bn:
+      "তারকেশ্বরে BBA হসপিটালিটি ম্যানেজমেন্ট, হুগলিতে BBA হোটেল ম্যানেজমেন্ট, পশ্চিমবঙ্গে হসপিটালিটি ডিগ্রি, দ্বাদশ শ্রেণীর পর BBA",
+    eligibility: "Class 12 (Higher Secondary) pass from any recognized board. Admission through the partnering university's process.",
+    eligibility_bn: "যেকোনো স্বীকৃত বোর্ড থেকে দ্বাদশ শ্রেণী (উচ্চমাধ্যমিক) পাশ। সহযোগী বিশ্ববিদ্যালয়ের প্রক্রিয়া অনুযায়ী ভর্তি।",
+    careerProspects: [
+      "Hotel Operations Manager",
+      "Front Office Manager",
+      "F&B Manager",
+      "Event & Banquet Manager",
+      "Hospitality Business Analyst",
+      "Travel & Tourism Executive",
+      "Entrepreneur (Hospitality)",
+    ],
+    careerProspects_bn: [
+      "হোটেল অপারেশনস ম্যানেজার",
+      "ফ্রন্ট অফিস ম্যানেজার",
+      "F&B ম্যানেজার",
+      "ইভেন্ট ও ব্যাঙ্কোয়েট ম্যানেজার",
+      "হসপিটালিটি বিজনেস অ্যানালিস্ট",
+      "ট্রাভেল ও ট্যুরিজম এক্সিকিউটিভ",
+      "উদ্যোক্তা (হসপিটালিটি)",
+    ],
+  },
+  {
+    id: "bhmct-hotel-management",
+    title: "BHMCT in Hotel Management",
+    title_bn: "হোটেল ম্যানেজমেন্টে BHMCT",
+    description:
+      "Four-year Bachelor of Hotel Management & Catering Technology, offered in collaboration with recognized universities. The most comprehensive professional degree in hotel management and catering.",
+    description_bn:
+      "স্বীকৃত বিশ্ববিদ্যালয়ের সহযোগিতায় প্রদত্ত চার বছরের ব্যাচেলর অফ হোটেল ম্যানেজমেন্ট অ্যান্ড ক্যাটারিং টেকনোলজি। হোটেল ম্যানেজমেন্ট ও ক্যাটারিংয়ে সবচেয়ে বিস্তৃত পেশাদার ডিগ্রি।",
+    longDescription:
+      "The BHMCT (Bachelor of Hotel Management & Catering Technology) is a four-year professional degree programme facilitated by TSHM & TF in collaboration with recognized universities. It is the most comprehensive qualification in the hotel management field, covering food production and culinary technology, food & beverage service, front office management, accommodation operations, hotel engineering, hospitality law, financial management, and strategic hospitality management. The programme includes structured industrial training with hotel partners, giving students substantial real-world experience before graduation. The degree is awarded by the partnering university; TSHM & TF provides the training, academic support, and placement network.",
+    longDescription_bn:
+      "BHMCT (ব্যাচেলর অফ হোটেল ম্যানেজমেন্ট অ্যান্ড ক্যাটারিং টেকনোলজি) হলো চার বছরের একটি পেশাদার ডিগ্রি প্রোগ্রাম, যা TSHM & TF স্বীকৃত বিশ্ববিদ্যালয়ের সহযোগিতায় পরিচালনা করে। হোটেল ম্যানেজমেন্ট ক্ষেত্রে এটি সবচেয়ে বিস্তৃত যোগ্যতা — যাতে ফুড প্রোডাকশন ও কালিনারি টেকনোলজি, ফুড অ্যান্ড বেভারেজ সার্ভিস, ফ্রন্ট অফিস ম্যানেজমেন্ট, অ্যাকোমোডেশন অপারেশনস, হোটেল ইঞ্জিনিয়ারিং, হসপিটালিটি ল, ফিন্যান্সিয়াল ম্যানেজমেন্ট এবং স্ট্র্যাটেজিক হসপিটালিটি ম্যানেজমেন্ট অন্তর্ভুক্ত। প্রোগ্রামে হোটেল পার্টনারদের সঙ্গে কাঠামোবদ্ধ ইন্ডাস্ট্রিয়াল ট্রেনিং রয়েছে, যা স্নাতক হওয়ার আগেই শিক্ষার্থীদের যথেষ্ট বাস্তব অভিজ্ঞতা দেয়। ডিগ্রিটি সহযোগী বিশ্ববিদ্যালয় প্রদান করে; TSHM & TF প্রশিক্ষণ, একাডেমিক সহায়তা ও প্লেসমেন্ট নেটওয়ার্ক প্রদান করে।",
+    duration: "4 Years",
+    duration_bn: "৪ বছর",
+    image: "/images/courses/hotel-management.jpeg",
+    category: "degree",
+    highlights: [
+      "University-recognized degree",
+      "Most comprehensive hotel management qualification",
+      "Structured industrial training",
+      "Placement support",
+    ],
+    highlights_bn: [
+      "বিশ্ববিদ্যালয়-স্বীকৃত ডিগ্রি",
+      "হোটেল ম্যানেজমেন্টে সবচেয়ে বিস্তৃত যোগ্যতা",
+      "কাঠামোবদ্ধ ইন্ডাস্ট্রিয়াল ট্রেনিং",
+      "প্লেসমেন্ট সহায়তা",
+    ],
+    seoTitle: "BHMCT in Hotel Management in Tarakeswar - 4 Year Degree",
+    seoTitle_bn: "তারকেশ্বরে হোটেল ম্যানেজমেন্টে BHMCT - ৪ বছরের ডিগ্রি",
+    seoDescription:
+      "Pursue a 4-year BHMCT (Bachelor of Hotel Management & Catering Technology) at TSHM Tarakeswar, in collaboration with recognized universities. Hooghly, West Bengal.",
+    seoDescription_bn:
+      "TSHM তারকেশ্বরে স্বীকৃত বিশ্ববিদ্যালয়ের সহযোগিতায় ৪ বছরের BHMCT (ব্যাচেলর অফ হোটেল ম্যানেজমেন্ট অ্যান্ড ক্যাটারিং টেকনোলজি) করুন। হুগলি, পশ্চিমবঙ্গ।",
+    seoKeywords:
+      "BHMCT Tarakeswar, hotel management degree Hooghly, BHMCT West Bengal, 4 year hotel management course, catering technology degree near me",
+    seoKeywords_bn:
+      "তারকেশ্বরে BHMCT, হুগলিতে হোটেল ম্যানেজমেন্ট ডিগ্রি, পশ্চিমবঙ্গে BHMCT, ৪ বছরের হোটেল ম্যানেজমেন্ট কোর্স",
+    eligibility: "Class 12 (Higher Secondary) pass from any recognized board. Admission through the partnering university's process.",
+    eligibility_bn: "যেকোনো স্বীকৃত বোর্ড থেকে দ্বাদশ শ্রেণী (উচ্চমাধ্যমিক) পাশ। সহযোগী বিশ্ববিদ্যালয়ের প্রক্রিয়া অনুযায়ী ভর্তি।",
+    careerProspects: [
+      "Hotel General Manager",
+      "Executive Chef",
+      "Food & Beverage Director",
+      "Rooms Division Manager",
+      "Catering Operations Manager",
+      "Cruise Line Management",
+      "Hospitality Consultant",
+    ],
+    careerProspects_bn: [
+      "হোটেল জেনারেল ম্যানেজার",
+      "এক্সিকিউটিভ শেফ",
+      "ফুড অ্যান্ড বেভারেজ ডিরেক্টর",
+      "রুমস ডিভিশন ম্যানেজার",
+      "ক্যাটারিং অপারেশনস ম্যানেজার",
+      "ক্রুজ লাইন ম্যানেজমেন্ট",
+      "হসপিটালিটি কনসালট্যান্ট",
+    ],
+  },
+  {
+    id: "bvoc-hotel-management",
+    title: "B.Voc in Hotel Management",
+    title_bn: "হোটেল ম্যানেজমেন্টে B.Voc",
+    description:
+      "Three-year Bachelor of Vocation in Hotel Management, offered in collaboration with recognized universities. A skill-focused degree combining hands-on vocational training with academic credentials.",
+    description_bn:
+      "স্বীকৃত বিশ্ববিদ্যালয়ের সহযোগিতায় প্রদত্ত তিন বছরের ব্যাচেলর অফ ভোকেশন ইন হোটেল ম্যানেজমেন্ট। হাতে-কলমে বৃত্তিমূলক প্রশিক্ষণ ও একাডেমিক যোগ্যতার সমন্বয়ে দক্ষতা-কেন্দ্রিক ডিগ্রি।",
+    longDescription:
+      "The B.Voc (Bachelor of Vocation) in Hotel Management is a three-year skill-oriented degree programme facilitated by TSHM & TF in collaboration with recognized universities. Unlike conventional degrees, B.Voc places a majority weighting on practical, job-ready skills alongside academic study — covering food production, food & beverage service, front office operations, housekeeping, and hospitality supervision. A distinctive feature of the B.Voc structure is multiple exit options, allowing students to receive a recognized qualification at the end of each year of study. This makes it well suited to students who want both an employable skill set and a full degree. The degree is awarded by the partnering university; TSHM & TF provides the vocational training and industry exposure.",
+    longDescription_bn:
+      "হোটেল ম্যানেজমেন্টে B.Voc (ব্যাচেলর অফ ভোকেশন) হলো তিন বছরের একটি দক্ষতা-কেন্দ্রিক ডিগ্রি প্রোগ্রাম, যা TSHM & TF স্বীকৃত বিশ্ববিদ্যালয়ের সহযোগিতায় পরিচালনা করে। প্রচলিত ডিগ্রির তুলনায় B.Voc একাডেমিক পড়াশোনার পাশাপাশি ব্যবহারিক ও চাকরি-উপযোগী দক্ষতার উপর বেশি গুরুত্ব দেয় — যাতে ফুড প্রোডাকশন, ফুড অ্যান্ড বেভারেজ সার্ভিস, ফ্রন্ট অফিস অপারেশনস, হাউসকিপিং ও হসপিটালিটি সুপারভিশন অন্তর্ভুক্ত। B.Voc কাঠামোর একটি বিশেষ বৈশিষ্ট্য হলো একাধিক এক্সিট অপশন, যা শিক্ষার্থীদের প্রতি বছর শেষে একটি স্বীকৃত যোগ্যতা অর্জনের সুযোগ দেয়। যারা কর্মোপযোগী দক্ষতা ও সম্পূর্ণ ডিগ্রি — দুটোই চান, তাদের জন্য এটি উপযুক্ত। ডিগ্রিটি সহযোগী বিশ্ববিদ্যালয় প্রদান করে; TSHM & TF বৃত্তিমূলক প্রশিক্ষণ ও ইন্ডাস্ট্রি এক্সপোজার প্রদান করে।",
+    duration: "3 Years",
+    duration_bn: "৩ বছর",
+    image: "/images/courses/hotel-management.jpeg",
+    category: "degree",
+    highlights: [
+      "University-recognized degree",
+      "Skill-focused, practical weighting",
+      "Multiple exit options",
+      "Placement support",
+    ],
+    highlights_bn: [
+      "বিশ্ববিদ্যালয়-স্বীকৃত ডিগ্রি",
+      "দক্ষতা-কেন্দ্রিক, ব্যবহারিক গুরুত্ব",
+      "একাধিক এক্সিট অপশন",
+      "প্লেসমেন্ট সহায়তা",
+    ],
+    seoTitle: "B.Voc in Hotel Management in Tarakeswar - 3 Year Degree",
+    seoTitle_bn: "তারকেশ্বরে হোটেল ম্যানেজমেন্টে B.Voc - ৩ বছরের ডিগ্রি",
+    seoDescription:
+      "Pursue a 3-year B.Voc in Hotel Management at TSHM Tarakeswar, in collaboration with recognized universities. Skill-focused degree with multiple exit options. Hooghly, West Bengal.",
+    seoDescription_bn:
+      "TSHM তারকেশ্বরে স্বীকৃত বিশ্ববিদ্যালয়ের সহযোগিতায় ৩ বছরের হোটেল ম্যানেজমেন্টে B.Voc করুন। একাধিক এক্সিট অপশন সহ দক্ষতা-কেন্দ্রিক ডিগ্রি। হুগলি, পশ্চিমবঙ্গ।",
+    seoKeywords:
+      "B.Voc hotel management Tarakeswar, B.Voc degree Hooghly, vocational degree West Bengal, B.Voc after 12th, skill based degree near me",
+    seoKeywords_bn:
+      "তারকেশ্বরে B.Voc হোটেল ম্যানেজমেন্ট, হুগলিতে B.Voc ডিগ্রি, পশ্চিমবঙ্গে ভোকেশনাল ডিগ্রি, দ্বাদশ শ্রেণীর পর B.Voc",
+    eligibility: "Class 12 (Higher Secondary) pass from any recognized board. Admission through the partnering university's process.",
+    eligibility_bn: "যেকোনো স্বীকৃত বোর্ড থেকে দ্বাদশ শ্রেণী (উচ্চমাধ্যমিক) পাশ। সহযোগী বিশ্ববিদ্যালয়ের প্রক্রিয়া অনুযায়ী ভর্তি।",
+    careerProspects: [
+      "Front Office Executive",
+      "F&B Service Supervisor",
+      "Kitchen Supervisor",
+      "Housekeeping Executive",
+      "Hotel Operations Trainee",
+      "Guest Relations Executive",
+      "Self-employment (Catering)",
+    ],
+    careerProspects_bn: [
+      "ফ্রন্ট অফিস এক্সিকিউটিভ",
+      "F&B সার্ভিস সুপারভাইজার",
+      "কিচেন সুপারভাইজার",
+      "হাউসকিপিং এক্সিকিউটিভ",
+      "হোটেল অপারেশনস ট্রেইনি",
+      "গেস্ট রিলেশনস এক্সিকিউটিভ",
+      "স্বনির্ভরতা (ক্যাটারিং)",
     ],
   },
   {
