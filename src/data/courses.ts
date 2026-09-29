@@ -380,6 +380,65 @@ export const courses: Course[] = [
     ],
   },
   {
+    id: "mba-hotel-management",
+    title: "MBA in Hotel Management",
+    title_bn: "হোটেল ম্যানেজমেন্টে MBA",
+    description:
+      "Two-year Master of Business Administration in Hotel Management, offered in collaboration with recognized universities. A postgraduate degree combining advanced business leadership with specialised hospitality management. N.D Scholarship available.",
+    description_bn:
+      "স্বীকৃত বিশ্ববিদ্যালয়ের সহযোগিতায় প্রদত্ত দুই বছরের মাস্টার অফ বিজনেস অ্যাডমিনিস্ট্রেশন ইন হোটেল ম্যানেজমেন্ট। অ্যাডভান্সড বিজনেস লিডারশিপের সঙ্গে বিশেষায়িত হসপিটালিটি ম্যানেজমেন্টের সমন্বয়ে একটি স্নাতকোত্তর ডিগ্রি। N.D স্কলারশিপ উপলব্ধ।",
+    longDescription:
+      "The MBA in Hotel Management is a two-year postgraduate degree programme facilitated by TSHM & TF in collaboration with recognized universities. Designed for graduates aiming for leadership and management roles in the hospitality industry, the programme combines core management education — strategic management, marketing, finance, human resource management, and organisational behaviour — with advanced hospitality specialisation covering hotel operations management, revenue and yield management, food & beverage management, service quality, and hospitality entrepreneurship. Students benefit from TSHM's industry-experienced faculty, practical exposure, and placement network while earning a university-recognized postgraduate degree. N.D Scholarship is available for eligible students. The degree is awarded by the partnering university; TSHM & TF provides the training, academic support, and industry exposure.",
+    longDescription_bn:
+      "হোটেল ম্যানেজমেন্টে MBA হলো দুই বছরের একটি স্নাতকোত্তর ডিগ্রি প্রোগ্রাম, যা TSHM & TF স্বীকৃত বিশ্ববিদ্যালয়ের সহযোগিতায় পরিচালনা করে। হসপিটালিটি ইন্ডাস্ট্রিতে নেতৃত্ব ও ম্যানেজমেন্ট ভূমিকার লক্ষ্যে থাকা স্নাতকদের জন্য তৈরি এই প্রোগ্রামটি মূল ম্যানেজমেন্ট শিক্ষা — স্ট্র্যাটেজিক ম্যানেজমেন্ট, মার্কেটিং, ফিন্যান্স, হিউম্যান রিসোর্স ম্যানেজমেন্ট ও অর্গানাইজেশনাল বিহেভিয়ার — এবং হোটেল অপারেশনস ম্যানেজমেন্ট, রেভিনিউ ও ইল্ড ম্যানেজমেন্ট, ফুড অ্যান্ড বেভারেজ ম্যানেজমেন্ট, সার্ভিস কোয়ালিটি ও হসপিটালিটি উদ্যোক্তা নিয়ে অ্যাডভান্সড হসপিটালিটি বিশেষায়নের সমন্বয় ঘটায়। শিক্ষার্থীরা বিশ্ববিদ্যালয়-স্বীকৃত স্নাতকোত্তর ডিগ্রি অর্জনের পাশাপাশি TSHM-এর ইন্ডাস্ট্রি-অভিজ্ঞ শিক্ষক, ব্যবহারিক এক্সপোজার ও প্লেসমেন্ট নেটওয়ার্কের সুবিধা পায়। যোগ্য শিক্ষার্থীদের জন্য N.D স্কলারশিপ উপলব্ধ। ডিগ্রিটি সহযোগী বিশ্ববিদ্যালয় প্রদান করে; TSHM & TF প্রশিক্ষণ, একাডেমিক সহায়তা ও ইন্ডাস্ট্রি এক্সপোজার প্রদান করে।",
+    duration: "2 Years",
+    duration_bn: "২ বছর",
+    image: "/images/courses/mba-hotel-management.jpeg",
+    category: "degree",
+    highlights: [
+      "University-recognized postgraduate degree",
+      "Management leadership + hospitality specialisation",
+      "N.D Scholarship available",
+      "Placement support",
+    ],
+    highlights_bn: [
+      "বিশ্ববিদ্যালয়-স্বীকৃত স্নাতকোত্তর ডিগ্রি",
+      "ম্যানেজমেন্ট লিডারশিপ + হসপিটালিটি বিশেষায়ন",
+      "N.D স্কলারশিপ উপলব্ধ",
+      "প্লেসমেন্ট সহায়তা",
+    ],
+    seoTitle: "MBA in Hotel Management in Tarakeswar - 2 Year Degree",
+    seoTitle_bn: "তারকেশ্বরে হোটেল ম্যানেজমেন্টে MBA - ২ বছরের ডিগ্রি",
+    seoDescription:
+      "Pursue a 2-year MBA in Hotel Management at TSHM Tarakeswar, in collaboration with recognized universities. Postgraduate hospitality management degree with N.D Scholarship available. Hooghly, West Bengal.",
+    seoDescription_bn:
+      "TSHM তারকেশ্বরে স্বীকৃত বিশ্ববিদ্যালয়ের সহযোগিতায় ২ বছরের হোটেল ম্যানেজমেন্টে MBA করুন। N.D স্কলারশিপ সহ স্নাতকোত্তর হসপিটালিটি ম্যানেজমেন্ট ডিগ্রি। হুগলি, পশ্চিমবঙ্গ।",
+    seoKeywords:
+      "MBA hotel management Tarakeswar, MBA hospitality management Hooghly, hotel management masters degree West Bengal, MBA after graduation Tarakeswar, postgraduate hotel management course near me",
+    seoKeywords_bn:
+      "তারকেশ্বরে MBA হোটেল ম্যানেজমেন্ট, হুগলিতে MBA হসপিটালিটি ম্যানেজমেন্ট, পশ্চিমবঙ্গে হোটেল ম্যানেজমেন্ট মাস্টার্স ডিগ্রি, স্নাতকের পর MBA তারকেশ্বর",
+    eligibility: "Graduation (Bachelor's degree) in any discipline from a recognized university. Admission through the partnering university's process.",
+    eligibility_bn: "যেকোনো স্বীকৃত বিশ্ববিদ্যালয় থেকে যেকোনো বিষয়ে স্নাতক (ব্যাচেলর ডিগ্রি)। সহযোগী বিশ্ববিদ্যালয়ের প্রক্রিয়া অনুযায়ী ভর্তি।",
+    careerProspects: [
+      "Hotel General Manager",
+      "Hospitality Operations Manager",
+      "Revenue Manager",
+      "Food & Beverage Director",
+      "Front Office Manager",
+      "Hospitality Consultant",
+      "Entrepreneur (Hospitality)",
+    ],
+    careerProspects_bn: [
+      "হোটেল জেনারেল ম্যানেজার",
+      "হসপিটালিটি অপারেশনস ম্যানেজার",
+      "রেভিনিউ ম্যানেজার",
+      "ফুড অ্যান্ড বেভারেজ ডিরেক্টর",
+      "ফ্রন্ট অফিস ম্যানেজার",
+      "হসপিটালিটি কনসালট্যান্ট",
+      "উদ্যোক্তা (হসপিটালিটি)",
+    ],
+  },
+  {
     id: "health-assistant",
     title: "Diploma in Health Assistant",
     title_bn: "হেলথ অ্যাসিস্ট্যান্ট ডিপ্লোমা",
