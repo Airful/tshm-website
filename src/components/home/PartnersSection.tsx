@@ -19,11 +19,11 @@ export default function PartnersSection({ t }: PartnersSectionProps) {
           subtitle={t.subtitle}
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="flex flex-wrap justify-center gap-6">
           {t.items.map((item) => (
             <div
               key={item.title}
-              className="bg-white rounded-2xl border border-[var(--border)] border-t-2 border-t-[var(--accent)] p-8 hover:shadow-md transition-all duration-300"
+              className="w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] bg-white rounded-2xl border border-[var(--border)] border-t-2 border-t-[var(--accent)] p-8 hover:shadow-md transition-all duration-300"
             >
               <h3 className="font-semibold text-[var(--foreground)] mb-2">
                 {item.title}
